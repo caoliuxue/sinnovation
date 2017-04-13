@@ -1,0 +1,16 @@
+/*common style*/
+@import url("tinyStyle.css") screen and (max-width: 767px);
+@import url("mainStyle.css") screen and (min-width: 768px);
+
+body {
+    font: normal 100% Source Sans Pro, Helvetica, Arial, sans-serif;
+}
+
+h1 {
+    font-size: 1.5em;
+}
+
+small {
+    font-size: 0.875em;
+}
+

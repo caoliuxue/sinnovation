@@ -1,29 +1,10 @@
+/*DESKTOP STYLE*/
+
 /*common style*/
-
-body {
-    font: normal 100% Helvetica, Arial, sans-serif;
-}
-
-h1 {
-    font-size: 1.5em;
-}
-
-small {
-    font-size: 0.875em;
-}
-
-/*index style*/
-@media(max-width: 767px){
-
-    .red{
-        color: rgba(255, 26, 0, 0.7);
-    }
-}
-
 
 /*index style*/
 @media(min-width: 768px){
-    .red{
+    .blue{
         color: #7849ff;
     }
 }

@@ -1,31 +1,11 @@
-/*common style*/
-
-body {
-    font: normal 100% Helvetica, Arial, sans-serif;
-}
-
-h1 {
-    font-size: 1.5em;
-}
-
-small {
-    font-size: 0.875em;
-}
-
+/*MOBILE STYLE*/
 /*index style*/
-@media screen and (max-device-width: 600px){
+@media screen and (max-width: 767px){
 
     .red{
         color: rgba(255, 26, 0, 0.7);
     }
 }
 
-
-/*index style*/
-@media screen and (min-device-width: 601px){
-    .blue{
-        color: #7849ff;
-    }
-}
 
 
