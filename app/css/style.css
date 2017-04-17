@@ -20,6 +20,61 @@ a {
     color: #000;
 }
 
+.font-color-main{
+    color: #ff7e00;
+}
+
+.font-color-white{
+    color: white;
+}
+.font-color-black{
+    color: black;
+}
+
+.bg-color-main{
+    background-color: #ff7e00;
+}
+
+.border-color-main{
+    border: 1px solid #ff7e00;
+}
+.border-color-white{
+    border: 1px solid white;
+}
+
+.tal{
+    text-align: left;
+}
+
+.tar{
+    text-align: right;
+}
+
+.tac{
+    text-align: center;
+}
+
+.font-size-6rem{
+    font-size: 6rem;
+}
+.font-size-3rem{
+    font-size: 3rem;
+}
+.font-size-1_0_8rem{
+    font-size: 1.8rem;
+}
+
+.width-100{
+    width: 100%;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.bolder{
+    font-weight: bolder;
+}
 /*!*main swiper customize style*!*/
 /*.swiper-pagination-bullet {*/
     /*width: 15px !important;*/
@@ -27,5 +82,3 @@ a {
     /*border: 2px solid #fa7c00;*/
 
 /*}*/
-
-

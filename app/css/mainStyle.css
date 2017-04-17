@@ -101,7 +101,7 @@
 
     .slide-title {
         font-family: "Source Sans Pro";
-        font-size: 3.5em;
+        font-size: 5em;
         color: white;
         font-weight: bolder;
         padding-left: 18%;
@@ -112,7 +112,7 @@
     /*有李开复头像层*/
     .index-content01 {
         display: flex;
-        height: 450px;
+        height: 550px;
         background: url("../img/sinnovation-bg.png") no-repeat 0 0;
         background-size: auto 100%;
     }
@@ -122,48 +122,44 @@
         padding-left: 12%;
     }
 
-    .index-content01-left > .t01 {
+    .index-content01-left > .t01-l1 {
         padding-top: 75px;
-        font-size: 1.6em;
         letter-spacing: 5px;
         font-weight: 500;
     }
 
-    .index-content01-left > .t02 {
+    .index-content01-left > .t01-l2 {
         padding-top: 10px;
-        font-size: 3.5em;
+        /*font-size: 3.5em;*/
         letter-spacing: 5px;
         font-weight: bolder;
         color: black;
     }
 
-    .index-content01-left > .t03 {
+    .index-content01-left > .t01-l3 {
         margin-top: 1px;
-        background-color: #ff7e00;
         height: 6px;
         width: 32%;
     }
 
-    .index-content01-left > .t04 {
+    .index-content01-left > .t01-l4 {
         height: 6px;
         margin-top: 31px;
-        font-size: 1em;
+        font-size: 1.5em;
         letter-spacing: 1px;
         font-weight: 300;
     }
 
     .access_more {
-        width: 180px;
-        height: 50px;
+        width: 250px;
+        height: 66px;
         margin-top: 50px;
-        border: 2px solid black;
-        border-bottom: 1px solid black;
-        border-top: 1px solid black;
+        border: 1px solid black;
         border-radius: 50px;
-        line-height: 50px;
+        line-height: 66px;
         padding-left: 20px;
         padding-right: 20px;
-        font-size: 1.6em;
+        font-size: 2em;
         letter-spacing: 6px;
         font-weight: 500;
         text-align: center;
@@ -172,25 +168,132 @@
     .index-content01-right {
         flex-basis: 40%;
         background: url("../img/lkf.png") no-repeat 40% 20px;
-        background-size: auto 96%;
+        background-size: auto 97%;
     }
 
-
     /*投资成绩*/
-    .index-content02{
+    .index-content02 {
         display: flex;
-        border: 2px solid #ff3f3e;
-        height: 450px;
+        /*border: 2px solid #ff3f3e;*/
+        height: 550px;
         background: url("../img/index-content02-bg.jpg") no-repeat center center;
         background-size: cover;
     }
 
-    .index-content02 > .wrapper{
+    .index-content02 > .cover {
         display: flex;
-        height: 450px;
+        height: 550px;
         width: 100%;
         background-color: rgba(0, 0, 0, 0.65);
     }
+
+    .index-content02-left {
+        flex-basis: 55%;
+        display: flex;
+        padding-left: 8%;
+    }
+
+    .t02-l1 {
+        border: 1px solid #ff7e00;
+        width: 33%;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        margin-top: 155px;
+        margin-left: 25px;
+        display: flex;
+        flex-direction: column;
+        height: 235px;
+    }
+
+    .t02-l1 > :first-child {
+        color: white;
+        width: 100%;
+        text-align: center;
+        font-size: 1.8rem;
+        font-weight: 400;
+        letter-spacing: 5px;
+    }
+
+    .t02-l1 > :nth-child(2) {
+        padding-left: 20px;
+        margin-top: -20px;
+        font-size: 2rem;
+    }
+
+    .t02-l1 > :nth-child(2) > span {
+        font-size: 15rem;
+        font-weight: 300;
+    }
+
+    .index-content02-right {
+        flex-basis: 35%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        text-align: right;
+    }
+
+    .index-content02-right > .t02-r1 {
+        margin-top: 80px;
+        letter-spacing: 10px;
+    }
+
+    .index-content02-right > .t02-r2 {
+        width: 60%;
+        height: 8px;
+        margin: 30px 0 35px 0;
+    }
+
+    .index-content02-right > .t02-r3 {
+        /*font-size: 1.8rem;*/
+        font-weight: 300;
+        line-height: 40px;
+    }
+
+    /*投后介绍*/
+    .index-content03 {
+        height: 550px;
+        display: flex;
+        background: url("../img/index-content03-bg.png") no-repeat 0 0;
+        background-size: auto 100%;
+
+    }
+
+    .index-content03-left {
+        flex-basis: 55%;
+        padding-left: 8%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+    }
+
+    .index-content03-left > .t03-l2{
+        line-height:110px;
+    }
+    .index-content03-left > .t03-l3{
+        letter-spacing: 4px;
+    }
+
+    .index-content03-left > .t03-l4{
+        background: url("../img/index-content03-01.png") no-repeat 0 0;
+        background-size: auto 70%;
+        height: 200px;
+        margin-top: 30px;
+
+    }
+
+    .index-content03-right {
+        flex-basis: 35%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        text-align: right;
+        padding-top: 320px;
+    }
+
+
+    /*人工智能工程院*/
+    
 }
 
 
