@@ -2,13 +2,26 @@
  * Created by caoliuxue on 2017/4/16.
  */
 $(document).ready(function () {
-    var mySwiper = new Swiper('.swiper-container', {
+    var bannerSwiper = new Swiper('.swiper-container', {
         // Optional parameters
         direction: 'horizontal',
         loop: true,
-        speed: 3000,
-        // autoplay: true,
+        speed: 2000,
+        autoplay: true,
         paginationHide:false,
         pagination: '.swiper-pagination'
     });
+
+    var sinnovationSwiper = new Swiper('.t05-bottom', {
+        // pagination: '.swiper-pagination',
+        // direction: 'horizontal',
+        slidesPerView: 3,
+        speed: 3000,
+        autoplay: true,
+        loop:true,
+        paginationClickable: true,
+        prevButton: '.page-prev',
+        nextButton: '.page-next'
+    });
+
 });

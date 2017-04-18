@@ -20,65 +20,70 @@ a {
     color: #000;
 }
 
-.font-color-main{
+.font-color-main {
     color: #ff7e00;
 }
 
-.font-color-white{
+.font-color-white {
     color: white;
 }
-.font-color-black{
+
+.font-color-black {
     color: black;
 }
 
-.bg-color-main{
+.bg-color-main {
     background-color: #ff7e00;
 }
 
-.border-color-main{
+.border-color-main {
     border: 1px solid #ff7e00;
 }
-.border-color-white{
+
+.border-color-white {
     border: 1px solid white;
 }
 
-.tal{
+.tal {
     text-align: left;
 }
 
-.tar{
+.tar {
     text-align: right;
 }
 
-.tac{
+.tac {
     text-align: center;
 }
 
-.font-size-6rem{
+.font-size-6rem {
     font-size: 6rem;
 }
-.font-size-3rem{
+
+.font-size-3rem {
     font-size: 3rem;
 }
-.font-size-1_0_8rem{
+
+.font-size-4rem {
+    font-size: 5rem;
+}
+
+.font-size-1_0_8rem {
     font-size: 1.8rem;
 }
 
-.width-100{
+.font-size-2rem{
+    font-size: 2rem;
+}
+
+.width-100 {
     width: 100%;
 }
 
-.bold{
+.bold {
     font-weight: bold;
 }
 
-.bolder{
+.bolder {
     font-weight: bolder;
 }
-/*!*main swiper customize style*!*/
-/*.swiper-pagination-bullet {*/
-    /*width: 15px !important;*/
-    /*background-color: transparent !important;*/
-    /*border: 2px solid #fa7c00;*/
-
-/*}*/
