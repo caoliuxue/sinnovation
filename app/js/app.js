@@ -12,16 +12,18 @@ $(document).ready(function () {
         pagination: '.swiper-pagination'
     });
 
-    var sinnovationSwiper = new Swiper('.t05-bottom', {
-        // pagination: '.swiper-pagination',
-        // direction: 'horizontal',
-        slidesPerView: 3,
-        speed: 3000,
-        autoplay: true,
-        loop:true,
-        paginationClickable: true,
-        prevButton: '.page-prev',
-        nextButton: '.page-next'
-    });
+    // var sinnovationSwiper = new Swiper('.t05-bottom', {
+    //     // pagination: '.swiper-pagination',
+    //     // direction: 'horizontal',
+    //     slidesPerView: 3,
+    //     speed: 5000,
+    //     spcaeBetween:30,
+    //     autoplay: true,
+    //     loop:true,
+    //     paginationClickable: true,
+    //     prevButton: '.page-prev',
+    //     nextButton: '.page-next',
+    //     paginationHide:true
+    // });
 
 });
