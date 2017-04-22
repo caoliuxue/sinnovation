@@ -24,11 +24,12 @@
         /*background: red;*/
     }
 
-    .header_log {
+    .header_logo {
         height: 80px;
         flex-basis: 30%;
         background: url("../img/logo.png") no-repeat center center;
         background-size: 180px 60px;
+        cursor: pointer;
     }
 
     .header_nav {
@@ -632,7 +633,7 @@
         line-height: 45px;
     }
 
-    .footer-nav{
+    .footer-nav {
         display: flex;
         background-color: black;
         justify-content: space-between;
@@ -651,7 +652,7 @@
         flex-direction: column;
     }
 
-    .footer-column span,.footer-copyright span {
+    .footer-column span, .footer-copyright span {
         color: #ff7e00;
     }
 
@@ -663,13 +664,13 @@
         /*background-size: 16px;*/
     }
 
-    .footer-nav-main img{
+    .footer-nav-main img {
         margin-left: 5px;
         width: 8px;
         height: auto;
     }
 
-    .footer-copyright{
+    .footer-copyright {
         display: flex;
         height: 90px;
         border-top: 1px solid #898989;
@@ -679,6 +680,274 @@
         padding-left: 15%;
         letter-spacing: 1px;
         font-size: 1.4rem;
+    }
+
+    /*
+
+        投资业务页面
+
+    */
+    .invest-header {
+        margin-top: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        height: 530px;
+        padding-top: 80px;
+    }
+
+    .invest-header-a {
+        background: url("../img/invest-biz/hd1.png") no-repeat center;
+        background-size: cover;
+    }
+
+    .invest-header-b {
+        background: url("../img/invest-biz/hd2.png") no-repeat center;
+        background-size: cover;
+    }
+
+    .invest-header > :first-child {
+        letter-spacing: 8px;
+    }
+
+    .invest-header > :nth-child(2) {
+        letter-spacing: 5px;
+        line-height: 60px;
+        font-weight: bolder;
+    }
+
+    .invest-header > .line-group {
+        background: url("../img/invest-biz/ling-group.png") no-repeat center;
+        background-size: contain;
+        height: 80px;
+    }
+
+    .invest-toggle-container {
+        position: relative;
+        width: 100%;
+        text-align: center;
+        background: transparent;
+        margin-top: -50px;
+    }
+
+    .invest-toggle {
+        background-color: white;
+        width: 46%;
+        padding-left: 5%;
+        padding-right: 5%;
+        margin-left: 27%;
+        height: 100px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        -moz-box-shadow: 100px 100px 50px 20px #bfbfbf; /* 老的 Firefox */
+        box-shadow: 0 1px 5px 1px #bfbfbf;
+    }
+
+    .invest-toggle span {
+        font-size: 1.6rem;
+        font-weight: bold;
+        height: 100px;
+        line-height: 100px;
+        width: 17%;
+        min-width: 72px;
+        letter-spacing: 2px;
+        overflow: hidden;
+        cursor: pointer;
+    }
+
+    .invest-toggle > .active {
+        border-bottom: 5px solid rgba(250, 124, 0, 0.8);
+    }
+
+    .invest-a-t01 {
+        margin-top: -50px;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        background: url("../img/invest-biz/bg.png") no-repeat center;
+        background-size: cover;
+        padding-left: 12%;
+        padding-top: 100px;
+    }
+
+    .invest-a-t01 > :first-child {
+        letter-spacing: 5px;
+    }
+
+    .invest-a-t01 > :nth-child(2) {
+        letter-spacing: 5px;
+        line-height: 100px;
+    }
+
+    .invest-a-t01 > :nth-child(n+3) {
+        letter-spacing: 5px;
+        line-height: 45px;
+    }
+
+    .invest-a-t02 {
+        display: flex;
+        background-color: #252525;
+    }
+
+    .invest-a-t02 > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        flex-basis: 18.75%;
+        height: 600px;
+    }
+
+    .invest-a-t02 > .intro {
+        display: flex;
+        flex-basis: 25%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
+    .invest-a-t02 :nth-child(4) {
+        flex-basis: 25%;
+    }
+
+    .invest-item {
+        display: flex;
+        height: 300px;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 100px;
+        letter-spacing: 5px;
+        background-size: cover;
+        /*align-items: flex-start;*/
+        /*padding: 15% auto*/
+    }
+
+    .invest-item > :first-child {
+        font-size: 3rem;
+        font-weight: bolder;
+        color: white;
+        line-height: 50px;
+
+    }
+
+    .invest-item > :nth-child(2) {
+        font-size: 1.6rem;
+        font-weight: bolder;
+        color: white;
+        line-height: 30px;
+    }
+
+    .item1 {
+        background: url("../img/invest-biz/1.png") no-repeat center;
+    }
+
+    .item2 {
+        background: url("../img/invest-biz/2.png") no-repeat center;
+
+    }
+
+    .item3 {
+        background: url("../img/invest-biz/3.png") no-repeat center;
+
+    }
+
+    .item4 {
+        background: url("../img/invest-biz/4.png") no-repeat center;
+
+    }
+
+    .item5 {
+        background: url("../img/invest-biz/5.png") no-repeat center;
+
+    }
+
+    .item6 {
+        background: url("../img/invest-biz/6.png") no-repeat center;
+
+    }
+
+    .item7 {
+        background: url("../img/invest-biz/7.png") no-repeat center;
+
+    }
+
+    /*创新工场投资阶段*/
+    .invest-a-t03 {
+        display: flex;
+        flex-direction: column;
+        height: 840px;
+        padding-left: 12%;
+        padding-right: 12%;
+        padding-top: 100px;
+        background: url("../img/invest-biz/phase.png") no-repeat bottom center;
+        background-size: 95% auto;
+        background-clip: padding-box;
+    }
+
+    .invest-a-t03 > :nth-child(2) {
+        padding-top: 20px;
+    }
+
+    .invest-a-t03 > :nth-child(2) > :first-child {
+        padding: 5px 5px 20px 0;
+        border-bottom: 5px solid #ff7e00;
+        font-weight: bolder;
+    }
+
+    .invest-a-t03 > :nth-child(3) {
+        padding: 50px 5px 10px 5px;
+        font-size: 1.6rem;
+    }
+
+    /*亿元美金俱乐部*/
+    .invest-a-t04 {
+        display: flex;
+        flex-direction: column;
+        background-color: #f7f7f7;
+        justify-content: center;
+        align-items: center;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
+    .invest-a-t04 > .title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 80px;
+    }
+
+    .invest-a-t04 > .title > span {
+        letter-spacing: 10px;
+        border-bottom: 5px solid #ff7e00;
+        padding-bottom: 30px;
+    }
+
+    .invest-a-t04 > .title > :nth-child(2) {
+        line-height: 100px;
+        letter-spacing: 1px;
+    }
+
+    .invest-a-t04 > .apps-wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .app1{
+        width: 25%;
+        height: 300px;
+        background: url("../img/invest-biz/app1.png") no-repeat center center;
+        background-size: 100% auto;
     }
 }
 

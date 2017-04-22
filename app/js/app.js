@@ -2,13 +2,18 @@
  * Created by caoliuxue on 2017/4/16.
  */
 $(document).ready(function () {
+
+    $(".header_logo").click(function () {
+        window.location.href = "index.html";
+    });
+
     var bannerSwiper = new Swiper('.swiper-container', {
         // Optional parameters
         direction: 'horizontal',
         loop: true,
         speed: 2000,
         autoplay: true,
-        paginationHide:false,
+        paginationHide: false,
         pagination: '.swiper-pagination'
     });
 
@@ -25,5 +30,14 @@ $(document).ready(function () {
     //     nextButton: '.page-next',
     //     paginationHide:true
     // });
+
+
+//>>>>>>>>>>>>>>INVEST BIZ
+
+    $(".invest-toggle span").click(function () {
+        console.log(this);
+        $(".invest-toggle span").removeClass("active");
+        $(this).addClass("active");
+    });
 
 });
