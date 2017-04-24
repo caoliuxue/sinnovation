@@ -33,7 +33,7 @@ $(document).ready(function () {
 
 
 //>>>>>>>>>>>>>>INVEST BIZ
-    $(".invest-a").hide();
+//     $(".invest-a").hide();
     $(".invest-toggle span").click(function () {
         console.log(this);
         $(".invest-toggle span").removeClass("active");
