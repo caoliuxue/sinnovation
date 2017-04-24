@@ -40,4 +40,16 @@ $(document).ready(function () {
         $(this).addClass("active");
     });
 
+    $(".app").mouseenter(function () {
+        console.log($(this));
+        $(this).removeClass("gray");
+        $(".gotoBtn").show();
+        $(".gotoBtn").css("top", $(this).prop("offsetTop") + $(this).prop("clientHeight") -60);
+        $(".gotoBtn").css("left", $(this).prop("offsetLeft") + $(this).prop("clientWidth") -60);
+    }).mouseleave(function () {
+        $(this).addClass("gray");
+        $(".gotoBtn").hide();
+    });
+
+
 });
