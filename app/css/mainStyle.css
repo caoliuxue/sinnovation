@@ -973,6 +973,7 @@
     }
 
     .gotoBtn {
+        display: none;
         position: absolute;
         /*top: 2845px;*/
         /*left: 446px;*/
@@ -1061,7 +1062,7 @@
 
     .indicator {
         background-color: white;
-        height: 40px;
+        height: 38px;
     }
 
     .indicator > span {
@@ -1100,6 +1101,185 @@
         white-space: pre-line;
     }
 
+    /*about us*/
+    .about_t01 {
+        margin-top: 80px;
+        height: 450px;
+        display: flex;
+        background: url("../img/about/c1bg.png") no-repeat center;
+        background-size: cover;
+    }
+
+    .about_t01 > .text {
+        padding-left: 12%;
+        flex-basis: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        line-height: 50px;
+        letter-spacing: 5px;
+    }
+
+    .about_t01 > .text {
+        padding-left: 12%;
+    }
+
+    .about_t01 > .video {
+        display: flex;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        flex-basis: 50%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about_t01 > .video video {
+        justify-content: center;
+        align-items: center;
+        /*width: 70%;*/
+        height: 290px;
+        /*padding-left: 5%;*/
+        /*padding-right: 5%;*/
+    }
+
+    .about_t02 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .about_t02 > .about_t02_01 {
+        flex-basis: 18.75%;
+        height: 200px;
+        background: url("../img/about/a.png") no-repeat center;
+        background-size: cover;
+    }
+
+    .about_t02 > .about_t02_02 {
+        flex-basis: 36.8%;
+        height: 400px;
+        background: url("../img/about/b.png") no-repeat center;
+        background-size: cover
+    }
+
+    .about_t02 > .about_t02_03 {
+        display: flex;
+        padding-left: 5%;
+        padding-right: 5%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        flex-basis: 44.45%;
+        height: 400px;
+        background: #252525;
+    }
+
+    .about_t02 > .about_t02_03 > :first-child {
+        font-size: 6rem;
+        color: white;
+        border-bottom: 8px solid #ff7e00;
+        padding-bottom: 20px;
+        letter-spacing: 5px;
+    }
+
+    .about_t02 > .about_t02_03 > :last-child {
+        font-size: 1.4rem;
+        color: white;
+        white-space: pre-line;
+        text-align: right;
+        line-height: 40px;
+        letter-spacing: 2px;
+    }
+
+    .about_t02 > .about_t02_04 {
+        flex-basis: 18.75%;
+        height: 200px;
+        margin-top: -200px;
+        background: url("../img/about/f.png") no-repeat center;
+        background-size: cover
+    }
+
+    .about_t03 {
+        padding: 20% 5%;
+        height: 820px;
+        background: url("../img/about/data.png") no-repeat center;
+        background-size: 80% auto;
+        background-clip: padding-box;
+    }
+
+    .about_t04 {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+
+    .temp1 {
+        display: flex;
+        flex-basis: 50%;
+        flex-direction: column;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 80px;
+        height: 400px;
+    }
+
+    .temp2, .temp2 > :first-child, .temp2 > :last-child {
+        display: flex;
+        flex-basis: 50%;
+        height: 400px;
+    }
+
+    .temp2 > .txt {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 50%;
+        height: 400px;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 80px;
+    }
+
+    .about_t04_title {
+        font-size: 3rem;
+        font-weight: bolder;
+        letter-spacing: 3px;
+        line-height: 60px;
+    }
+
+    .temp1 > :last-child, .temp2 > .txt > :last-child {
+        font-size: 1.6rem;
+        font-weight: 500;
+        white-space: pre-line;
+        letter-spacing: 2px;
+        line-height: 40px;
+    }
+
+
+    .about_t04_01 {
+        background: url("../img/about/gg.png") no-repeat center;
+        background-size: cover;
+    }
+
+    .about_t04_02 > :first-child {
+        background: #252525;
+    }
+
+    .about_t04_02 > :nth-child(2) {
+        background: url("../img/about/e.png") no-repeat center;
+        background-size: cover;
+    }
+
+    .about_t04_03 > :first-child {
+        background: url("../img/about/d.png") no-repeat center;
+        background-size: cover;
+    }
+
+    .about_t04_04 {
+        background: url("../img/about/cc.png") no-repeat center;
+        background-size: cover;
+
+    }
 }
 
 

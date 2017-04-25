@@ -33,7 +33,7 @@ $(document).ready(function () {
 
 
 //>>>>>>>>>>>>>>INVEST BIZ
-//     $(".invest-a").hide();
+    $(".invest-b").hide();
     $(".invest-toggle span").click(function () {
         console.log(this);
         $(".invest-toggle span").removeClass("active");
@@ -106,6 +106,17 @@ $(document).ready(function () {
                 renderLine(lineArray);
             }
         });
+    });
+
+
+//    ABOUT US
+    $("video").click(function () {
+       console.log($(this));
+       if($(this).prop("paused")){
+           this.play();
+       }else{
+           this.pause();
+       }
     });
 
 
