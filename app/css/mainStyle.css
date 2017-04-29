@@ -723,14 +723,13 @@
         height: 80px;
     }
 
-    .invest-toggle-container {
-        position: relative;
-        width: 100%;
-        text-align: center;
-        background: transparent;
-        margin-top: -50px;
-    }
-
+    /*.toggle-container {*/
+    /*position: relative;*/
+    /*width: 100%;*/
+    /*text-align: center;*/
+    /*background: transparent;*/
+    /*margin-top: -50px;*/
+    /*}*/
     .invest-toggle {
         background-color: white;
         width: 46%;
@@ -745,7 +744,10 @@
         box-shadow: 0 1px 5px 1px #bfbfbf;
     }
 
-    .invest-toggle span {
+    .invest-toggle span,
+    .team-toggle span,
+    .job-toggle span,
+    .startup-toggle span {
         font-size: 1.6rem;
         font-weight: bold;
         height: 100px;
@@ -757,7 +759,10 @@
         cursor: pointer;
     }
 
-    .invest-toggle > .active {
+    .invest-toggle > .active,
+    .team-toggle > .active,
+    .job-toggle > .active,
+    .startup-toggle > .active {
         border-bottom: 5px solid rgba(250, 124, 0, 0.8);
     }
 
@@ -1255,7 +1260,6 @@
         line-height: 40px;
     }
 
-
     .about_t04_01 {
         background: url("../img/about/gg.png") no-repeat center;
         background-size: cover;
@@ -1280,6 +1284,396 @@
         background-size: cover;
 
     }
-}
 
+    /*关于我们团队介绍*/
+    .about_team_hd {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 80px;
+        height: 400px;
+        color: white;
+        background: url("../img/about/hero.png") no-repeat center;
+        background-size: cover;
+    }
+
+    .about_team_hd > :first-child {
+        height: 100px;
+    }
+
+    .about_team_hd > :nth-child(2) {
+        font-size: 6rem;
+        font-weight: bolder;
+        letter-spacing: 5px;
+    }
+
+    .about_team_hd > :nth-child(3) {
+        font-size: 2rem;
+        font-weight: bolder;
+        letter-spacing: 4px;
+    }
+
+    .about_team_lkf {
+        display: flex;
+        height: 550px;
+        background: url("../img/sinnovation-bg.png") no-repeat 0 0;
+        background-size: auto 100%;
+    }
+
+    .about_team_lkf_left {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 60%;
+        padding-left: 12%;
+    }
+
+    .about_team_lkf_left > :first-child {
+        margin-top: 80px;
+        letter-spacing: 5px;
+        line-height: 60px;
+    }
+
+    .about_team_lkf_left > :nth-child(2) > span {
+        line-height: 80px;
+        padding-bottom: 20px;
+        border-bottom: 6px solid #ff7e00;
+        letter-spacing: 5px;
+    }
+
+    .about_team_lkf_left > :last-child {
+        margin-top: 40px;
+        font-size: 1.8rem;
+        font-weight: 300;
+        line-height: 50px;
+        letter-spacing: 5px;
+        white-space: pre-line;
+        height: 200px;
+        overflow: hidden;
+    }
+
+    .about_team_lkf > .index-content01-right {
+        flex-basis: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding-bottom: 80px;
+    }
+
+    .about_team-toggle {
+        background-color: white;
+        width: 46%;
+        padding-left: 5%;
+        padding-right: 5%;
+        margin-left: 27%;
+        height: 100px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        -moz-box-shadow: 100px 100px 50px 20px #bfbfbf; /* 老的 Firefox */
+        box-shadow: 0 1px 5px 1px #bfbfbf;
+    }
+
+    /*.team-toggle-container {*/
+    /*position: relative;*/
+    /*width: 100%;*/
+    /*text-align: center;*/
+    /*background: transparent;*/
+    /*margin-top: -50px;*/
+    /*}*/
+    .team-toggle {
+        background-color: white;
+        width: 76%;
+        padding-left: 18%;
+        padding-right: 18%;
+        margin-left: 12%;
+        height: 100px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        -moz-box-shadow: 100px 100px 50px 20px #bfbfbf; /* 老的 Firefox */
+        box-shadow: 0 1px 5px 1px #bfbfbf;
+    }
+
+    .about_job {
+        display: flex;
+        height: 450px;
+        background: #ff7e00 url("../img/invest-biz/bg.png") no-repeat right center;
+        background-size: cover;
+    }
+
+    .about_job > .job-left {
+        flex-basis: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about_job > .job-right {
+        flex-basis: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        padding-right: 5%;
+    }
+
+    .job-right > :first-child {
+        letter-spacing: 8px;
+    }
+
+    .job-right > :nth-child(2) {
+        letter-spacing: 4px;
+        line-height: 60px;
+    }
+
+    .job-right > :last-child {
+        color: white;
+        border: 1px solid white;
+    }
+
+    /*工作机会*/
+    .job-hd {
+        margin-top: 80px;
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        line-height: 60px;
+        /*background-color: #1b6d85;*/
+        background: url("../img/job/hero.png") no-repeat center;
+        background-size: cover;
+    }
+
+    .job-hd > :first-child {
+        letter-spacing: 5px;
+    }
+
+    .job-hd > :last-child {
+        height: 36px;
+        margin-top: 50px;
+        /*letter-spacing: 5px;*/
+        /*word-spacing: 10px;*/
+    }
+
+    .job-toggle {
+        background-color: white;
+        width: 50%;
+        padding-left: 5%;
+        padding-right: 5%;
+        margin-left: 25%;
+        height: 100px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        -moz-box-shadow: 100px 100px 50px 20px #bfbfbf; /* 老的 Firefox */
+        box-shadow: 0 1px 5px 1px #bfbfbf;
+    }
+
+    .company-tab-container {
+        display: flex;
+        padding-left: 15%;
+        justify-content: flex-start;
+        align-items: center;
+        height: 100px;
+    }
+
+    .company-tab {
+        font-weight: bolder;
+        font-size: 1.6rem;
+        color: #0f0f0f;
+        height: 45px;
+        line-height: 45px;
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-left: 50px;
+        border-radius: 2px;
+    }
+
+    .active_tab {
+        background-color: #ff7e00;
+        color: white;
+    }
+
+    .job-list {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 12%;
+        padding-right: 12%;
+        margin-bottom: 50px;
+    }
+
+    .job-item {
+        flex-basis: 33.33%;
+        height: 185px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding-left: 3%;
+        /*border-left: 1px solid #dddddd;*/
+    }
+
+    .job-list > :nth-child(3n+1) {
+        border-left: 1px solid #dddddd;
+        border-bottom: 1px solid #dddddd;
+        border-right: 1px solid #dddddd;
+    }
+
+    .job-list > :nth-child(3n+2) {
+        border-right: 1px solid #dddddd;
+        border-bottom: 1px solid #dddddd;
+    }
+
+    .job-list > :nth-child(3n+3) {
+        border-right: 1px solid #dddddd;
+        border-bottom: 1px solid #dddddd;
+    }
+
+    .job-list > :first-child, .job-list > :nth-child(2), .job-list > :nth-child(3) {
+        border-top: 1px solid #dddddd;
+    }
+
+    .job-item > :first-child {
+        color: #ff7e00;
+        font-size: 1.6rem;
+        font-weight: bolder;
+    }
+
+    .job-item > :last-child {
+        margin-top: 25px;
+        font-size: 1.4rem;
+    }
+
+    /*JOB DETAIL*/
+    .job-detail-container {
+        margin-top: 80px;
+        padding-left: 12%;
+        padding-right: 12%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .job-detail-container > .where {
+        margin-top: 100px;
+    }
+
+    .job-detail-container > .title {
+        height: 150px;
+        line-height: 150px;
+    }
+
+    .job-detail-container > .job-label {
+        margin-top: 50px;
+        color: black;
+    }
+
+    .job-detail-container > .label-txt {
+        white-space: pre-line;
+        line-height: 50px;
+    }
+
+    .job-detail-container > .job-email {
+        line-height: 150px;
+    }
+
+    .line {
+        height: 1px;
+        background-color: #cfcfcf;
+        width: 70%;
+        margin-top: 50px;
+    }
+
+    /*创业服务*/
+    .startup-hd {
+        margin-top: 80px;
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        line-height: 60px;
+        /*background-color: #1b6d85;*/
+        background: url("../img/startup/hero.png") no-repeat center;
+        background-size: cover;
+    }
+
+    .startup-hd > :last-child {
+        height: 35px;
+        margin-top: 50px;
+    }
+
+    .startup-toggle {
+        background-color: white;
+        width: 46%;
+        padding-left: 10%;
+        padding-right: 10%;
+        margin-left: 27%;
+        height: 100px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        -moz-box-shadow: 100px 100px 50px 20px #bfbfbf; /* 老的 Firefox */
+        box-shadow: 0 1px 5px 1px #bfbfbf;
+    }
+
+    .startup-service {
+        display: flex;
+    }
+
+    .startup-service > .left, .startup-service > .right {
+        flex-basis: 50%;
+        display: flex;
+        flex-direction: column;
+        margin-top: -50px;
+    }
+
+    .startup-service > .left > .left_t01,
+    .startup-service > .left > .left_t03,
+    .startup-service > .right > .right_t02 {
+        display: flex;
+        height: 500px;
+        background: url("../img/startup/bg3.png") no-repeat center right;
+        background-size: cover;
+        padding-top: 30px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding-left: 10%;
+    }
+
+    .startup-service > .left > .left_t01 > :nth-child(2) {
+        line-height: 100px;
+    }
+
+    .startup-service .txt-intro {
+        white-space: pre-line;
+        line-height: 40px;
+        font-size: 1.6rem;
+
+    }
+
+    .startup-service > .left > .left_t02 {
+        height: 800px;
+        background: url("../img/startup/img2.png") no-repeat center right;
+        background-size: cover;
+
+    }
+
+    .startup-service > .right > .right_t01 {
+        height: 650px;
+        background: url("../img/startup/img1.png") no-repeat center right;
+        background-size: cover;
+
+    }
+
+    .startup-service > .right > .right_t03 {
+        height: 650px;
+        background: url("../img/startup/img3.png") no-repeat center right;
+        background-size: cover;
+
+    }
+}
 

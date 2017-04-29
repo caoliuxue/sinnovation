@@ -58,10 +58,10 @@ $(document).ready(function () {
         $(".gotoBtn").hide();
     });
 
-    var renderLine = function (lineArray) {
+    var renderLine = function (lineParent, lineArray) {
         var line = $("<div class=\"team-member-line\"></div>");
         $.each(lineArray, function () {
-            console.log(this.name);
+            // console.log(this.name);
             var that = this;
             var member = $("<div class=\"team-member\"></div>");
             member.append("<img src='" + this.img + "'/>");
@@ -75,7 +75,7 @@ $(document).ready(function () {
             });
             line.append(member);
         });
-        $(".team-member-list").append(line);
+        lineParent.append(line);
     };
 
     var renderIntro = function (obj, item) {
@@ -87,10 +87,10 @@ $(document).ready(function () {
             intro.remove();
         });
         intro.append(indicator, close, intro_txt);
-        indicator.find("span").css("left", obj.prop("offsetLeft") + obj.prop("offsetWidth") / 2 -20);
+        indicator.find("span").css("left", obj.prop("offsetLeft") + obj.prop("offsetWidth") / 2 - 20);
         obj.parent().after(intro);
         $("html,body").stop(true);
-        $("html,body").animate({scrollTop: obj.offset().top-80}, 1000);
+        $("html,body").animate({scrollTop: obj.offset().top - 80}, 500);
     };
 
     $.get("js/team-member.json", function (data) {
@@ -100,10 +100,10 @@ $(document).ready(function () {
             item = this;
             lineArray.push(this);
             if (lineArray.length === 5) {
-                renderLine(lineArray);
+                renderLine($(".team-member-list"), lineArray);
                 lineArray = [];
             } else if (index === (data.length - 1)) {
-                renderLine(lineArray);
+                renderLine($(".team-member-list"), lineArray);
             }
         });
     });
@@ -111,13 +111,64 @@ $(document).ready(function () {
 
 //    ABOUT US
     $("video").click(function () {
-       console.log($(this));
-       if($(this).prop("paused")){
-           this.play();
-       }else{
-           this.pause();
-       }
+        console.log($(this));
+        if ($(this).prop("paused")) {
+            this.play();
+        } else {
+            this.pause();
+        }
     });
 
+//    ABOUT TEAM
 
+    var selectedTeam = null;
+
+    var renderTeam = function () {
+        $.get("js/team-list.json", function (data) {
+            // console.log(data);
+            var allMember = $("<span class='active'>全部团队成员</span>");
+            $(".team-toggle").append(allMember);
+            $.each(data, function (index) {
+                if (null === selectedTeam || (null !== selectedTeam && selectedTeam === data[index])) {
+                    //add toggle btn
+                    var teamInToggle = $("<span>" + data[index] + "</span>");
+                    $(".team-toggle").append(teamInToggle);
+                    //add team list viewer
+                    var teamTitle = $("<div class='team-title font-color-black'>" + data[index] + "成员</div>");
+                    var team_member_list = $("<div class='team-member-list'></div>");
+                    $(".crazy-team").append(teamTitle, team_member_list);
+                    $.get("js/team-member.json", function (data) {
+                        var lineArray = [];
+                        var item = {};
+                        $.each(data, function (index) {
+                            item = this;
+                            lineArray.push(this);
+                            if (lineArray.length === 5) {
+                                renderLine(team_member_list, lineArray);
+                                lineArray = [];
+                            } else if (index === (data.length - 1)) {
+                                renderLine(team_member_list, lineArray);
+                            }
+                        });
+                    });
+                }
+            });
+        });
+    };
+    renderTeam();
+
+//JOB-LIST
+
+    $.get("js/jobs.json", function (data) {
+        console.log(data);
+        $.each(data, function () {
+            var job = $("<div class='job-item'></div>");
+            job.append("<div>" + this.title + "</div>");
+            job.append("<div>" + this.office + "</div>");
+            job.click(function () {
+                window.open("job-detail.html");
+            });
+            $(".job-list").append(job);
+        });
+    });
 });

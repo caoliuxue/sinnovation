@@ -87,3 +87,16 @@ a {
 .bolder {
     font-weight: bolder;
 }
+
+::selection{
+    background-color: #ff7e00;
+    color: white;
+}
+
+.toggle-container {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    background: transparent;
+    margin-top: -50px;
+}
