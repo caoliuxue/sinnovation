@@ -171,4 +171,10 @@ $(document).ready(function () {
             $(".job-list").append(job);
         });
     });
+
+//    创业服务
+
+    $(".detail-close").click(function () {
+        $("#myModal").modal('toggle');
+    });
 });
