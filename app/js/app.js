@@ -177,4 +177,34 @@ $(document).ready(function () {
     $(".detail-close").click(function () {
         $("#myModal").modal('toggle');
     });
+
+//    联系我们
+
+
+    var initBMap = function initialize(id) {
+        var map = new BMap.Map(id);    // 创建Map实例
+        var point = new BMap.Point(116.320831, 39.990322);
+        var myIcon = new BMap.Icon("img/contact/coordinate.png", new BMap.Size(45, 45), {
+            offset: new BMap.Size(10,25)
+        });
+        var marker = new BMap.Marker(point, {icon: myIcon});        // 创建标注
+        map.centerAndZoom(point, 19);  // 初始化地图,设置中心点坐标和地图级别
+        map.setCurrentCity("北京");          // 设置地图显示的城市 此项是必须设置的
+        // map.enableScrollWheelZoom(true);     //开启鼠标滚轮缩放
+        map.addOverlay(marker);
+    };
+
+    initBMap("bdmap1");
+    initBMap("bdmap2");
+    initBMap("bdmap3");
+    initBMap("bdmap4");
+
+    // (function loadScript() {
+    //     var script = document.createElement("script");
+    //     script.src = "http://api.map.baidu.com/api?v=2.0&ak=hYAc1ZakYTmbRDXzhbtwb5jC&callback=initialize";//此为v2.0版本的引用方式
+    //     http://api.map.baidu.com/api?v=1.4&ak=您的密钥&callback=initialize"; //此为v1.4版本及以前版本的引用方式
+    // document.body.appendChild(script);
+    // })();
+
+
 });
