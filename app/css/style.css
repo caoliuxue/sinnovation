@@ -1,5 +1,6 @@
 /*common style*/
 @import url("tinyStyle.css") screen and (max-width: 767px);
+/*@import url("mainStyle.css") screen and (max-width: 767px);*/
 @import url("mainStyle.css") screen and (min-width: 768px);
 
 body {
