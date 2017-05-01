@@ -682,6 +682,7 @@
 
     .footer-nav > .footer-column span, .footer-nav > .footer-copyright span {
         color: #ff7e00;
+        white-space: nowrap;
     }
 
     .footer-nav > .lp_login {
@@ -710,7 +711,7 @@
     .footer-copyright {
         display: flex;
         flex-wrap: wrap;
-        border-top: 1px solid #898989;
+        border-top: 1px solid rgba(41, 41, 41, 0.93);
         background-color: #181818;
         justify-content: flex-start;
         align-items: flex-start;
