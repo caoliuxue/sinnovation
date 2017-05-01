@@ -1149,25 +1149,26 @@
     /*about us*/
     .about_t01 {
         margin-top: 80px;
-        height: 450px;
-        display: flex;
+        height: 650px;
+        /*display: flex;*/
         background: url("../img/about/c1bg.png") no-repeat center;
         background-size: cover;
     }
 
     .about_t01 > .text {
-        padding-left: 12%;
+        /*padding-left: 12%;*/
         flex-basis: 50%;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: flex-start;
+        align-items: center;
         line-height: 50px;
         letter-spacing: 5px;
+        padding-top: 100px;
     }
 
     .about_t01 > .text {
-        padding-left: 12%;
+        /*padding-left: 12%;*/
     }
 
     .about_t01 > .video {
@@ -1182,8 +1183,8 @@
     .about_t01 > .video video {
         justify-content: center;
         align-items: center;
-        /*width: 70%;*/
-        height: 290px;
+        width: 100%;
+        /*height: 290px;*/
         /*padding-left: 5%;*/
         /*padding-right: 5%;*/
     }
@@ -1195,14 +1196,14 @@
     }
 
     .about_t02 > .about_t02_01 {
-        flex-basis: 18.75%;
+        flex-basis: 40%;
         height: 200px;
         background: url("../img/about/a.png") no-repeat center;
         background-size: cover;
     }
 
     .about_t02 > .about_t02_02 {
-        flex-basis: 36.8%;
+        flex-basis: 60%;
         height: 400px;
         background: url("../img/about/b.png") no-repeat center;
         background-size: cover
@@ -1215,13 +1216,13 @@
         flex-direction: column;
         justify-content: center;
         align-items: flex-end;
-        flex-basis: 44.45%;
+        flex-basis: 100%;
         height: 400px;
         background: #252525;
     }
 
     .about_t02 > .about_t02_03 > :first-child {
-        font-size: 6rem;
+        font-size: 4rem;
         color: white;
         border-bottom: 8px solid #ff7e00;
         padding-bottom: 20px;
@@ -1229,32 +1230,32 @@
     }
 
     .about_t02 > .about_t02_03 > :last-child {
-        font-size: 1.4rem;
-        color: white;
+        font-size: 1.7rem;
+        color: gray;
         white-space: pre-line;
         text-align: right;
-        line-height: 40px;
+        line-height: 30px;
         letter-spacing: 2px;
     }
 
     .about_t02 > .about_t02_04 {
-        flex-basis: 18.75%;
+        flex-basis: 40%;
         height: 200px;
-        margin-top: -200px;
+        margin-top: -600px;
         background: url("../img/about/f.png") no-repeat center;
         background-size: cover
     }
 
     .about_t03 {
-        padding: 20% 5%;
-        height: 820px;
+        /*padding: 20% 5%;*/
+        height: 400px;
         background: url("../img/about/data.png") no-repeat center;
-        background-size: 80% auto;
+        background-size: 90% auto;
         background-clip: padding-box;
     }
 
     .about_t04 {
-        display: flex;
+        /*display: flex;*/
         flex-wrap: wrap;
         align-items: flex-start;
     }
@@ -1263,7 +1264,7 @@
         display: flex;
         flex-basis: 50%;
         flex-direction: column;
-        padding-left: 5%;
+        padding-left: 10%;
         padding-right: 5%;
         padding-top: 80px;
         height: 400px;
@@ -1271,33 +1272,34 @@
 
     .temp2, .temp2 > :first-child, .temp2 > :last-child {
         display: flex;
-        flex-basis: 50%;
+        flex-basis: 40%;
         height: 400px;
     }
 
     .temp2 > .txt {
         display: flex;
         flex-direction: column;
-        flex-basis: 50%;
+        flex-basis: 70%;
         height: 400px;
         padding-left: 5%;
         padding-right: 5%;
-        padding-top: 80px;
+        padding-top: 50px;
     }
 
     .about_t04_title {
-        font-size: 3rem;
+        font-size: 4rem;
         font-weight: bolder;
         letter-spacing: 3px;
         line-height: 60px;
     }
 
     .temp1 > :last-child, .temp2 > .txt > :last-child {
-        font-size: 1.6rem;
+        font-size: 2rem;
         font-weight: 500;
         white-space: pre-line;
         letter-spacing: 2px;
         line-height: 40px;
+        padding-top: 20px;
     }
 
     .about_t04_01 {
@@ -1602,7 +1604,8 @@
 
     .job-detail-container > .title {
         height: 150px;
-        line-height: 150px;
+        /*line-height: 150px;*/
+            font-size: 60px;
     }
 
     .job-detail-container > .job-label {
@@ -1617,6 +1620,7 @@
 
     .job-detail-container > .job-email {
         line-height: 150px;
+        font-size: 20px;
     }
 
     .line {
@@ -1795,10 +1799,10 @@
 
     .ai-toggle {
         background-color: white;
-        width: 50%;
-        padding-left: 10%;
-        padding-right: 10%;
-        margin-left: 25%;
+        /*width: 50%;*/
+        /*padding-left: 10%;*/
+        /*padding-right: 10%;*/
+        /*margin-left: 25%;*/
         height: 100px;
         display: flex;
         justify-content: space-around;
@@ -1808,7 +1812,7 @@
     }
 
     .ai-content {
-        display: flex;
+        /*display: flex;*/
         margin-top: -50px;
     }
 
@@ -1825,6 +1829,10 @@
         align-items: flex-start;
         background: url("../img/ai/bg1.png") no-repeat left;
         background-size: auto 200%;
+    }
+
+    .ai-content > .left > .left_t02 {
+        display: hidden !important;
     }
 
     .ai-content > .left > .left_t01 > :nth-child(2),
@@ -1987,27 +1995,30 @@
     }
 
     .office {
-        display: flex;
+        /*display: flex;*/
         margin-bottom: 20px;
     }
 
     .office > :first-child {
-        flex-basis: 30%;
+        /*flex-basis: 30%;*/
+        width: 100%;
         height: 400px;
         z-index: 98;
     }
 
     .office > :nth-child(2) {
-        flex-basis: 100%;
-        margin-left: -30%;
-        height: 400px;
+        /*flex-basis: 100%;*/
+        width: 40%;
+        float: left;
+        margin-left: 0%;
+        height: 300px;
     }
 
     .office > .address {
         flex-basis: 40%;
         margin-left: -40%;
         padding-left: 5%;
-        height: 400px;
+        height: 300px;
         background-color: rgba(255, 255, 255, 0.9);
         z-index: 99;
         display: flex;
@@ -2017,16 +2028,16 @@
     }
 
     .office > .address > :last-child {
-        margin-top: 30px;
-        font-size: 1.6rem;
-        line-height: 45px;
+        margin-top: 20px;
+        font-size: 14px;
+        line-height: 18px;
         white-space: pre-line;
 
     }
 
     .contacts-container {
-        height: 250px;
-        display: flex;
+        /*height: 250px;*/
+        /*display: flex;*/
     }
 
     .contacts-container > div {
@@ -2035,9 +2046,23 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-        padding-left: 5%;
+        padding-left: 15%;
+        height: 400px;
+
     }
 
+    .contacts-container > .corporate
+    {
+        background-color: #f5f5f5;
+    }
+    .contacts-container > .blueprint
+    {
+        background-color: #f8f8f8;
+    }
+    .contacts-container > .social
+    {
+        background-color: #f4f4f4;
+    }
     .contacts-container > .corporate > :first-child,
     .contacts-container > .blueprint > :first-child,
     .contacts-container > .social > :first-child {
@@ -2106,7 +2131,7 @@
     .news-list > .news {
         margin-bottom: 10px;
         display: flex;
-        flex-basis: 24.5%;
+        flex-basis: 50%;
         height: 300px;
         justify-content: flex-start;
         align-items: center;
@@ -2169,8 +2194,8 @@
 
     /*动态详情*/
     .news-detail {
-        padding-left: 15%;
-        padding-right: 15%;
+        padding-left: 5%;
+        padding-right: 5%;
         padding-top: 50px;
         margin-bottom: 50px;
     }
