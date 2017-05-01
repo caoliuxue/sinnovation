@@ -7,16 +7,18 @@ $(document).ready(function () {
         window.location.href = "index.html";
     });
 
-    // var bannerSwiper = new Swiper('.swiper-container', {
-    //     Optional parameters
-        // direction: 'horizontal',
-        // loop: true,
-        // speed: 2000,
-        // autoplay: true,
-        // paginationHide: false,
-        // pagination: '.swiper-pagination'
-    // });
-
+    $(".right-close").click(function () {
+        $("#header_nav").modal('toggle');
+    });
+    var bannerSwiper = new Swiper('.swiper-container', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+        speed: 2000,
+        autoplay: true,
+        paginationHide: false,
+        pagination: '.swiper-pagination'
+    });
 
 
 //>>>>>>>>>>>>>>INVEST BIZ
@@ -164,6 +166,7 @@ $(document).ready(function () {
     $(".detail-close").click(function () {
         $("#myModal").modal('toggle');
     });
+
 
 //    联系我们
 
