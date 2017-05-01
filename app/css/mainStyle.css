@@ -40,7 +40,31 @@
         justify-content: flex-end;
     }
 
-    .header_nav ul {
+
+    .header_nav >div{
+        flex-basis: 15%;
+        height: 80px;
+        line-height: 80px;
+        overflow: hidden;
+    }
+
+    .header_nav >div:hover{
+        overflow: visible;
+    }
+
+    .header_nav >div > a{
+        display: block;
+        width: 100%;
+        text-align: center;
+        text-decoration: none;
+        color: #4c4c4c;
+        font-weight: bolder;
+        font-size: 1.5rem;
+        background: white;
+    }
+
+
+    .header_nav > ul {
         list-style: none;
         display: inline-block;
         float: left;
@@ -50,7 +74,7 @@
         /*margin-right: 50px;*/
     }
 
-    .header_nav ul > li {
+    .header_nav > ul > li {
         font-weight: bolder;
         align-content: center;
         padding-left: 70px;
@@ -58,6 +82,19 @@
         /*vertical-align: center;*/
         float: left;
         line-height: 80px;
+    }
+
+    .header_nav ul a {
+        text-decoration: none;
+        color: #4c4c4c;
+    }
+
+    .drop{
+        display: none;
+    }
+
+    .drop-hover{
+
     }
 
     .head-menu {

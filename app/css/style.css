@@ -3,6 +3,12 @@
 /*@import url("mainStyle.css") screen and (max-width: 767px);*/
 @import url("mainStyle.css") screen and (min-width: 768px);
 
+html {
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
 body {
     font: normal 100% Microsoft Yahei,Source Sans Pro, Helvetica, Arial, sans-serif !important;
     margin: 0;
@@ -17,8 +23,8 @@ small {
 }
 
 a {
-    text-decoration: none;
-    color: #000;
+    text-decoration: none;!important;
+    color: #000;!important;
 }
 
 .font-color-main {
