@@ -76,7 +76,7 @@
     </div>
     <div class="toggle-container">
         <div class="invest-toggle">
-            <span class="introduce active">基金介绍</span>
+            <span class="introduce actived">基金介绍</span>
             <span class="invest_team">投资团队</span>
         </div>
     </div>
@@ -300,8 +300,8 @@ Request = GetRequest();
 // alert(Request["tab"]);
     if("team" == Request['tab'])
     {
-        $('.invest_team').addClass("active");
-    $(".introduce").removeClass("active");
+        $('.invest_team').addClass("actived");
+    $(".introduce").removeClass("actived");
     $(".invest-a").hide();
             $(".invest-b").show();
     }

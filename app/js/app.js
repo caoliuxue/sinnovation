@@ -15,7 +15,7 @@ $(document).ready(function () {
         direction: 'horizontal',
         loop: true,
         speed: 2000,
-        autoplay: false,
+        autoplay: true,
         paginationHide: false,
         pagination: '.swiper-pagination'
     });
@@ -39,8 +39,8 @@ $(document).ready(function () {
     $(".invest-b").hide();
     $(".invest-toggle span").click(function () {
         console.log(this);
-        $(".invest-toggle span").removeClass("active");
-        $(this).addClass("active");
+        $(".invest-toggle span").removeClass("actived");
+        $(this).addClass("actived");
         if ($(this).hasClass("invest_team")) {
             $(".invest-a").hide();
             $(".invest-b").show();
@@ -129,7 +129,7 @@ $(document).ready(function () {
     var renderTeam = function () {
         $.get("js/team-list.json", function (data) {
             // console.log(data);
-            var allMember = $("<span class='active'>全部团队成员</span>");
+            var allMember = $("<span class='actived'>全部团队成员</span>");
             $(".team-toggle").append(allMember);
             $.each(data, function (index) {
                 if (null === selectedTeam || (null !== selectedTeam && selectedTeam === data[index])) {

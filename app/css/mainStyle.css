@@ -873,11 +873,11 @@
         cursor: pointer;
     }
 
-    .invest-toggle > .active,
-    .team-toggle > .active,
-    .ai-toggle > .active,
-    .job-toggle > .active,
-    .startup-toggle > .active {
+    .invest-toggle > .actived,
+    .team-toggle > .actived,
+    .ai-toggle > .actived,
+    .job-toggle > .actived,
+    .startup-toggle > .actived {
         border-bottom: 5px solid rgba(250, 124, 0, 0.8);
     }
 

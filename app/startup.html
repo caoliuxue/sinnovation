@@ -81,7 +81,7 @@
     </div>
     <div class="toggle-container">
         <div class="startup-toggle">
-            <span class="startup-service active">创业服务介绍</span>
+            <span class="startup-service actived">创业服务介绍</span>
             <span class="operation-team">运营团队</span>
         </div>
     </div>
@@ -262,8 +262,8 @@ $(document).ready(function () {
     Request = GetRequest();
     if("team" == Request['tab'])
     {
-        $('.operation-team').addClass("active");
-        $(".startup-service").removeClass("active");
+        $('.operation-team').addClass("actived");
+        $(".startup-service").removeClass("actived");
         $(".invest-a").hide();
         $(".invest-b").show();
     }
