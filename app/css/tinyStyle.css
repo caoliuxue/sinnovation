@@ -1602,7 +1602,8 @@
 
     .job-detail-container > .title {
         height: 150px;
-        line-height: 150px;
+        /*line-height: 150px;*/
+            font-size: 60px;
     }
 
     .job-detail-container > .job-label {
@@ -1617,6 +1618,7 @@
 
     .job-detail-container > .job-email {
         line-height: 150px;
+        font-size: 20px;
     }
 
     .line {
