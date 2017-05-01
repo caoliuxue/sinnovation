@@ -11,6 +11,32 @@
         }
     }
 
+    .scroll-bar{
+        border-radius: 30px;
+        position: fixed;
+        margin-right: 20px;
+        right: 0;
+        top:30%;
+        background: url("../img/index/scrollbar.png") no-repeat center;
+        /*background-size: 40px 100%;*/
+        z-index: 99;
+    }
+
+    .nav > li > a{
+        color: white;
+        font-size: 2rem;
+        font-weight: bolder;
+        background: transparent;!important;
+    }
+
+    .nav > li > a:hover{
+        background-color: transparent;!important;
+    }
+
+    .active{
+        background: url("../img/index/mouse.png") no-repeat center;
+    }
+
     header {
         display: flex !important;
         justify-content: space-between;
@@ -148,6 +174,14 @@
         padding-left: 18%;
         letter-spacing: 5px;
         width: 60%;
+        max-height: 134px;
+        overflow: hidden;
+    }
+
+    .swiper-slide-hover >img{
+        margin-left: 15%;
+        margin-top: 30px;
+        height: 45px;
     }
 
     /*有李开复头像层*/

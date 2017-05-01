@@ -7,11 +7,24 @@
     <title>创新工场</title>
     <link rel="stylesheet" type="text/css" href="css/source-sans-pro-2.020R-ro-1.075R-it/source-sans-pro.css"/>
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
-    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="bower_components/swiper/dist/css/swiper.css">
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
 </head>
-<body>
-    <header>
+<body data-spy="scroll" data-target="#scroll-bar">
+
+    <div class="scroll-bar" id="scroll-bar">
+        <ul class="nav">
+            <li class="active"><a href="#zero">·</a></li>
+            <li><a href="#one">·</a></li>
+            <li><a href="#two">·</a></li>
+            <li><a href="#three">·</a></li>
+            <li><a href="#four">·</a></li>
+            <li><a href="#five">·</a></li>
+            <li><a href="#six">·</a></li>
+            <li><a href="#seven">·</a></li>
+        </ul>
+    </div>
+    <header id="zero">
         <div class="header_logo"></div>
         <div class="head-menu">
             <img src="img/mobile/menu.png" data-toggle="modal" data-target="#header_nav"/>
@@ -76,13 +89,14 @@
             <li class="main-nav"><a href="#">EN</a></li>
         </ul>
     </div>
-    <div class="swiper-container">
+    <div class="swiper-container" id="one">
         <div class="swiper-wrapper">
             <div class="swiper-slide slide1">
                 <div class="swiper-slide-hover">
                     <div class="rectangle-left"></div>
-                    <div class="slide-title">创新工厂举办中美教育沙解析创新工厂举办中美教育沙解析</div>
+                    <div class="slide-title">创新工厂举办中美教育沙解析创新工厂举办中美教育沙解析创新工厂举办中美教育沙解析创新工厂举办中美教育沙解析创新工厂举办中美教育沙解析创新工厂举办中美教育沙解析</div>
                     <div class="rectangle-right"></div>
+                    <img src="img/index/arrow-right-active.jpg">
                 </div>
             </div>
             <div class="swiper-slide slide2">
@@ -90,12 +104,13 @@
                     <div class="rectangle-left"></div>
                     <div class="slide-title">蓝天下微风抚起我的发，脚步永不停止</div>
                     <div class="rectangle-right"></div>
+                    <img src="img/index/arrow-right-active.jpg">
                 </div>
             </div>
         </div>
         <div class="swiper-pagination"></div>
     </div>
-    <div class="index-content01">
+    <div class="index-content01" id="two">
         <div class="index-content01-left">
             <div class="t01-l1 ">我们是谁</div>
             <span class="t01-l2">不断创新</span>
@@ -107,7 +122,7 @@
         <div class="index-content01-right tiny-hide"></div>
     </div>
 
-    <div class="index-content02">
+    <div class="index-content02" id="three">
         <div class="cover">
             <div class="index-content02-left">
                 <div class="t02-l1 font-color-main">
@@ -132,7 +147,7 @@
             </div>
         </div>
     </div>
-    <div class="index-content03">
+    <div class="index-content03" id="four">
         <div class="index-content03-left">
             <div class="t03-l1 font-color-main">不止于投资</div>
             <div class="t03-l2 font-color-black bolder">为创业者做的更多</div>
@@ -144,7 +159,7 @@
         </div>
     </div>
 
-    <div class="index-content04 width-100 border-color-main bg-color-main">
+    <div class="index-content04 width-100 border-color-main bg-color-main" id="five">
         <div class="index-content04-left tiny-hide">
             <div class="access_more font-color-white border-color-white">了解更多</div>
         </div>
@@ -159,7 +174,7 @@
     </div>
 
     <!--创业者说-->
-    <div class="index-content05 width-100">
+    <div class="index-content05 width-100" id="six">
         <div class="t05-top width-100">
             <div class="left">
                 <div class="font-size-3rem font-color-main">一路相伴同行</div>
@@ -204,7 +219,7 @@
     </div>
 
     <!--最新动态-->
-    <div class="index-content06 width-100">
+    <div class="index-content06 width-100" id="seven">
         <div class="t06-top width-100">
             <div class="left">
                 <div class="font-size-3rem font-color-main">实时关注</div>

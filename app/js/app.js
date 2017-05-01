@@ -15,7 +15,7 @@ $(document).ready(function () {
         direction: 'horizontal',
         loop: true,
         speed: 2000,
-        autoplay: true,
+        autoplay: false,
         paginationHide: false,
         pagination: '.swiper-pagination'
     });
