@@ -756,10 +756,10 @@
     /*}*/
     .invest-toggle {
         background-color: white;
-        width: 46%;
-        padding-left: 5%;
-        padding-right: 5%;
-        margin-left: 27%;
+        width: 100%;
+        /*padding-left: 5%;*/
+        /*padding-right: 5%;*/
+        /*margin-left: 27%;*/
         height: 100px;
         display: flex;
         justify-content: space-around;
@@ -803,8 +803,9 @@
         justify-content: flex-start;
         background: url("../img/invest-biz/bg.png") no-repeat center;
         background-size: cover;
-        padding-left: 12%;
+        padding: 0 5%;
         padding-top: 100px;
+        font-family: "Microsoft Yahei";
     }
 
     .invest-a-t01 > :first-child {
@@ -822,16 +823,16 @@
     }
 
     .invest-a-t02 {
-        display: flex;
+        /*display: flex;*/
         background-color: #252525;
     }
 
     .invest-a-t02 > div {
-        display: flex;
+        /*display: flex;*/
         flex-direction: column;
         justify-content: flex-start;
         flex-basis: 18.75%;
-        height: 600px;
+        /*height: 600px;*/
     }
 
     .invest-a-t02 > .intro {
@@ -842,6 +843,11 @@
         align-items: flex-start;
         padding-left: 3%;
         padding-right: 3%;
+            width: 50%;
+    height: 300px;
+    float: left;
+    background-color: #000;
+    font-family: "Microsoft Yahei";
     }
 
     .invest-a-t02 :nth-child(4) {
@@ -858,6 +864,7 @@
         padding-top: 100px;
         letter-spacing: 5px;
         background-size: cover;
+        width: 50%;
         /*align-items: flex-start;*/
         /*padding: 15% auto*/
     }
@@ -879,6 +886,7 @@
 
     .item1 {
         background: url("../img/invest-biz/1.png") no-repeat center;
+        float: left;
     }
 
     .item2 {
@@ -888,6 +896,7 @@
 
     .item3 {
         background: url("../img/invest-biz/3.png") no-repeat center;
+        float: left;
 
     }
 
@@ -898,6 +907,7 @@
 
     .item5 {
         background: url("../img/invest-biz/5.png") no-repeat center;
+        float: left;
 
     }
 
@@ -908,6 +918,7 @@
 
     .item7 {
         background: url("../img/invest-biz/7.png") no-repeat center;
+        float: left;
 
     }
 
@@ -919,7 +930,7 @@
         padding-left: 12%;
         padding-right: 12%;
         padding-top: 100px;
-        background: url("../img/invest-biz/phase.png") no-repeat bottom center;
+        background: url("../img/invest-biz/phase-mobile.png") no-repeat bottom center;
         background-size: 95% auto;
         background-clip: padding-box;
     }
@@ -930,7 +941,7 @@
 
     .invest-a-t03 > :nth-child(2) > :first-child {
         padding: 5px 5px 20px 0;
-        border-bottom: 5px solid #ff7e00;
+        /*border-bottom: 5px solid #ff7e00;*/
         font-weight: bolder;
     }
 
@@ -945,28 +956,30 @@
         flex-direction: column;
         background-color: #f7f7f7;
         justify-content: center;
-        align-items: center;
-        padding-left: 3%;
-        padding-right: 3%;
+        /*align-items: center;*/
+        /*padding-left: 3%;*/
+        /*padding-right: 3%;*/
     }
 
     .invest-a-t04 > .title {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        /*align-items: center;*/
         padding-top: 80px;
+        padding-left: 50px;
     }
 
     .invest-a-t04 > .title > span {
         letter-spacing: 10px;
-        border-bottom: 5px solid #ff7e00;
-        padding-bottom: 30px;
+        /*border-bottom: 5px solid #ff7e00;*/
+        /*padding-bottom: 30px;*/
     }
 
     .invest-a-t04 > .title > :nth-child(2) {
         line-height: 100px;
         letter-spacing: 1px;
+        font-size: 25px;
     }
 
     .invest-a-t04 > .apps-wrapper {
@@ -978,11 +991,12 @@
 
         border-left: 1px solid #ff7e00;
         border-top: 1px solid #ff7e00;
+        margin-bottom: 20px;
     }
 
     .app {
-        width: 25%;
-        height: 300px;
+        width: 33.3%;
+        height: 200px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -994,7 +1008,7 @@
     }
 
     .app > img {
-        height: 100px;
+        height: 60px;
         margin: 100px auto;
     }
 
