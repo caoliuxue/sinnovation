@@ -1663,10 +1663,10 @@
 
     .startup-toggle {
         background-color: white;
-        width: 50%;
+        /*width: 50%;*/
         padding-left: 10%;
         padding-right: 10%;
-        margin-left: 25%;
+        /*margin-left: 25%;*/
         height: 100px;
         display: flex;
         justify-content: space-around;
@@ -1676,7 +1676,7 @@
     }
 
     .startup-service {
-        display: flex;
+        /*display: flex;*/
     }
 
     .startup-service > .left, .startup-service > .right {
@@ -1690,7 +1690,7 @@
     .startup-service > .left > .left_t03,
     .startup-service > .right > .right_t02 {
         display: flex;
-        height: 500px;
+        height: 600px;
         background: url("../img/startup/bg3.png") no-repeat center right;
         background-size: cover;
         padding-top: 30px;
