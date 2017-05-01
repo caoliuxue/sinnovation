@@ -148,8 +148,15 @@
         padding-left: 18%;
         letter-spacing: 5px;
         width: 60%;
+        max-height: 200px;
+        overflow: hidden;
     }
 
+    .swiper-slide-hover>:nth-child(4){
+        margin-top: 30px;
+        margin-left: 15%;
+        height: 45px;
+    }
     /*有李开复头像层*/
     .index-content01 {
         display: flex;
@@ -768,10 +775,15 @@
         margin-top: 80px;
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
+        justify-content: center;
         align-items: center;
         height: 530px;
-        padding-top: 80px;
+        /*padding-top: 80px;*/
+    }
+
+    .invest-header img{
+        width: 20%;
+        margin-top: 50px;
     }
 
     .invest-header-a {
