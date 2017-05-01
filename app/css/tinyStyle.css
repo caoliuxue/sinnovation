@@ -2129,7 +2129,7 @@
     .news-list > .news {
         margin-bottom: 10px;
         display: flex;
-        flex-basis: 24.5%;
+        flex-basis: 50%;
         height: 300px;
         justify-content: flex-start;
         align-items: center;
