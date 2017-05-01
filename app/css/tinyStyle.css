@@ -728,7 +728,7 @@
         margin-top: 80px;
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
+        justify-content: center;
         align-items: center;
         height: 530px;
         /*padding-top: 80px;*/
@@ -746,6 +746,7 @@
 
     .invest-header > :first-child {
         letter-spacing: 8px;
+            font-weight: bold;
     }
 
     .invest-header > :nth-child(2) {
@@ -758,6 +759,7 @@
         background: url("../img/invest-biz/ling-group.png") no-repeat center;
         background-size: contain;
         height: 80px;
+        margin-top: 50px;
     }
 
     /*.toggle-container {*/
@@ -939,7 +941,7 @@
     .invest-a-t03 {
         display: flex;
         flex-direction: column;
-        height: 840px;
+        height: 740px;
         padding-left: 12%;
         padding-right: 12%;
         padding-top: 100px;
@@ -1426,6 +1428,8 @@
         box-shadow: 0 1px 5px 1px #bfbfbf;
     }
 
+
+
     /*.team-toggle-container {*/
     /*position: relative;*/
     /*width: 100%;*/
@@ -1435,16 +1439,23 @@
     /*}*/
     .team-toggle {
         background-color: white;
-        width: 76%;
-        padding-left: 10%;
-        padding-right: 10%;
-        margin-left: 12%;
-        height: 100px;
+        /*width: 76%;*/
+        /*padding-left: 10%;*/
+        /*padding-right: 10%;*/
+        /*margin-left: 12%;*/
+        height: 200px;
         display: flex;
         justify-content: space-around;
         align-items: center;
         -moz-box-shadow: 100px 100px 50px 20px #bfbfbf; /* 老的 Firefox */
         box-shadow: 0 1px 5px 1px #bfbfbf;
+        flex-wrap: wrap;
+    }
+
+    .team-toggle > span{
+        flex-basis: 33.33%;
+        padding: 0px 5%;
+        text-align: center;
     }
 
     .about_job {
@@ -1452,11 +1463,12 @@
         height: 450px;
         background: #ff7e00 url("../img/invest-biz/bg.png") no-repeat right center;
         background-size: cover;
+        flex-direction: column;
     }
 
     .about_job > .job-left {
         flex-basis: 40%;
-        display: flex;
+        /*display: flex;*/
         justify-content: center;
         align-items: center;
     }
@@ -1464,7 +1476,7 @@
     .about_job > .job-right {
         flex-basis: 60%;
         display: flex;
-        flex-direction: column;
+        /*flex-direction: column;*/
         justify-content: center;
         align-items: flex-end;
         padding-right: 5%;
@@ -1472,11 +1484,14 @@
 
     .job-right > :first-child {
         letter-spacing: 8px;
+        font-size: 4rem;
     }
 
     .job-right > :nth-child(2) {
         letter-spacing: 4px;
         line-height: 60px;
+        font-size: 2rem;
+        padding-top: 50px;
     }
 
     .job-right > :last-child {
@@ -1511,10 +1526,10 @@
 
     .job-toggle {
         background-color: white;
-        width: 50%;
+        /*width: 50%;*/
         padding-left: 5%;
         padding-right: 5%;
-        margin-left: 25%;
+        /*margin-left: 25%;*/
         height: 100px;
         display: flex;
         justify-content: space-around;
@@ -1551,19 +1566,19 @@
     .job-list {
         display: flex;
         flex-wrap: wrap;
-        padding-left: 12%;
-        padding-right: 12%;
+        padding-left: 0%;
+        padding-right: 0%;
         margin-bottom: 50px;
     }
 
     .job-item {
-        flex-basis: 33.33%;
+        flex-basis: 50%;
         height: 185px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
-        padding-left: 3%;
+        padding-left: 10%;
         /*border-left: 1px solid #dddddd;*/
     }
 
@@ -1661,10 +1676,10 @@
 
     .startup-toggle {
         background-color: white;
-        width: 50%;
+        /*width: 50%;*/
         padding-left: 10%;
         padding-right: 10%;
-        margin-left: 25%;
+        /*margin-left: 25%;*/
         height: 100px;
         display: flex;
         justify-content: space-around;
@@ -1674,7 +1689,7 @@
     }
 
     .startup-service {
-        display: flex;
+        /*display: flex;*/
     }
 
     .startup-service > .left, .startup-service > .right {
@@ -1688,7 +1703,7 @@
     .startup-service > .left > .left_t03,
     .startup-service > .right > .right_t02 {
         display: flex;
-        height: 500px;
+        height: 600px;
         background: url("../img/startup/bg3.png") no-repeat center right;
         background-size: cover;
         padding-top: 30px;
