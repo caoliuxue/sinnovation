@@ -1795,10 +1795,10 @@
 
     .ai-toggle {
         background-color: white;
-        width: 50%;
-        padding-left: 10%;
-        padding-right: 10%;
-        margin-left: 25%;
+        /*width: 50%;*/
+        /*padding-left: 10%;*/
+        /*padding-right: 10%;*/
+        /*margin-left: 25%;*/
         height: 100px;
         display: flex;
         justify-content: space-around;
@@ -1808,7 +1808,7 @@
     }
 
     .ai-content {
-        display: flex;
+        /*display: flex;*/
         margin-top: -50px;
     }
 
@@ -1825,6 +1825,10 @@
         align-items: flex-start;
         background: url("../img/ai/bg1.png") no-repeat left;
         background-size: auto 200%;
+    }
+
+    .ai-content > .left > .left_t02 {
+        display: hidden !important;
     }
 
     .ai-content > .left > .left_t01 > :nth-child(2),
