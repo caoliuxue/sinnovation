@@ -19,13 +19,13 @@
         <div class="header_nav tiny-hide">
             <div>
                 <a href="invest_biz.html">投资业务</a>
-                <a href="invest_biz.html">工程院简介</a>
-                <a href="invest_biz.html">团队介绍</a>
+                <a href="ai.html">工程院简介</a>
+                <a href="invest_biz.html?tab=team">团队介绍</a>
             </div>
             <div>
                 <a href="startup.html">创业服务</a>
                 <a href="startup.html">创业服务介绍</a>
-                <a href="startup.html">运营团队</a>
+                <a href="startup.html?tab=team">运营团队</a>
             </div>
             <div>
                 <a href="ai.html">人工智能工程院</a>
@@ -49,15 +49,20 @@
         <ul>
             <li class="main-nav"><a href="index.html">首页</a></li>
             <li class="main-nav current"><a href="invest_biz.html">投资业务</a></li>
-            <li class="sub-nav"><a href="invest_biz.html">工程院简介</a></li>
-            <li class="sub-nav"><a href="invest_biz.html">团队介绍</a></li>
+            <li class="sub-nav"><a href="ai.html">工程院简介</a></li>
+            <li class="sub-nav"><a href="invest_biz.html?tab=team">团队介绍</a></li>
             <li class="main-nav"><a href="startup.html">创业服务</a></li>
             <li class="sub-nav"><a href="startup.html">创业服务介绍</a></li>
-            <li class="sub-nav"><a href="startup.html">运营团队</a></li>
+            <li class="sub-nav"><a href="startup.html?tab=team">运营团队</a></li>
             <li class="main-nav"><a href="ai.html">人工智能工程院</a></li>
             <li class="sub-nav"><a href="ai.html">工程院简介</a></li>
             <li class="sub-nav"><a href="ai.html">团队介绍</a></li>
             <li class="main-nav"><a href="about_us.html">关于我们</a></li>
+            <li class="sub-nav"><a href="about_us.html">工场介绍</a></li>
+                <li class="sub-nav"><a href="about_team.html">团队介绍</a></li>
+               <li class="sub-nav"> <a href="job.html">工作机会</a></li>
+               <li class="sub-nav"> <a href="contact.html">联系我们</a></li>
+               <li class="sub-nav"> <a href="about_us.html">工场动态</a></li>
             <li class="main-nav"><a href="#">EN</a></li>
         </ul>
     </div>
@@ -268,4 +273,39 @@
 <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
 <script src="bower_components/swiper/dist/js/swiper.js"></script>
 <script src="js/app.js"></script>
+<script type="text/javascript">
+function GetRequest() {
+  
+  var url = location.search; //获取url中"?"符后的字串
+   var theRequest = new Object();
+   if (url.indexOf("?") != -1) {
+      var str = url.substr(1);
+      strs = str.split("&");
+      for(var i = 0; i < strs.length; i ++) {
+         theRequest[strs[i].split("=")[0]]=(strs[i].split("=")[1]);
+      }
+   }
+   return theRequest;
+}
+function GetQueryString(name) {
+   var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)","i");
+   var r = window.location.search.substr(1).match(reg);
+   if (r!=null) return (r[2]); return null;
+}
+
+$(document).ready(function () {
+    // alert(GetQueryString("tab"));
+    var Request = new Object();
+Request = GetRequest();
+// alert(Request["tab"]);
+    if("team" == Request['tab'])
+    {
+        $('.invest_team').addClass("active");
+    $(".introduce").removeClass("active");
+    $(".invest-a").hide();
+            $(".invest-b").show();
+    }
+    
+    });
+</script>
 </html>
