@@ -39,13 +39,16 @@
         /*justify-content: flex-end;*/
     }
 
-    .header_nav > .right-close {
+    .header_nav > .menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         height: 80px;
         width: 100%;
         text-align: right;
     }
 
-    .header_nav > .right-close > span {
+    .header_nav > .menu > span {
         font-size: 8rem;
         color: black;
         font-weight: 100;
@@ -74,13 +77,7 @@
     .header_nav ul {
         list-style: none;
         padding: 0;
-        margin: 0;
-        /*display: inline-block;*/
-        /*float: left;*/
-        /*height: 80px;*/
-        /*margin-bottom: 0;*/
-        /*margin-right: 9%;*/
-        /*margin-right: 50px;*/
+        margin: 0 9%;
     }
 
     .header_nav ul > li {
@@ -92,12 +89,27 @@
         text-align: center;
         /*float: left;*/
         line-height: 80px;
+        border-bottom: 1px solid #e5e5e5;
+    }
+
+    .header_nav ul > .sub-nav {
+        font-weight: 500;
+    }
+
+    .header_nav ul a {
+        text-decoration: none;
+        color: #4c4c4c;
+    }
+
+
+    .header_nav ul > .current > a {
+        color: #ff7e00;
     }
 
     .swiper-container {
         width: 100%;
         height: 360px;
-        /*margin-top: 80px;*/
+        margin-top: 80px;
     }
 
     .slide1 {
@@ -672,7 +684,7 @@
         color: #ff7e00;
     }
 
-    .footer-nav >.lp_login{
+    .footer-nav > .lp_login {
         margin-bottom: 50px;
         display: flex;
         justify-content: flex-start;
@@ -718,7 +730,7 @@
         justify-content: flex-start;
         align-items: center;
         height: 530px;
-        padding-top: 80px;
+        /*padding-top: 80px;*/
     }
 
     .invest-header-a {
@@ -843,11 +855,11 @@
         align-items: flex-start;
         padding-left: 3%;
         padding-right: 3%;
-            width: 50%;
-    height: 300px;
-    float: left;
-    background-color: #000;
-    font-family: "Microsoft Yahei";
+        width: 50%;
+        height: 300px;
+        float: left;
+        background-color: #000;
+        font-family: "Microsoft Yahei";
     }
 
     .invest-a-t02 :nth-child(4) {
@@ -1119,9 +1131,6 @@
         border-left: 20px solid transparent;
         border-right: 20px solid transparent;
         border-bottom: 25px solid #ff7e00;
-    }
-
-    .right-close {
     }
 
     .right-close > :first-child {
@@ -1605,7 +1614,7 @@
     .job-detail-container > .title {
         height: 150px;
         /*line-height: 150px;*/
-            font-size: 60px;
+        font-size: 60px;
     }
 
     .job-detail-container > .job-label {
@@ -2051,18 +2060,18 @@
 
     }
 
-    .contacts-container > .corporate
-    {
+    .contacts-container > .corporate {
         background-color: #f5f5f5;
     }
-    .contacts-container > .blueprint
-    {
+
+    .contacts-container > .blueprint {
         background-color: #f8f8f8;
     }
-    .contacts-container > .social
-    {
+
+    .contacts-container > .social {
         background-color: #f4f4f4;
     }
+
     .contacts-container > .corporate > :first-child,
     .contacts-container > .blueprint > :first-child,
     .contacts-container > .social > :first-child {

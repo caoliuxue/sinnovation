@@ -7,7 +7,7 @@ $(document).ready(function () {
         window.location.href = "index.html";
     });
 
-    $(".right-close").click(function () {
+    $(".menu-close").click(function () {
         $("#header_nav").modal('toggle');
     });
     var bannerSwiper = new Swiper('.swiper-container', {
