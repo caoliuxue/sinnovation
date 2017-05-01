@@ -1,15 +1,19 @@
 /*MOBILE STYLE*/
 /*index style*/
-@media screen and (max-width: 767px){
+@media screen and (max-width: 767px) {
 
+    .tiny-hide {
+        display: none !important;
+    }
 
     header {
         display: flex !important;
+        flex-wrap: wrap;
         justify-content: space-between;
         /*flex-direction: row;*/
         width: 100%;
-        height: 80px;
-        position: fixed;
+        /*height: 80px;*/
+        /*position: fixed;*/
         top: 0;
         z-index: 20;
         background-color: white;
@@ -18,66 +22,91 @@
 
     .header_logo {
         height: 80px;
-        flex-basis: 30%;
-        background: url("../img/logo.png") no-repeat 30% center;
+        flex-basis: 40%;
+        background: url("../img/index/logo.png") no-repeat 30% center;
         background-size: auto 40px;
         cursor: pointer;
     }
 
     .header_nav {
-        /*flex-basis: 70%;*/
-        display: none;
+        flex-basis: 100%;
+        display: flex;
+        flex-direction: column;
+        background: white;
+        /*display: none;*/
         /*align-self:flex-end;*/
         /*height: 80px;*/
         /*justify-content: flex-end;*/
     }
 
-    .head-menu{
+    .header_nav > .right-close {
+        height: 80px;
+        width: 100%;
+        text-align: right;
+    }
+
+    .header_nav > .right-close > span {
+        font-size: 8rem;
+        color: black;
+        font-weight: 100;
+        margin-right: 5%;
+        line-height: 80px;
+        transform: rotate(45deg);
+        /*-ms-transform:rotate(7deg); 	!* IE 9 *!*/
+        /*-moz-transform:rotate(7deg); 	!* Firefox *!*/
+        /*-webkit-transform:rotate(7deg); !* Safari 和 Chrome *!*/
+        /*-o-transform:rotate(7deg); 	!* Opera *!*/
+    }
+
+    .head-menu {
         padding-right: 5%;
-        flex-basis: 70%;
+        flex-basis: 50%;
         display: flex;
         justify-content: flex-end;
         align-self: center;
     }
 
-    .head-menu img{
+    .head-menu img {
         width: 35px;
         height: 35px;
     }
 
     .header_nav ul {
         list-style: none;
-        display: inline-block;
-        float: left;
-        height: 80px;
-        margin-bottom: 0;
-        margin-right: 9%;
+        padding: 0;
+        margin: 0;
+        /*display: inline-block;*/
+        /*float: left;*/
+        /*height: 80px;*/
+        /*margin-bottom: 0;*/
+        /*margin-right: 9%;*/
         /*margin-right: 50px;*/
     }
 
     .header_nav ul > li {
+        width: 100%;
         font-weight: bolder;
-        align-content: center;
-        padding-left: 70px;
+        /*align-content: center;*/
+        /*padding-left: 70px;*/
         font-size: 1.5em;
-        /*vertical-align: center;*/
-        float: left;
+        text-align: center;
+        /*float: left;*/
         line-height: 80px;
     }
 
     .swiper-container {
         width: 100%;
         height: 360px;
-        margin-top: 80px;
+        /*margin-top: 80px;*/
     }
 
     .slide1 {
-        background: url("../img/swiper1.jpg") no-repeat center 100%;
+        background: url("../img/index/swiper1.jpg") no-repeat center 100%;
         background-size: cover;
     }
 
     .slide2 {
-        background: url("../img/swiper2.jpg") no-repeat center 100%;
+        background: url("../img/index/swiper2.jpg") no-repeat center 100%;
     }
 
     .swiper-slide-hover {
@@ -87,12 +116,9 @@
     }
 
     .rectangle-left {
-        /*border: 2px solid yellow;*/
         width: 100%;
-        /*background: #000;*/
-        height: 160px;
-        /*padding-top: 100px;*/
-        background: url("../img/Rectangle-l.png") no-repeat 10% 100px;
+        height: 120px;
+        background: url("../img/index/Rectangle-l.png") no-repeat 10% 80px;
         background-size: 40px 40px;
     }
 
@@ -101,34 +127,37 @@
         /*background: #000;*/
         height: 60px;
         margin-top: -40px;
-        background: url("../img/Rectangle-r.png") no-repeat 85% 0;
+        background: url("../img/index/Rectangle-r.png") no-repeat 85% 0;
         background-size: 40px 40px;
     }
 
     .slide-title {
+        margin-top: -20px;
         font-family: "Source Sans Pro";
         font-size: 3em;
         color: white;
         font-weight: bolder;
         padding-left: 15%;
         letter-spacing: 5px;
-        width: 80%;
+        width: 85%;
     }
 
     /*有李开复头像层*/
     .index-content01 {
         display: flex;
-        height: 550px;
-        background: url("../img/sinnovation-bg.png") no-repeat 0 0;
+        height: 400px;
+        background: url("../img/index/sinnovation-bg.png") no-repeat 0 0;
         background-size: auto 100%;
     }
 
     .index-content01-left {
-        flex-basis: 60%;
+        flex-basis: 100%;
         padding-left: 12%;
+        padding-right: 12%;
     }
 
     .index-content01-left > .t01-l1 {
+        font-size: 2rem;
         padding-top: 75px;
         letter-spacing: 5px;
         font-weight: 500;
@@ -136,36 +165,38 @@
 
     .index-content01-left > .t01-l2 {
         padding-top: 10px;
-        /*font-size: 3.5em;*/
+        font-size: 3rem;
         letter-spacing: 5px;
         font-weight: bolder;
         color: black;
+        border-bottom: 5px solid #ff7e00;
+        padding-bottom: 10px;
     }
 
+    /*.index-content01-left > .t01-l3 {*/
+    /*margin-top: 1px;*/
+    /*height: 6px;*/
+    /*width: 32%;*/
+    /*}*/
     .index-content01-left > .t01-l3 {
-        margin-top: 1px;
-        height: 6px;
-        width: 32%;
-    }
-
-    .index-content01-left > .t01-l4 {
-        height: 6px;
+        /*height: 6px;*/
         margin-top: 31px;
-        font-size: 1.5em;
+        font-size: 1.4em;
         letter-spacing: 1px;
         font-weight: 300;
+        white-space: pre-line;
     }
 
     .access_more {
-        width: 250px;
-        height: 66px;
-        margin-top: 50px;
+        margin-top: 35px;
+        /*width: 200px;*/
+        height: 46px;
+        line-height: 46px;
         border: 1px solid black;
         border-radius: 50px;
-        line-height: 66px;
-        padding-left: 20px;
-        padding-right: 20px;
-        font-size: 2rem;
+        padding-left: 30px;
+        padding-right: 30px;
+        font-size: 1.6rem;
         letter-spacing: 6px;
         font-weight: 500;
         text-align: center;
@@ -173,7 +204,7 @@
 
     .index-content01-right {
         flex-basis: 40%;
-        background: url("../img/lkf.png") no-repeat 40% 20px;
+        background: url("../img/index/lkf.png") no-repeat 40% 20px;
         background-size: auto 97%;
     }
 
@@ -182,57 +213,58 @@
         display: flex;
         /*border: 2px solid #ff3f3e;*/
         height: 550px;
-        background: url("../img/index-content02-bg.jpg") no-repeat center center;
+        background: url("../img/index/index-content02-bg.jpg") no-repeat center center;
         background-size: cover;
     }
 
     .index-content02 > .cover {
         display: flex;
+        flex-wrap: wrap;
         height: 550px;
         width: 100%;
         background-color: rgba(0, 0, 0, 0.65);
+        padding-right: 5%;
     }
 
     .index-content02-left {
-        flex-basis: 55%;
+        flex-basis: 100%;
         display: flex;
-        padding-left: 8%;
+        justify-content: space-around;
     }
 
     .t02-l1 {
         border: 1px solid #ff7e00;
-        width: 33%;
+        width: 30%;
         padding-top: 25px;
         padding-bottom: 25px;
-        margin-top: 155px;
-        margin-left: 25px;
+        margin-top: 35px;
+        /*margin-left: 25px;*/
         display: flex;
         flex-direction: column;
-        height: 235px;
+        height: 135px;
     }
 
     .t02-l1 > :first-child {
         color: white;
         width: 100%;
         text-align: center;
-        font-size: 1.8rem;
+        font-size: 1rem;
         font-weight: 400;
-        letter-spacing: 5px;
+        letter-spacing: 3px;
     }
 
     .t02-l1 > :nth-child(2) {
         padding-left: 20px;
-        margin-top: -20px;
-        font-size: 2rem;
+        font-size: 1rem;
     }
 
     .t02-l1 > :nth-child(2) > span {
-        font-size: 15rem;
+        font-size: 8rem;
         font-weight: 300;
     }
 
     .index-content02-right {
-        flex-basis: 35%;
+        flex-basis: 100%;
         display: flex;
         flex-direction: column;
         align-items: flex-end;
@@ -240,8 +272,11 @@
     }
 
     .index-content02-right > .t02-r1 {
-        margin-top: 80px;
+        font-size: 3rem;
+        /*margin-top: 80px;*/
         letter-spacing: 10px;
+        border-bottom: 5px solid #ff7e00;
+        padding-bottom: 10px;
     }
 
     .index-content02-right > .t02-r2 {
@@ -251,60 +286,69 @@
     }
 
     .index-content02-right > .t02-r3 {
-        /*font-size: 1.8rem;*/
+        font-size: 1.6rem;
         font-weight: 300;
         line-height: 40px;
     }
 
     /*投后介绍*/
     .index-content03 {
-        height: 550px;
+        height: 450px;
         display: flex;
-        background: url("../img/index-content03-bg.png") no-repeat 0 0;
+        flex-wrap: wrap;
+        background: url("../img/index/index-content03-bg.png") no-repeat 0 0;
         background-size: auto 100%;
 
     }
 
     .index-content03-left {
-        flex-basis: 55%;
-        padding-left: 8%;
+        flex-basis: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
         display: flex;
         flex-direction: column;
-        margin-top: 100px;
+        margin-top: 30px;
+    }
+
+    .index-content03-left > .t03-l1 {
+        font-size: 1.6rem;
+        letter-spacing: 5px;
     }
 
     .index-content03-left > .t03-l2 {
-        line-height: 110px;
+        font-size: 3rem;
+        line-height: 70px;
+        height: 70px;
         letter-spacing: 5px;
     }
 
     .index-content03-left > .t03-l3 {
-        letter-spacing: 4px;
+        letter-spacing: 3px;
+        font-size: 1.6rem;
+        line-height: 40px;
     }
 
     .index-content03-left > .t03-l4 {
-        background: url("../img/index-content03-01.png") no-repeat 0 0;
-        background-size: auto 52%;
-        height: 200px;
-        margin-top: 30px;
-
+        background: url("../img/index/index-content03-01.png") no-repeat left center;
+        background-size: 100% auto;
+        height: 100px;
     }
 
     .index-content03-right {
-        flex-basis: 35%;
+        flex-basis: 100%;
+        padding-left: 5%;
         display: flex;
         flex-direction: column;
-        align-items: flex-end;
+        align-items: flex-start;
         text-align: right;
-        padding-top: 320px;
     }
 
     /*人工智能工程院*/
     .index-content04 {
         display: flex;
         flex-direction: row;
-        height: 450px;
-        background: url("../img/index-content04-bg.png") no-repeat 100% 100%;
+        height: 400px;
+        background: url("../img/index/index-content04-bg.png") no-repeat 100% 100%;
         background-size: auto 100%;
 
     }
@@ -318,61 +362,77 @@
     }
 
     .index-content04-middle {
-        flex-basis: 55%;
-        padding-right: 5%;
+        flex-basis: 60%;
+        padding-left: 5%;
         text-align: right;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
     }
 
     .index-content04-middle > .t04-l1 {
-        margin-top: 100px;
+        /*margin-top: 100px;*/
+        font-size: 2.2rem;
         letter-spacing: 5px;
     }
 
     .index-content04-middle > .t04-l2 {
-        line-height: 80px;
-        letter-spacing: 5px;
+        line-height: 40px;
+        font-size: 1.6rem;
+        letter-spacing: 2px;
     }
 
     .index-content04-middle > .t04-l3 {
-        line-height: 80px;
+        line-height: 30px;
         font-weight: 100;
     }
 
     .index-content04-right {
-        flex-basis: 25%;
-        background: url("../img/index-content04-logo.png") no-repeat left center;
-        background-size: auto 60%;
+        flex-basis: 40%;
+        background: url("../img/index/index-content04-logo.png") no-repeat center;
+        background-size: 80% auto;
     }
 
     /*创业者说*/
     .index-content05 {
         display: flex;
         flex-direction: column;
-        height: 680px;
+        /*height: 680px;*/
+        background-color: #ededed;
     }
 
     .index-content05 > .t05-top {
         display: flex;
         flex-direction: row;
-        height: 170px;
+        height: 100px;
     }
 
     .index-content05 > .t05-top > .left {
         flex-basis: 70%;
         display: flex;
         flex-direction: column;
-        padding-left: 12%;
-        padding-bottom: 20px;
-        padding-top: 50px;
+        justify-content: center;
+        align-items: flex-start;
+        padding-left: 5%;
         letter-spacing: 5px;
+    }
+
+    .index-content05 > .t05-top > .left > :first-child {
+        font-size: 1.8rem;
+    }
+
+    .index-content05 > .t05-top > .left > :last-child {
+        font-size: 3rem;
     }
 
     .index-content05 > .t05-top > .right {
         flex-basis: 30%;
         display: flex;
-        justify-content: flex-end;
+        justify-content: space-around;
         align-items: flex-end;
         padding-bottom: 20px;
+        padding-left: 12%;
         padding-right: 12%;
     }
 
@@ -381,7 +441,7 @@
         width: 40px;
         line-height: 40px;
         text-align: center;
-        background: url("../img/arrow-left-active.jpg") no-repeat left center;
+        background: url("../img/index/arrow-left-active.jpg") no-repeat left center;
         background-size: auto 100%;
         cursor: pointer;
     }
@@ -392,110 +452,41 @@
         line-height: 40px;
         margin-left: 10%;
         text-align: center;
-        background: url("../img/arrow-right-active.jpg") no-repeat left center;
+        background: url("../img/index/arrow-right-active.jpg") no-repeat left center;
         background-size: auto 100%;
         cursor: pointer;
     }
 
-    @media screen and (min-width: 1920px) {
-
-        .index-content05 > .t05-bottom {
-            height: 450px;
-            display: flex;
-            margin-top: 0 !important;
-        }
-
-        .t05-item {
-            background: url("../img/t05-item.png") no-repeat 70% 100%;
-            background-size: auto 90%;
-            width: 33.333% !important;
-            height: 450px;
-            padding-left: 60px;
-        }
-
-        .t05-item > .item-slogan {
-            width: 45%;
-            margin-top: 140px;
-            letter-spacing: 3px;
-        }
-
-        .t05-item > .item-ceo {
-            line-height: 70px;
-        }
-
-        .t05-item > .item-logo {
-            background: url("../img/logo1.png") no-repeat;
-            background-size: auto 100%;
-            height: 60px;
-        }
-
+    .index-content05 > .t05-bottom {
+        height: 400px;
+        display: flex;
+        margin-top: 0 !important;
     }
 
-    @media screen and (min-width: 1280px) and (max-width: 1919px) {
-
-        .index-content05 > .t05-bottom {
-            height: 350px;
-            display: flex;
-            margin-top: 0 !important;
-        }
-
-        .t05-item {
-            background: url("../img/t05-item.png") no-repeat 70% 100%;
-            background-size: contain;
-            width: 33.333% !important;
-            height: 350px;
-            padding-left: 2%;
-        }
-
-        .t05-item > .item-slogan {
-            width: 50%;
-            margin-top: 65px;
-            letter-spacing: 3px;
-        }
-
-        .t05-item > .item-ceo {
-            line-height: 50px;
-        }
-
-        .t05-item > .item-logo {
-            background: url("../img/logo1.png") no-repeat;
-            background-size: auto 100%;
-            height: 50px;
-        }
-
+    .t05-item {
+        background: url("../img/index/molbase.png") no-repeat 70% center;
+        background-size: 80% auto;
+        width: 100% !important;
+        height: 400px;
+        padding-left: 5%;
     }
-    @media screen and (max-width: 1279px) {
 
-        .index-content05 > .t05-bottom {
-            height: 350px;
-            display: flex;
-            margin-top: 0 !important;
-        }
+    .t05-item > .item-slogan {
+        width: 45%;
+        font-size: 1.6rem;
+        margin-top: 120px;
+        letter-spacing: 3px;
+    }
 
-        .t05-item {
-            background: url("../img/t05-item.png") no-repeat 70% 100%;
-            background-size: 82% auto;
-            width: 33.333% !important;
-            height: 350px;
-            padding-left: 10px;
-        }
+    .t05-item > .item-ceo {
+        line-height: 30px;
+        font-size: 1rem;
+    }
 
-        .t05-item > .item-slogan {
-            width: 50%;
-            margin-top: 65px;
-            letter-spacing: 3px;
-        }
-
-        .t05-item > .item-ceo {
-            line-height: 40px;
-        }
-
-        .t05-item > .item-logo {
-            background: url("../img/logo1.png") no-repeat;
-            background-size: auto 100%;
-            height: 30px;
-        }
-
+    .t05-item > .item-logo {
+        background: url("../img/index/logo_en_new.png") no-repeat;
+        background-size: auto 100%;
+        height: 30px;
     }
 
     /*最新动态*/
@@ -504,21 +495,32 @@
     }
 
     .t06-top {
-        height: 170px;
+        height: 120px;
         display: flex;
     }
 
     .t06-top > .left {
-        padding-left: 10%;
+        padding-left: 5%;
         display: flex;
-        flex-basis: 70%;
+        flex-basis: 50%;
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
     }
 
+    .t06-top > .left > :first-child {
+        font-size: 1.8rem;
+        letter-spacing: 5px;
+    }
+
+    .t06-top > .left > :last-child {
+        font-size: 3rem;
+        letter-spacing: 5px;
+    }
+
     .t06-top > .right {
-        padding-left: 5%;
+        flex-basis: 50%;
+        /*padding-right: 5%;*/
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -527,14 +529,15 @@
 
     .t06-row {
         display: flex;
-        /*justify-content: space-between;*/
+        flex-wrap: wrap;
+        justify-content: space-between;
         align-items: center;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
     }
 
     .t06-row > :nth-child(2) {
-        margin-left: 10px;
-        margin-right: 10px;
+        /*margin-left: 10px;*/
+        /*margin-right: 10px;*/
     }
 
     .t06-row-reverse {
@@ -544,12 +547,16 @@
 
     .t06-row-column-l {
         height: 410px;
-        width: 52%;
+        width: 100%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        font-weight: bolder;
     }
 
     .t06-row-column-s {
         height: 410px;
-        width: 24%;
+        width: 49.5%;
+        font-weight: bolder;
     }
 
     .t06-row-column-l > :first-child {
@@ -560,14 +567,21 @@
         padding-left: 10%;
         padding-right: 10%;
         letter-spacing: 3px;
+        font-size: 2rem;
     }
 
-    .cover-main-transparent {
-        background-color: rgba(255, 126, 0, 0.8);
+    /*.cover-main-transparent {*/
+    /*background-color: rgb(255, 126, 0);*/
+    /*}*/
+    .index-news {
+        color: #000;
+        background: rgb(230, 230, 230) url("../img/news/mark.png") no-repeat 5% 95%;
+        background-size: 40px 40px;
     }
 
-    .cover-gray-transparent {
-        background-color: rgba(11, 11, 11, 0.5);
+    .index-news:hover {
+        background-color: rgb(255, 126, 0);
+        color: white;
     }
 
     .t06-row-column-s > :first-child {
@@ -595,44 +609,38 @@
         font-weight: 200;
     }
 
-    .news1 {
-        background: url("../img/news-1.jpg") no-repeat center;
-        background-size: cover;
-    }
-
-    .news2 {
-        background: url("../img/news-2.jpg") no-repeat center;
-        background-size: cover;
-    }
-
-    .news3 {
-        background: url("../img/news-3.jpg") no-repeat center;
-        background-size: cover;
-    }
-
-    .news4 {
-        background: url("../img/news-4.jpg") no-repeat center;
-        background-size: cover;
-    }
-
-    .news5 {
-        background: url("../img/news-5.jpg") no-repeat center;
-        background-size: cover;
-    }
-
-    .news6 {
-        background: url("../img/news-6.jpg") no-repeat center;
-        background-size: cover;
-    }
-
+    /*.news1 {*/
+    /*background: url("../img/index/news-1.jpg") no-repeat center;*/
+    /*background-size: cover;*/
+    /*}*/
+    /*.news2 {*/
+    /*background: url("../img/index/news-2.jpg") no-repeat center;*/
+    /*background-size: cover;*/
+    /*}*/
+    /*.news3 {*/
+    /*background: url("../img/index/news-3.jpg") no-repeat center;*/
+    /*background-size: cover;*/
+    /*}*/
+    /*.news4 {*/
+    /*background: url("../img/index/news-4.jpg") no-repeat center;*/
+    /*background-size: cover;*/
+    /*}*/
+    /*.news5 {*/
+    /*background: url("../img/index/news-5.jpg") no-repeat center;*/
+    /*background-size: cover;*/
+    /*}*/
+    /*.news6 {*/
+    /*background: url("../img/index/news-6.jpg") no-repeat center;*/
+    /*background-size: cover;*/
+    /*}*/
     /*footer*/
     .index-footer {
         display: flex;
         flex-direction: column;
         background-color: black;
-        height: 780px;
-        padding-top: 60px;
-        letter-spacing: 3px;
+        /*height: 780px;*/
+        /*padding-top: 60px;*/
+        /*letter-spacing: 3px;*/
         font-size: 1.7rem;
         color: #b5a699;
         line-height: 45px;
@@ -640,31 +648,43 @@
 
     .footer-nav {
         display: flex;
+        flex-wrap: wrap;
         background-color: black;
         justify-content: space-between;
-        height: 480px;
-        padding-left: 15%;
-        padding-right: 15%;
+        /*height: 480px;*/
+        padding-left: 5%;
+        padding-right: 5%;
         padding-top: 60px;
-        letter-spacing: 3px;
+
         font-size: 1.7rem;
         color: #b5a699;
         line-height: 45px;
     }
 
-    .footer-column {
+    .footer-nav > .footer-column {
+        flex-basis: 45%;
         display: flex;
         flex-direction: column;
+        font-size: 1.4rem;
     }
 
-    .footer-column span, .footer-copyright span {
+    .footer-nav > .footer-column span, .footer-nav > .footer-copyright span {
         color: #ff7e00;
+    }
+
+    .footer-nav >.lp_login{
+        margin-bottom: 50px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-basis: 100%;
     }
 
     .footer-nav-main {
         line-height: 60px;
-        font-size: 2.1rem;
+        font-size: 1.6rem;
         color: white;
+        letter-spacing: 3px;
         /*background: url("../img/triangle.png") no-repeat 100% center;*/
         /*background-size: 16px;*/
     }
@@ -677,13 +697,12 @@
 
     .footer-copyright {
         display: flex;
-        height: 90px;
+        flex-wrap: wrap;
         border-top: 1px solid #898989;
         background-color: #181818;
         justify-content: flex-start;
-        align-items: center;
-        padding-left: 15%;
-        letter-spacing: 1px;
+        align-items: flex-start;
+        padding-left: 5%;
         font-size: 1.4rem;
     }
 
@@ -1324,7 +1343,7 @@
     .about_team_lkf {
         display: flex;
         height: 550px;
-        background: url("../img/sinnovation-bg.png") no-repeat 0 0;
+        background: url("../img/index/sinnovation-bg.png") no-repeat 0 0;
         background-size: auto 100%;
     }
 
@@ -1755,7 +1774,7 @@
         background-size: cover;
     }
 
-    .ai-hd img{
+    .ai-hd img {
         height: 100px;
         margin-bottom: 50px;
     }
