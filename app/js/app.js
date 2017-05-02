@@ -109,7 +109,7 @@ $(document).ready(function () {
                 renderLine($(".team-member-list"), lineArray);
             }
         });
-    });
+    },"json");
 
 
 //    ABOUT US
@@ -153,10 +153,10 @@ $(document).ready(function () {
                                 renderLine(team_member_list, lineArray);
                             }
                         });
-                    });
+                    },"json");
                 }
             });
-        });
+        },"json");
     };
     renderTeam();
 
@@ -173,7 +173,7 @@ $(document).ready(function () {
             });
             $(".job-list").append(job);
         });
-    });
+    },"json");
 
 //    创业服务
 
