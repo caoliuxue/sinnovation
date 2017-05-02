@@ -54,8 +54,8 @@ $(document).ready(function () {
         console.log($(this));
         $(this).removeClass("gray");
         $(".gotoBtn").show();
-        $(".gotoBtn").css("top", $(this).prop("offsetTop") + $(this).prop("clientHeight") - 60);
-        $(".gotoBtn").css("left", $(this).prop("offsetLeft") + $(this).prop("clientWidth") - 60);
+        $(".gotoBtn").css("top", $(this).prop("offsetTop") + $(this).prop("clientHeight") - 45);
+        $(".gotoBtn").css("left", $(this).prop("offsetLeft") + $(this).prop("clientWidth") - 45);
     }).mouseleave(function () {
         $(this).addClass("gray");
         $(".gotoBtn").hide();

@@ -11,32 +11,37 @@
         }
     }
 
-    .scroll-bar{
+    .scroll-bar {
         border-radius: 30px;
         position: fixed;
         margin-right: 20px;
         right: 0;
-        top:30%;
-        background: url("../img/index/scrollbar.png") no-repeat center;
-        /*background-size: 40px 100%;*/
+        top: 30%;
+        background-color: rgba(122, 122, 122, 0.71);
         z-index: 99;
+        padding-top: 15px;
+        padding-bottom: 15px;
     }
 
-    .nav > li > a{
-        color: white;
-        font-size: 2rem;
-        font-weight: bolder;
-        background: transparent;!important;
+    .nav > li > a {
+        height: 30px;
+        background: url("../img/index/dot.png") no-repeat center;
+        background-size: 6px;
     }
 
-    .nav > li > a:hover{
-        background-color: transparent;!important;
-    }
-
-    .active{
+    .active {
         background: url("../img/index/mouse.png") no-repeat center;
+        background-size: 18px;
     }
 
+    .nav > li > a:hover, .nav > li > a:focus {
+        background: rgba(122, 122, 122, 0.71);
+    !important;
+    }
+
+    /*.active > a{*/
+    /*backgroundnone;   */
+    /*}*/
     header {
         display: flex !important;
         justify-content: space-between;
@@ -71,7 +76,6 @@
         height: 80px;
         line-height: 80px;
         overflow: hidden;
-
     }
 
     .header_nav > div:hover {
@@ -81,6 +85,7 @@
     .header_nav > div > a {
         display: block;
         width: 100%;
+        height: 80px;
         text-align: center;
         text-decoration: none;
         color: #4c4c4c;
@@ -89,37 +94,22 @@
         background: white;
     }
 
-    .header_nav > ul {
-        list-style: none;
+    .header_nav > div > .active_menu > span {
         display: inline-block;
-        float: left;
         height: 80px;
-        margin-bottom: 0;
-        margin-right: 9%;
-        /*margin-right: 50px;*/
+        padding-left: 5px;
+        padding-right: 5px;
+        border-bottom: 5px solid #ff7e00;
     }
 
-    .header_nav > ul > li {
-        font-weight: bolder;
-        align-content: center;
-        padding-left: 70px;
-        font-size: 1.5em;
-        /*vertical-align: center;*/
-        float: left;
-        line-height: 80px;
+    .header_nav > div > :nth-child(n+2) {
+        background-color: #ebebeb;
+        /*color: white;*/
     }
 
-    .header_nav ul a {
-        text-decoration: none;
-        color: #4c4c4c;
-    }
-
-    .drop {
-        display: none;
-    }
-
-    .drop-hover {
-
+    .header_nav > div > :nth-child(n+2):hover {
+        background-color: #ff7e00;
+        color: white;
     }
 
     .head-menu {
@@ -161,8 +151,8 @@
         width: 100%;
         /*background: #000;*/
         height: 60px;
-        margin-top: -50px;
-        background: url("../img/index/Rectangle-r.png") no-repeat 60% 0;
+        margin-top: -15px;
+        background: url("../img/index/Rectangle-r.png") no-repeat 58% 0;
         background-size: 60px 60px;
     }
 
@@ -178,9 +168,9 @@
         overflow: hidden;
     }
 
-    .swiper-slide-hover >img{
+    .swiper-slide-hover > img {
         margin-left: 15%;
-        margin-top: 30px;
+        margin-top: 80px;
         height: 45px;
     }
 
@@ -205,7 +195,7 @@
     }
 
     .index-content01-left > .t01-l2 {
-        margin-top: 10px;
+        margin-top: 20px;
         padding-right: 20px;
         font-size: 6em;
         letter-spacing: 5px;
@@ -223,10 +213,11 @@
     .index-content01-left > .t01-l3 {
         /*height: 6px;*/
         margin-top: 31px;
-        font-size: 1.6em;
+        font-size: 1.4em;
         letter-spacing: 1px;
         font-weight: 300;
-        white-space: pre-line;
+        line-height: 50px;
+        /*white-space: pre-line;*/
     }
 
     .access_more {
@@ -238,10 +229,24 @@
         line-height: 66px;
         padding-left: 20px;
         padding-right: 20px;
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         letter-spacing: 6px;
         font-weight: 500;
         text-align: center;
+    }
+
+    .access_more > a {
+        text-decoration: none;
+    !important;
+        color: rgba(60, 60, 60, 0.86);
+    !important;
+    }
+
+    .access_more > a:hover {
+        text-decoration: none;
+    !important;
+        color: #ff7e00;
+    !important;
     }
 
     .index-content01-right {
@@ -398,19 +403,22 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        flex-basis: 20%;
+        flex-basis: 25%;
         padding-left: 12%;
     }
 
     .index-content04-middle {
-        flex-basis: 55%;
-        padding-right: 5%;
-        text-align: right;
+        flex-basis: 50%;
+        display: flex;
+        flex-direction: column;
+        padding-right: 1%;
+        justify-content: center;
+        align-items: flex-end;
     }
 
     .index-content04-middle > .t04-l1 {
-        font-size: 6rem;
-        margin-top: 100px;
+        font-size: 5rem;
+        /*margin-top: 100px;*/
         letter-spacing: 5px;
     }
 
@@ -421,14 +429,16 @@
     }
 
     .index-content04-middle > .t04-l3 {
-        font-size: 1.8rem;
+        width: 70%;
+        font-size: 1.4rem;
+        text-align: right;
         line-height: 45px;
         font-weight: 100;
     }
 
     .index-content04-right {
         flex-basis: 25%;
-        background: url("../img/index/index-content04-logo.png") no-repeat left center;
+        background: url("../img/index/index-content04-logo.png") no-repeat center;
         background-size: auto 60%;
     }
 
@@ -469,7 +479,7 @@
         width: 40px;
         line-height: 40px;
         text-align: center;
-        background: url("../img/index/arrow-left-active.jpg") no-repeat left center;
+        background: url("../img/index/arrow-left-disable.jpg") no-repeat left center;
         background-size: auto 100%;
         cursor: pointer;
     }
@@ -538,7 +548,7 @@
 
         .t05-item > .item-slogan {
             width: 50%;
-            margin-top: 75px;
+            margin-top: 100px;
             letter-spacing: 3px;
             font-size: 1.6rem;
         }
@@ -784,7 +794,7 @@
     .footer-copyright {
         display: flex;
         height: 90px;
-        border-top: 1px solid rgba(41, 41, 41, 0.93);
+        border-top: 1px solid rgba(41, 41, 41, 0.5);
         background-color: #181818;
         justify-content: flex-start;
         align-items: center;
@@ -806,7 +816,7 @@
         align-items: center;
         height: 430px;
         padding-top: 80px;
-            font-weight: bold;
+        font-weight: bold;
     }
 
     .invest-header-a {
@@ -853,8 +863,8 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
-        -moz-box-shadow: 100px 100px 50px 20px #bfbfbf; /* 老的 Firefox */
-        box-shadow: 0 1px 5px 1px #bfbfbf;
+        -moz-box-shadow: 0 1px 5px 1px rgba(191, 191, 191, 0.31); /* 老的 Firefox */
+        box-shadow: 0 1px 5px 1px rgba(191, 191, 191, 0.31);
     }
 
     .invest-toggle span,
@@ -890,7 +900,7 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        background: url("../img/invest-biz/bg.png") no-repeat center;
+        background: url("../img/invest-biz/bg1.png") no-repeat center;
         background-size: cover;
         padding-left: 12%;
         padding-top: 100px;
@@ -912,43 +922,52 @@
 
     .invest-a-t02 {
         display: flex;
-        background-color: #252525;
-    }
-
-    .invest-a-t02 > div {
-        display: flex;
         flex-direction: column;
-        justify-content: flex-start;
-        flex-basis: 18.75%;
-        height: 600px;
+        background-color: #252525;
     }
 
     .invest-a-t02 > .intro {
         display: flex;
-        flex-basis: 25%;
+        width: 100%;
+        height: 300px;
+        /*flex-basis: 25%;*/
         flex-direction: column;
         justify-content: center;
-        align-items: flex-start;
+        align-items: center;
         padding-left: 3%;
         padding-right: 3%;
     }
 
-    .invest-a-t02 :nth-child(4) {
-        flex-basis: 25%;
+    .invest-a-t02 > .intro > :first-child {
+        font-weight: bolder;
+        border-bottom: 5px solid #ff7e00;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        font-size: 5rem;
+        letter-spacing: 15px;
+    }
+
+    .invest-a-t02 > .intro > :nth-child(n+2) {
+        line-height: 50px;
+        font-size: 1.6rem;
+        color: rgba(255, 255, 255, 0.8);
+    }
+
+    .invest-a-t02 > .invest-area {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 40px 5%;
     }
 
     .invest-item {
         display: flex;
-        height: 300px;
+        flex-basis: 33.3333%;
+        height: 220px;
         flex-direction: column;
-        justify-content: flex-start;
-        padding-left: 10%;
+        justify-content: center;
+        padding-left: 3%;
         padding-right: 10%;
-        padding-top: 100px;
         letter-spacing: 5px;
-        background-size: cover;
-        /*align-items: flex-start;*/
-        /*padding: 15% auto*/
     }
 
     .invest-item > :first-child {
@@ -968,36 +987,37 @@
 
     .item1 {
         background: url("../img/invest-biz/1.png") no-repeat center;
+        background-size: cover;
     }
 
     .item2 {
         background: url("../img/invest-biz/2.png") no-repeat center;
-
+        background-size: cover;
     }
 
     .item3 {
         background: url("../img/invest-biz/3.png") no-repeat center;
-
+        background-size: cover;
     }
 
     .item4 {
         background: url("../img/invest-biz/4.png") no-repeat center;
-
+        background-size: cover;
     }
 
     .item5 {
         background: url("../img/invest-biz/5.png") no-repeat center;
-
+        background-size: cover;
     }
 
     .item6 {
         background: url("../img/invest-biz/6.png") no-repeat center;
-
+        background-size: cover;
     }
 
     .item7 {
         background: url("../img/invest-biz/7.png") no-repeat center;
-
+        background-size: cover;
     }
 
     /*创新工场投资阶段*/
@@ -1066,8 +1086,8 @@
         justify-content: flex-start;
         align-items: center;
 
-        border-left: 1px solid #ff7e00;
-        border-top: 1px solid #ff7e00;
+        /*border-left: 1px solid #ff7e00;*/
+        /*border-top: 1px solid #ff7e00;*/
     }
 
     .app {
@@ -1078,9 +1098,33 @@
         align-items: center;
         /*background: url("../img/invest-biz/app1.png") no-repeat center center;*/
         /*background-size: auto 100px;*/
-        border-bottom: 1px solid #ff7e00;
-        border-right: 1px solid #ff7e00;
+        /*border-bottom: 1px solid #ff7e00;*/
+        /*border-right: 1px solid #ff7e00;*/
         /*border-left: 1px solid #ff7e00;*/
+    }
+
+    .apps-wrapper > :nth-child(1),
+    .apps-wrapper > :nth-child(2),
+    .apps-wrapper > :nth-child(3),
+    .apps-wrapper > :nth-child(4),
+    .apps-wrapper > :nth-child(5),
+    .apps-wrapper > :nth-child(6) {
+        border-top: 1px solid gray;
+    }
+
+    .apps-wrapper > :nth-child(6n+1) {
+        border-left: 1px solid gray;
+        border-bottom: 1px solid gray;
+        border-right: 1px solid gray;
+    }
+
+    .apps-wrapper > :nth-child(6n+2),
+    .apps-wrapper > :nth-child(6n+3),
+    .apps-wrapper > :nth-child(6n+4),
+    .apps-wrapper > :nth-child(6n+5),
+    .apps-wrapper > :nth-child(6n+6) {
+        border-bottom: 1px solid gray;
+        border-right: 1px solid gray;
     }
 
     .app > img {
@@ -1098,8 +1142,8 @@
         position: absolute;
         /*top: 2845px;*/
         /*left: 446px;*/
-        height: 60px;
-        width: 60px;
+        height: 45px;
+        width: 45px;
         background: url("../img/invest-biz/gopic.png") no-repeat center;
         background-size: contain;
     }
@@ -1303,7 +1347,7 @@
         border-bottom: 8px solid #ff7e00;
         padding-bottom: 20px;
         letter-spacing: 5px;
-            font-weight: bold;
+        font-weight: bold;
     }
 
     .about_t02 > .about_t02_03 > :last-child {
@@ -1325,7 +1369,7 @@
 
     .about_t03 {
         padding: 20% 5%;
-        height: 820px;
+        height: 600px;
         background: url("../img/about/data.png") no-repeat center;
         background-size: 80% auto;
         background-clip: padding-box;
@@ -1373,7 +1417,7 @@
     .temp1 > :last-child, .temp2 > .txt > :last-child {
         font-size: 1.6rem;
         font-weight: 500;
-        white-space: pre-line;
+        /*white-space: pre-line;*/
         letter-spacing: 2px;
         line-height: 40px;
     }
@@ -1465,9 +1509,9 @@
         font-weight: 300;
         line-height: 50px;
         letter-spacing: 5px;
-        white-space: pre-line;
         height: 200px;
         overflow: hidden;
+        padding-right: 5%;
     }
 
     .about_team_lkf > .index-content01-right {
@@ -1476,6 +1520,10 @@
         flex-direction: column;
         justify-content: flex-end;
         padding-bottom: 80px;
+    }
+
+    .about_team_lkf > .index-content01-right img {
+        width: 20px;
     }
 
     .about_team-toggle {
@@ -1488,8 +1536,8 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
-        -moz-box-shadow: 100px 100px 50px 20px #bfbfbf; /* 老的 Firefox */
-        box-shadow: 0 1px 5px 1px #bfbfbf;
+        -moz-box-shadow: 0 1px 5px 1px rgba(191, 191, 191, 0.31); /* 老的 Firefox */
+        box-shadow: 0 1px 5px 1px rgba(191, 191, 191, 0.31);
     }
 
     /*.team-toggle-container {*/
@@ -1509,26 +1557,30 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
-        -moz-box-shadow: 100px 100px 50px 20px #bfbfbf; /* 老的 Firefox */
-        box-shadow: 0 1px 5px 1px #bfbfbf;
+        -moz-box-shadow: 0 1px 5px 1px rgba(191, 191, 191, 0.31); /* 老的 Firefox */
+        box-shadow: 0 1px 5px 1px rgba(191, 191, 191, 0.31);
     }
 
     .about_job {
         display: flex;
-        height: 450px;
-        background: #ff7e00 url("../img/invest-biz/bg.png") no-repeat right center;
+        height: 400px;
+        background: #ff7e00 url("../img/about/bg-bottom.png") no-repeat right center;
         background-size: cover;
     }
 
     .about_job > .job-left {
-        flex-basis: 40%;
+        flex-basis: 30%;
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
+    .about_job > .job-left img {
+        height: 95px;
+    }
+
     .about_job > .job-right {
-        flex-basis: 60%;
+        flex-basis: 70%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -1537,17 +1589,21 @@
     }
 
     .job-right > :first-child {
-        letter-spacing: 8px;
+        font-size: 5rem;
+        letter-spacing: 5px;
     }
 
     .job-right > :nth-child(2) {
-        letter-spacing: 4px;
+        letter-spacing: 3px;
         line-height: 60px;
     }
 
     .job-right > :last-child {
-        color: white;
         border: 1px solid white;
+    }
+
+    .job-right > :last-child > a {
+        color: white;
     }
 
     /*工作机会*/
@@ -1585,8 +1641,8 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
-        -moz-box-shadow: 100px 100px 50px 20px #bfbfbf; /* 老的 Firefox */
-        box-shadow: 0 1px 5px 1px #bfbfbf;
+        -moz-box-shadow: 0 1px 5px 1px rgba(191, 191, 191, 0.31); /* 老的 Firefox */
+        box-shadow: 0 1px 5px 1px rgba(191, 191, 191, 0.31);
     }
 
     .company-tab-container {
@@ -1733,8 +1789,8 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
-        -moz-box-shadow: 100px 100px 50px 20px #bfbfbf; /* 老的 Firefox */
-        box-shadow: 0 1px 5px 1px #bfbfbf;
+        -moz-box-shadow: 0 1px 5px 1px rgba(191, 191, 191, 0.31); /* 老的 Firefox */
+        box-shadow: 0 1px 5px 1px rgba(191, 191, 191, 0.31);
     }
 
     .startup-service {
@@ -1749,7 +1805,27 @@
     }
 
     .startup-service > .left > .left_t01,
-    .startup-service > .left > .left_t03,
+    .startup-service > .left > .left_t03 {
+        display: flex;
+        height: 500px;
+        padding-top: 30px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding-left: 10%;
+
+    }
+
+    .startup-service > .left > .left_t01 {
+        background: url("../img/startup/bg3.png") no-repeat 0% 20%;
+        background-size: 130% 130%;
+    }
+
+    .startup-service > .left > .left_t03 {
+        background: url("../img/startup/bg2.png") no-repeat 0% 0%;
+        background-size: 130% 130%;
+    }
+
     .startup-service > .right > .right_t02 {
         display: flex;
         height: 500px;
@@ -1758,13 +1834,21 @@
         padding-top: 30px;
         flex-direction: column;
         justify-content: center;
-            align-items: flex-end;
+        align-items: flex-end;
         padding-right: 10%;
 
     }
 
-    .startup-service > .left > .left_t01 > :nth-child(2) {
+    .startup-service > .left > .left_t01 > :nth-child(2),
+    .startup-service > .left > .left_t03 > :nth-child(2),
+    .startup-service > .right > .right_t02 > :nth-child(2) {
         line-height: 100px;
+    }
+
+    .startup-service > .left > .left_t01 > :nth-child(3),
+    .startup-service > .left > .left_t03 > :nth-child(3),
+    .startup-service > .right > .right_t02 > :nth-child(3) {
+        line-height: 40px;
     }
 
     .startup-service .txt-intro {
@@ -1811,7 +1895,7 @@
         margin-right: 17%;
         padding-left: 10%;
         padding-right: 6%;
-        padding-top: 100px;
+        /*padding-top: 100px;*/
         /*overflow: scroll;*/
     }
 
@@ -1837,8 +1921,8 @@
 
     .startup-detail > .title {
         letter-spacing: 5px;
-        margin-top: 50px;
-        /*line-height: 110px;*/
+        /*margin-top: 50px;*/
+        line-height: 110px;
     }
 
     .startup-detail > .slogan {
@@ -1848,7 +1932,7 @@
         color: rgba(0, 0, 0, 0.75);
         font-size: 1.6rem;
         margin-bottom: 50px;
-        margin-top: 50px;
+        /*margin-top: 50px;*/
     }
 
     .startup-detail img {
@@ -1862,16 +1946,25 @@
         height: 450px;
         display: flex;
         flex-direction: column;
-        /*justify-content: center;*/
+        justify-content: center;
         align-items: center;
         background: url("../img/ai/hero.png") no-repeat center;
         background-size: cover;
-        padding-top: 50px;
+        padding-bottom: 50px;
     }
 
     .ai-hd img {
         height: 100px;
-        margin-bottom: 50px;
+        margin-bottom: 10px;
+    }
+
+    .ai-hd > :nth-child(2) {
+        font-size: 5rem;
+        letter-spacing: 8px;
+    }
+
+    .ai-hd > :nth-child(3) {
+        letter-spacing: 1px;
     }
 
     .ai-toggle {
@@ -1884,8 +1977,8 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
-        -moz-box-shadow: 100px 100px 50px 20px #bfbfbf; /* 老的 Firefox */
-        box-shadow: 0 1px 5px 1px #bfbfbf;
+        -moz-box-shadow: 0 1px 5px 1px rgba(191, 191, 191, 0.31); /* 老的 Firefox */
+        box-shadow: 0 1px 5px 1px rgba(191, 191, 191, 0.31);
     }
 
     .ai-content {
@@ -1920,19 +2013,17 @@
         white-space: pre-line;
         line-height: 30px;
         font-size: 1.6rem;
-            opacity: 0.5;
+        opacity: 0.5;
     }
 
     .ai-content > .left > .left_t02 .logo-bg {
         flex-basis: 30%;
         display: flex;
         justify-content: center;
-        /*align-items: center;*/
-
+        background: url("../img/ai/logo33.png") no-repeat center;
+        background-size: 100px;
         font-size: 6rem;
         font-weight: bolder;
-        background: url("../img/ai/ai-logo-green.png") no-repeat center;
-        background-size: 100px;
         /*filter:alpha(opacity=50);*/
         /*-moz-opacity:0.5;*/
         /*-khtml-opacity: 0.5;*/
@@ -1943,11 +2034,12 @@
         display: flex;
         height: 250px;
         background: url("../img/ai/subbg1.png");
-        background-size: contain;
+        background-size: cover;
     }
 
     .ai-content > .left > .left_t02 > .left_t02_01 > .logo-bg {
         padding-top: 70px;
+
     }
 
     .ai-content > .left > .left_t02 > .left_t02_01 > :last-child {
@@ -1955,12 +2047,13 @@
         font-size: 4rem;
         font-weight: bolder;
         color: white;
-        margin-left: -13%;
+        margin-left: -12%;
         white-space: pre-line;
         z-index: 999;
     }
 
     .ai-content > .left > .left_t02 > .left_t02_02 > .logo-bg {
+
         padding-top: 80px;
     }
 
@@ -1969,7 +2062,7 @@
         font-size: 4rem;
         font-weight: bolder;
         color: white;
-        margin-left: -13%;
+        margin-left: -12%;
         white-space: pre-line;
         z-index: 999;
     }
@@ -1983,7 +2076,7 @@
         font-size: 4rem;
         font-weight: bolder;
         color: white;
-        margin-left: -13%;
+        margin-left: -12%;
         white-space: pre-line;
         z-index: 999;
     }
@@ -1992,14 +2085,14 @@
         display: flex;
         height: 280px;
         background: url("../img/ai/subbg2.png");
-        background-size: contain;
+        background-size: cover;
     }
 
     .ai-content > .left > .left_t02 > .left_t02_03 {
         display: flex;
         height: 350px;
         background: url("../img/ai/subbg3.png");
-        background-size: contain;
+        background-size: cover;
     }
 
     .ai-content > .left > .left_t03 {
@@ -2072,28 +2165,39 @@
         background-size: cover;
     }
 
+    .contact-hd > :first-child {
+        letter-spacing: 5px;
+    }
+
+    .contact-hd > :last-child {
+        height: 35px;
+        margin-top: 20px;
+    }
+
     .office {
         display: flex;
         margin-bottom: 20px;
     }
 
     .office > :first-child {
-        flex-basis: 30%;
-        height: 400px;
+        flex-basis: 25%;
+        height: 300px;
+        font-size: 2rem;
         z-index: 98;
     }
 
     .office > :nth-child(2) {
         flex-basis: 100%;
-        margin-left: -30%;
-        height: 400px;
+        margin-left: -20%;
+        height: 300px;
     }
 
     .office > .address {
         flex-basis: 40%;
         margin-left: -40%;
         padding-left: 5%;
-        height: 400px;
+        padding-right: 3%;
+        height: 300px;
         background-color: rgba(255, 255, 255, 0.9);
         z-index: 99;
         display: flex;
@@ -2104,9 +2208,9 @@
 
     .office > .address > :last-child {
         margin-top: 30px;
-        font-size: 1.6rem;
+        font-size: 1.4rem;
         line-height: 45px;
-        white-space: pre-line;
+        /*white-space: pre-line;*/
 
     }
 
