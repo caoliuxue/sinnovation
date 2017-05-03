@@ -144,6 +144,8 @@
     }
 
     .slide-title {
+        width: 85%;
+        height: 120px;
         margin-top: -20px;
         font-family: "Source Sans Pro";
         font-size: 3em;
@@ -151,8 +153,14 @@
         font-weight: bolder;
         padding-left: 15%;
         letter-spacing: 5px;
-        width: 85%;
     }
+
+    .swiper-slide-hover > img {
+        margin-left: 15%;
+        /*margin-top: 80px;*/
+        height: 45px;
+    }
+
 
     /*有李开复头像层*/
     .index-content01 {
@@ -453,7 +461,7 @@
         width: 40px;
         line-height: 40px;
         text-align: center;
-        background: url("../img/index/arrow-left-active.jpg") no-repeat left center;
+        background: url("../img/index/arrow-left-disable.jpg") no-repeat left center;
         background-size: auto 100%;
         cursor: pointer;
     }
@@ -470,6 +478,7 @@
     }
 
     .index-content05 > .t05-bottom {
+        overflow: hidden;
         height: 400px;
         display: flex;
         margin-top: 0 !important;
@@ -477,7 +486,7 @@
 
     .t05-item {
         background: url("../img/index/molbase.png") no-repeat 70% center;
-        background-size: 80% auto;
+        background-size: auto 80%;
         width: 100% !important;
         height: 400px;
         padding-left: 5%;

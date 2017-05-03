@@ -3,6 +3,37 @@
  */
 $(document).ready(function () {
 
+    function get_device_type() {
+        var info = navigator.userAgent;
+        var ios = new Array("iPhone", "iPod");
+        var android = new Array("Android");
+        var winphone = new Array("Windows Phone");
+
+        ios.forEach(function (item) {
+            // console.log(info,item);
+            if (info.indexOf(item) > 0) {
+                return "ios";
+            }
+        });
+        // }
+
+        for (var i = 0; i < android.length; i++) {
+            if (info.indexOf(android[i]) > 0) {
+                return "android";
+            }
+        }
+
+        for (var i = 0; i < winphone.length; i++) {
+            if (info.indexOf(winphone[i]) > 0) {
+                return "winphone";
+            }
+        }
+
+        return "others";
+    }
+
+    console.log(get_device_type());
+
     $(".header_logo").click(function () {
         window.location.href = "index.html";
     });
@@ -21,9 +52,9 @@ $(document).ready(function () {
         paginationBulletRender: function (swiper, index, className) {
             return '<span class="pagination-bullet"></span>';
         },
-        onSlideChangeStart: function(){
+        onSlideChangeStart: function () {
             $('.pagination-bullet').eq(this.realIndex).addClass('pagination-bullet-active');
-        },
+        }
 
     });
 
@@ -33,17 +64,32 @@ $(document).ready(function () {
         // pagination: '.swiper-pagination',
         // direction: 'horizontal',
         slidesPerView: 3,
+        slidesPerGroup: 1,
         speed: 5000,
-        spcaeBetween:30,
+        // spcaeBetween:30,
         autoplay: true,
         loop:true,
-        paginationClickable: true,
-        prevButton: '.page-prev',
-        nextButton: '.page-next',
-        paginationHide:true
+        // paginationClickable: true,
+        // paginationHide:true
+    });
+
+    $(".page-prev").click(function () {
+        sinnovationSwiper.stopAutoplay();
+        sinnovationSwiper.slidePrev();
+
     });
 
 
+    $(".page-next").click(function () {
+        sinnovationSwiper.stopAutoplay();
+        sinnovationSwiper.slideNext();
+    });
+
+    window.onresize(function (a,b,c) {
+        console.log(a,b,c);
+        bannerSwiper.onResize();
+        sinnovationSwiper.onResize();
+    });
 //>>>>>>>>>>>>>>INVEST BIZ
     $(".invest-b").hide();
     $(".invest-toggle span").click(function () {
@@ -118,7 +164,7 @@ $(document).ready(function () {
                 renderLine($(".team-member-list"), lineArray);
             }
         });
-    },"json");
+    }, "json");
 
 
 //    ABOUT US
@@ -162,10 +208,10 @@ $(document).ready(function () {
                                 renderLine(team_member_list, lineArray);
                             }
                         });
-                    },"json");
+                    }, "json");
                 }
             });
-        },"json");
+        }, "json");
     };
     renderTeam();
 
@@ -182,7 +228,7 @@ $(document).ready(function () {
             });
             $(".job-list").append(job);
         });
-    },"json");
+    }, "json");
 
 //    创业服务
 

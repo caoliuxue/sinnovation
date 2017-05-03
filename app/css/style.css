@@ -13,6 +13,7 @@ body {
     font: normal 100% Microsoft Yahei,Source Sans Pro, Helvetica, Arial, sans-serif !important;
     margin: 0;
     position: relative;
+    overflow-x: hidden;
 }
 
 h1 {
