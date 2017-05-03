@@ -108,3 +108,26 @@ a {
     background: transparent;
     margin-top: -50px;
 }
+
+/*覆盖swiper默认翻页符*/
+.pagination-bullet{
+    width: 25px;
+    border-radius: 0;
+    border: 1px solid #ff7e00;
+    height: 8px;
+    display: inline-block;
+    background: transparent;
+    margin: 0 8px;
+    cursor: pointer;
+}
+
+.pagination-bullet-active{
+    background-color: #ff7e00;
+    width: 50px;
+}
+
+.swiper-pagination{
+    text-align: left;!important;
+    padding-left: 15%;
+}
+

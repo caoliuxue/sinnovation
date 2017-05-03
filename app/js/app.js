@@ -17,8 +17,17 @@ $(document).ready(function () {
         speed: 2000,
         autoplay: true,
         paginationHide: false,
-        pagination: '.swiper-pagination'
+        pagination: '.swiper-pagination',
+        paginationBulletRender: function (swiper, index, className) {
+            return '<span class="pagination-bullet"></span>';
+        },
+        onSlideChangeStart: function(){
+            $('.pagination-bullet').eq(this.realIndex).addClass('pagination-bullet-active');
+        },
+
     });
+
+    // swiper-pagination-bullet-active
 
     var sinnovationSwiper = new Swiper('.t05-bottom', {
         // pagination: '.swiper-pagination',
