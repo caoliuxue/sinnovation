@@ -34,6 +34,10 @@ $(document).ready(function () {
 
     console.log(get_device_type());
 
+    $(".head-menu img").click(function () {
+        $("#header_nav").modal();
+    });
+
     $(".header_logo").click(function () {
         window.location.href = "index.html";
     });
@@ -68,7 +72,7 @@ $(document).ready(function () {
         speed: 5000,
         // spcaeBetween:30,
         autoplay: true,
-        loop:true,
+        loop: true,
         // paginationClickable: true,
         // paginationHide:true
     });
@@ -85,12 +89,8 @@ $(document).ready(function () {
         sinnovationSwiper.slideNext();
     });
 
-    window.onresize(function (a,b,c) {
-        console.log(a,b,c);
-        bannerSwiper.onResize();
-        sinnovationSwiper.onResize();
-    });
-//>>>>>>>>>>>>>>INVEST BIZ
+    //INVEST BIZ
+
     $(".invest-b").hide();
     $(".invest-toggle span").click(function () {
         console.log(this);
