@@ -71,11 +71,11 @@ a {
 }
 
 .font-size-6rem {
-    font-size: 6rem;
+    font-size: 4.8rem;
 }
 
 .font-size-3rem {
-    font-size: 3rem;
+    font-size: 2.4rem;
 }
 
 .font-size-4rem {
@@ -120,7 +120,7 @@ a {
     width: 25px;
     border-radius: 0;
     border: 1px solid #ff7e00;
-    height: 8px;
+    height: 5px;
     display: inline-block;
     background: transparent;
     margin: 0 8px;
