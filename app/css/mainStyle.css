@@ -10,11 +10,17 @@
             overflow-y: hidden;
         }
     }
+    @media screen and (max-width: 1280px) {
+        html
+        {
+            zoom:0.6;
+        }
+    }
 
     .scroll-bar {
         border-radius: 30px;
         position: fixed;
-        margin-right: 20px;
+        margin-right: 50px;
         right: 0;
         top: 30%;
         background-color: rgba(122, 122, 122, 0.71);
@@ -31,7 +37,9 @@
 
     .nav > li > a:hover, .nav > li > a:focus {
     text-decoration: none;
-    background-color: #000 !important;
+    background-color: rgba(122, 122, 122, 0.3) !important;
+    background-size: 6px !important;
+    background: url("../img/index/dotactive.png") no-repeat center;
 }
     .active {
         background: url("../img/index/mouse.png") no-repeat center;
@@ -39,8 +47,7 @@
     }
 
     .nav > li > a:hover, .nav > li > a:focus {
-        /*background: rgba(122, 122, 122, 0.71);*/
-    !important;
+        /*background: rgba(122, 122, 122, 0.71);!important;*/
     }
 
     /*.active > a{*/
@@ -191,6 +198,7 @@
     .index-content01-left {
         flex-basis: 60%;
         padding-left: 12%;
+        padding-top: 3%;
     }
 
     .index-content01-left > .t01-l1 {
@@ -272,6 +280,22 @@
         color: #ff7e00;
     }
 
+    .sendbp1 {
+        width: 150px;
+        height: 50px;
+        margin-top: -20px;
+        border: 1px solid grey;
+        border-radius: 50px;
+        line-height: 50px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 1.4rem;
+        letter-spacing: 6px;
+        font-weight: 500;
+        text-align: center;
+        color: #ff7e00;
+    }
+
     .access_more > a {
         text-decoration: none;
     !important;
@@ -317,22 +341,24 @@
     .t02-l1 {
         border: 1px solid #ff7e00;
         width: 33%;
-        padding-top: 25px;
-        padding-bottom: 25px;
+        padding-top: 35px;
+        padding-bottom: 35px;
         margin-top: 155px;
         margin-left: 25px;
         display: flex;
         flex-direction: column;
         height: 235px;
+            min-width: 250px;
     }
 
     .t02-l1 > :first-child {
         color: white;
         width: 100%;
-        text-align: center;
+        text-align: left;
         font-size: 1.8rem;
         font-weight: 400;
         letter-spacing: 5px;
+            padding-left: 12%;
     }
 
     .t02-l1 > :nth-child(2) {
@@ -430,7 +456,7 @@
     .index-content04 {
         display: flex;
         flex-direction: row;
-        height: 450px;
+        height: 550px;
         background: url("../img/index/index-content04-bg.png") no-repeat 100% 100%;
         background-size: auto 100%;
 
@@ -852,8 +878,8 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        height: 430px;
-        padding-top: 80px;
+        height: 550px;
+        padding-top: 140px;
         font-weight: bold;
     }
 
@@ -940,8 +966,8 @@
     }
 
     .invest-a-t01 {
-        height: 500px;
-        max-height: 500px;
+        height: 550px;
+        max-height: 550px;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -981,12 +1007,16 @@
         align-items: center;
         padding-left: 3%;
         padding-right: 3%;
+        padding-top: 3%;
     }
 
     .ai-a-t02 {
         display: flex;
         flex-direction: column;
         background-color: #252525;
+        height: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
     }
 
     .ai-a-t02 > .intro {
@@ -1018,21 +1048,23 @@
     }
 
     .ai-a-t02 > .intro > :first-child {
-        line-height: 50px;
-        font-size: 1.6rem;
-        letter-spacing: 5px;
-        color: rgba(255, 255, 255, 0.8);
-    }
-
-    .ai-a-t02 > .intro > :nth-child(n+2) {
         
+    padding-left: 10px;
         font-weight: bolder;
-        /*border-bottom: 5px solid #ff7e00;*/
-        /*padding-bottom: 20px;*/
+        border-bottom: 5px solid #ff7e00;
+        padding-bottom: 20px;
         margin-bottom: 20px;
         font-size: 30px;
         letter-spacing: 15px;
         color: #fff;
+    }
+
+    .ai-a-t02 > .intro > :nth-child(n+2) {
+        
+        line-height: 50px;
+        font-size: 1.6rem;
+        letter-spacing: 5px;
+        color: rgba(255, 255, 255, 0.8);
     }
 
     .invest-a-t02 > .invest-area {
@@ -1273,6 +1305,7 @@
         font-weight: bolder;
         line-height: 80px;
         height: 200px;
+        padding-top: 3%;
     }
 
     .crazy-team > .team-member-list {
@@ -1379,7 +1412,7 @@
     /*about us*/
     .about_t01 {
         margin-top: 80px;
-        height: 450px;
+        height: 550px;
         display: flex;
         background: url("../img/about/c1bg.png") no-repeat center;
         background-size: cover;
@@ -1422,18 +1455,19 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        height: 550px;
     }
 
     .about_t02 > .about_t02_01 {
         flex-basis: 18.75%;
-        height: 200px;
+        height: 275px;
         background: url("../img/about/a.png") no-repeat center;
         background-size: cover;
     }
 
     .about_t02 > .about_t02_02 {
         flex-basis: 36.8%;
-        height: 400px;
+        height: 550px;
         background: url("../img/about/b.png") no-repeat center;
         background-size: cover
     }
@@ -1446,7 +1480,7 @@
         justify-content: center;
         align-items: flex-end;
         flex-basis: 44.45%;
-        height: 400px;
+        height: 550px;
         background: #252525;
         /*padding-top: 5%;*/
     }
@@ -1471,8 +1505,8 @@
 
     .about_t02 > .about_t02_04 {
         flex-basis: 18.75%;
-        height: 200px;
-        margin-top: -200px;
+        height: 275px;
+        margin-top: -275px;
         background: url("../img/about/f.png") no-repeat center;
         background-size: cover
     }
@@ -1564,7 +1598,7 @@
         justify-content: center;
         align-items: center;
         margin-top: 80px;
-        height: 400px;
+        height: 550px;
         color: white;
         background: url("../img/about/hero.png") no-repeat center;
         background-size: cover;
@@ -1719,7 +1753,7 @@
     /*工作机会*/
     .job-hd {
         margin-top: 80px;
-        height: 450px;
+        height: 550px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -1877,7 +1911,7 @@
     /*创业服务*/
     .startup-hd {
         margin-top: 80px;
-        height: 450px;
+        height: 550px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -2057,7 +2091,7 @@
     /*人工智能工程院*/
     .ai-hd {
         margin-top: 80px;
-        height: 450px;
+        height: 550px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -2275,7 +2309,7 @@
     .ai-content2 > .row1, .row2 , .row3, .row4 {
         flex-basis: 100%;
         display: flex;
-        /*height: 400px;*/
+        height: 550px;
         overflow: hidden;
     }
 
@@ -2293,7 +2327,7 @@
     }
 
     .ai-content2 > .row1 > .right_t01 {
-        height: 500px;
+        height: 550px;
         background: url("../img/ai/img1.jpg") no-repeat center;
         background-size: cover;
         flex-basis: 50%;
@@ -2313,7 +2347,7 @@
     }
 
     .ai-content2 > .row3 > .right_t01 {
-        height: 500px;
+        height: 550px;
         background: url("../img/ai/img1.jpg") no-repeat center;
         background-size: cover;
         flex-basis: 50%;
@@ -2333,7 +2367,7 @@
     }
 
     .ai-content2 > .row4 > .right_t01 {
-        height: 500px;
+        height: 550px;
         background: url("../img/ai/img1.jpg") no-repeat center;
         background-size: cover;
         flex-basis: 50%;
@@ -2492,7 +2526,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 500px;
+        height: 550px;
         margin-top: 80px;
         background: url("../img/contact/hero.png") no-repeat center;
         background-size: cover;
@@ -2514,7 +2548,7 @@
 
     .office > :first-child {
         flex-basis: 25%;
-        height: 300px;
+        height: 400px;
         font-size: 2rem;
         z-index: 98;
     }
@@ -2522,7 +2556,7 @@
     .office > :nth-child(2) {
         flex-basis: 100%;
         margin-left: -20%;
-        height: 300px;
+        height: 400px;
     }
 
     .office > .address {
@@ -2530,7 +2564,7 @@
         margin-left: -40%;
         padding-left: 5%;
         padding-right: 3%;
-        height: 300px;
+        height: 400px;
         background-color: rgba(255, 255, 255, 0.9);
         z-index: 99;
         display: flex;
@@ -2574,7 +2608,7 @@
     .contacts-container > .corporate > :last-child,
     .contacts-container > .blueprint > :last-child {
         color: #a9a9a9;
-        font-size: 24px;
+        font-size: 20px;
     }
 
     .contacts-container > .social > :last-child {
