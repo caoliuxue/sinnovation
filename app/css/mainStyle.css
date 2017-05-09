@@ -37,13 +37,18 @@
 
     .nav > li > a:hover, .nav > li > a:focus {
     text-decoration: none;
-    background-color: rgba(122, 122, 122, 0.3) !important;
+    background-color: rgba(122, 122, 122, 0) !important;
     background-size: 6px !important;
     background: url("../img/index/dotactive.png") no-repeat center;
 }
     .active {
         background: url("../img/index/mouse.png") no-repeat center;
         background-size: 18px;
+    }
+
+    .nav > li.active > a
+    {
+        background-size: 0px !important;
     }
 
     .nav > li > a:hover, .nav > li > a:focus {
@@ -567,8 +572,8 @@
         }
 
         .t05-item {
-            background: url("../img/index/molbase.png") no-repeat 70% 100%;
-            background-size: auto 90%;
+            /*background: url("../img/index/molbase.png") no-repeat 70% 100%;*/
+            background-size: auto 90% !important;
             width: 33.333% !important;
             height: 450px;
             padding-left: 60px;
@@ -586,8 +591,8 @@
         }
 
         .t05-item > .item-logo {
-            background: url("../img/index/logo_en_new.png") no-repeat;
-            background-size: auto 100%;
+            /*background: url("../img/index/logo_en_new.png") no-repeat;*/
+            background-size: auto 100% !important;
             height: 60px;
         }
 
@@ -602,8 +607,8 @@
         }
 
         .t05-item {
-            background: url("../img/index/molbase.png") no-repeat 70% 100%;
-            background-size: contain;
+            /*background: url("../img/index/molbase.png") no-repeat 70% 100%;*/
+            background-size: contain !important;
             width: 33.333% !important;
             height: 350px;
             padding-left: 2%;
@@ -621,8 +626,8 @@
         }
 
         .t05-item > .item-logo {
-            background: url("../img/index/logo_en_new.png") no-repeat;
-            background-size: auto 100%;
+            /*background: url("../img/index/logo_en_new.png") no-repeat;*/
+            background-size: auto 100% !important;
             height: 50px;
         }
 
@@ -630,14 +635,14 @@
     @media screen and (max-width: 1279px) {
 
         .index-content05 > .t05-bottom {
-            height: 350px;
+            height: 450px;
             display: flex;
             margin-top: 0 !important;
         }
 
         .t05-item {
-            background: url("../img/index/molbase.png") no-repeat 70% 100%;
-            background-size: 82% auto;
+            
+            background-size: 82% auto!important;
             width: 33.333% !important;
             height: 350px;
             padding-left: 10px;
@@ -645,7 +650,7 @@
 
         .t05-item > .item-slogan {
             width: 50%;
-            margin-top: 115px;
+            margin-top: 200px;
             letter-spacing: 3px;
             font-size: 1.6rem;
         }
@@ -655,8 +660,8 @@
         }
 
         .t05-item > .item-logo {
-            background: url("../img/index/logo_en_new.png") no-repeat;
-            background-size: auto 100%;
+            
+            background-size: auto 100% !important;
             height: 30px;
         }
 
@@ -1023,7 +1028,7 @@
         display: flex;
         width: 100%;
         height: 150px;
-    padding-top: 50px;
+    padding-top: 80px;
         /*flex-basis: 25%;*/
         flex-direction: column;
         justify-content: center;
@@ -1284,8 +1289,8 @@
         position: absolute;
         /*top: 2845px;*/
         /*left: 446px;*/
-        height: 45px;
-        width: 45px;
+        height: 47px;
+        width: 47px;
         background: url("../img/invest-biz/gopic.png") no-repeat center;
         background-size: contain;
     }
@@ -1499,8 +1504,8 @@
         color: grey;
         white-space: pre-line;
         text-align: right;
-        line-height: 20px;
-        letter-spacing: 2px;
+        line-height: 25px;
+        letter-spacing: 1px;
     }
 
     .about_t02 > .about_t02_04 {
@@ -2340,10 +2345,15 @@
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
-        /*background: url("../img/ai/bg1.png") no-repeat left;*/
+        background: url("../img/ai/bg3.png") no-repeat left;
         background-size: auto 110%;
         margin-top: 10px;
         flex-basis: 50%;
+    }
+
+    .ai-content2 > .row3 > .left_t01 > :nth-child(3){
+        margin-top: 20px;
+        font-size: 0.7rem;
     }
 
     .ai-content2 > .row3 > .right_t01 {
@@ -2353,6 +2363,11 @@
         flex-basis: 50%;
     }
 
+    .ai-content2 > .row4 > .left_t01 > :nth-child(3){
+        margin-top: 20px;
+        font-size: 0.7rem;
+    }
+
     .ai-content2 > .row4 > .left_t01 {
         /*height: 500px;*/
         padding-right: 10%;
@@ -2360,7 +2375,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: flex-end;
-        /*background: url("../img/ai/bg1.png") no-repeat left;*/
+        background: url("../img/ai/bg1.png") no-repeat left;
         background-size: auto 110%;
         margin-top: 10px;
         flex-basis: 50%;
