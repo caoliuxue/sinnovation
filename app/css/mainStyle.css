@@ -10,11 +10,17 @@
             overflow-y: hidden;
         }
     }
+    @media screen and (max-width: 1280px) {
+        html
+        {
+            zoom:0.6;
+        }
+    }
 
     .scroll-bar {
         border-radius: 30px;
         position: fixed;
-        margin-right: 20px;
+        margin-right: 50px;
         right: 0;
         top: 30%;
         background-color: rgba(122, 122, 122, 0.71);
@@ -29,14 +35,24 @@
         background-size: 6px;
     }
 
+    .nav > li > a:hover, .nav > li > a:focus {
+    text-decoration: none;
+    background-color: rgba(122, 122, 122, 0) !important;
+    background-size: 6px !important;
+    background: url("../img/index/dotactive.png") no-repeat center;
+}
     .active {
         background: url("../img/index/mouse.png") no-repeat center;
         background-size: 18px;
     }
 
+    .nav > li.active > a
+    {
+        background-size: 0px !important;
+    }
+
     .nav > li > a:hover, .nav > li > a:focus {
-        background: rgba(122, 122, 122, 0.71);
-    !important;
+        /*background: rgba(122, 122, 122, 0.71);!important;*/
     }
 
     /*.active > a{*/
@@ -120,6 +136,7 @@
         width: 100%;
         height: 560px;
         margin-top: 80px;
+        max-height: 560px;
     }
 
     .slide1 {
@@ -178,6 +195,7 @@
     .index-content01 {
         display: flex;
         height: 550px;
+        max-height: 550px;
         background: url("../img/index/sinnovation-bg.png") no-repeat 0 0;
         background-size: auto 100%;
     }
@@ -185,10 +203,11 @@
     .index-content01-left {
         flex-basis: 60%;
         padding-left: 12%;
+        padding-top: 3%;
     }
 
     .index-content01-left > .t01-l1 {
-        font-size: 3rem;
+        font-size: 36px;
         padding-top: 75px;
         letter-spacing: 5px;
         font-weight: 500;
@@ -197,7 +216,7 @@
     .index-content01-left > .t01-l2 {
         margin-top: 20px;
         padding-right: 20px;
-        font-size: 6em;
+        font-size: 48px;
         letter-spacing: 5px;
         font-weight: bolder;
         color: black;
@@ -216,11 +235,26 @@
         font-size: 1.4em;
         letter-spacing: 1px;
         font-weight: 300;
-        line-height: 50px;
+        line-height: 35px;
         /*white-space: pre-line;*/
     }
 
     .access_more {
+        width: 230px;
+        height: 56px;
+        margin-top: 30px;
+        border: 1px solid black;
+        border-radius: 50px;
+        line-height: 56px;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 1.4rem;
+        letter-spacing: 6px;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    .lplogin {
         width: 250px;
         height: 66px;
         margin-top: 50px;
@@ -233,6 +267,38 @@
         letter-spacing: 6px;
         font-weight: 500;
         text-align: center;
+    }
+
+    .sendbp {
+        width: 130px;
+        height: 35px;
+        margin-top: 10px;
+        border: 1px solid black;
+        border-radius: 50px;
+        line-height: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 1.4rem;
+        letter-spacing: 6px;
+        font-weight: 500;
+        text-align: center;
+        color: #ff7e00;
+    }
+
+    .sendbp1 {
+        width: 150px;
+        height: 50px;
+        margin-top: -20px;
+        border: 1px solid grey;
+        border-radius: 50px;
+        line-height: 50px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 1.4rem;
+        letter-spacing: 6px;
+        font-weight: 500;
+        text-align: center;
+        color: #ff7e00;
     }
 
     .access_more > a {
@@ -251,8 +317,8 @@
 
     .index-content01-right {
         flex-basis: 40%;
-        background: url("../img/index/lkf.png") no-repeat 40% 20px;
-        background-size: auto 97%;
+        background: url("../img/index/lkf.png") no-repeat 40% 60px;
+        background-size: auto 90%;
     }
 
     /*投资成绩*/
@@ -280,22 +346,24 @@
     .t02-l1 {
         border: 1px solid #ff7e00;
         width: 33%;
-        padding-top: 25px;
-        padding-bottom: 25px;
+        padding-top: 35px;
+        padding-bottom: 35px;
         margin-top: 155px;
         margin-left: 25px;
         display: flex;
         flex-direction: column;
         height: 235px;
+            min-width: 250px;
     }
 
     .t02-l1 > :first-child {
         color: white;
         width: 100%;
-        text-align: center;
+        text-align: left;
         font-size: 1.8rem;
         font-weight: 400;
         letter-spacing: 5px;
+            padding-left: 12%;
     }
 
     .t02-l1 > :nth-child(2) {
@@ -318,7 +386,7 @@
     }
 
     .index-content02-right > .t02-r1 {
-        font-size: 6rem;
+        font-size: 48px;
         margin-top: 80px;
         letter-spacing: 10px;
         border-bottom: 5px solid #ff7e00;
@@ -335,7 +403,7 @@
         margin-top: 30px;
         font-size: 1.8rem;
         font-weight: 300;
-        line-height: 40px;
+        line-height: 35px;
         max-width: 60%;
     }
 
@@ -357,14 +425,14 @@
     }
 
     .index-content03-left > .t03-l1 {
-        font-size: 3rem;
+        font-size: 36px;
         letter-spacing: 5px;
     }
 
     .index-content03-left > .t03-l2 {
         line-height: 110px;
         letter-spacing: 5px;
-        font-size: 6rem;
+        font-size: 48px;
     }
 
     .index-content03-left > .t03-l3 {
@@ -393,7 +461,7 @@
     .index-content04 {
         display: flex;
         flex-direction: row;
-        height: 450px;
+        height: 550px;
         background: url("../img/index/index-content04-bg.png") no-repeat 100% 100%;
         background-size: auto 100%;
 
@@ -417,13 +485,13 @@
     }
 
     .index-content04-middle > .t04-l1 {
-        font-size: 5rem;
+        font-size: 48px;
         /*margin-top: 100px;*/
         letter-spacing: 5px;
     }
 
     .index-content04-middle > .t04-l2 {
-        font-size: 3rem;
+        font-size: 36px;
         line-height: 80px;
         letter-spacing: 5px;
     }
@@ -504,8 +572,8 @@
         }
 
         .t05-item {
-            background: url("../img/index/molbase.png") no-repeat 70% 100%;
-            background-size: auto 90%;
+            /*background: url("../img/index/molbase.png") no-repeat 70% 100%;*/
+            background-size: auto 90% !important;
             width: 33.333% !important;
             height: 450px;
             padding-left: 60px;
@@ -523,8 +591,8 @@
         }
 
         .t05-item > .item-logo {
-            background: url("../img/index/logo_en_new.png") no-repeat;
-            background-size: auto 100%;
+            /*background: url("../img/index/logo_en_new.png") no-repeat;*/
+            background-size: auto 100% !important;
             height: 60px;
         }
 
@@ -539,8 +607,8 @@
         }
 
         .t05-item {
-            background: url("../img/index/molbase.png") no-repeat 70% 100%;
-            background-size: contain;
+            /*background: url("../img/index/molbase.png") no-repeat 70% 100%;*/
+            background-size: contain !important;
             width: 33.333% !important;
             height: 350px;
             padding-left: 2%;
@@ -558,8 +626,8 @@
         }
 
         .t05-item > .item-logo {
-            background: url("../img/index/logo_en_new.png") no-repeat;
-            background-size: auto 100%;
+            /*background: url("../img/index/logo_en_new.png") no-repeat;*/
+            background-size: auto 100% !important;
             height: 50px;
         }
 
@@ -567,14 +635,14 @@
     @media screen and (max-width: 1279px) {
 
         .index-content05 > .t05-bottom {
-            height: 350px;
+            height: 450px;
             display: flex;
             margin-top: 0 !important;
         }
 
         .t05-item {
-            background: url("../img/index/molbase.png") no-repeat 70% 100%;
-            background-size: 82% auto;
+            
+            background-size: 82% auto!important;
             width: 33.333% !important;
             height: 350px;
             padding-left: 10px;
@@ -582,7 +650,7 @@
 
         .t05-item > .item-slogan {
             width: 50%;
-            margin-top: 115px;
+            margin-top: 200px;
             letter-spacing: 3px;
             font-size: 1.6rem;
         }
@@ -592,8 +660,8 @@
         }
 
         .t05-item > .item-logo {
-            background: url("../img/index/logo_en_new.png") no-repeat;
-            background-size: auto 100%;
+            
+            background-size: auto 100% !important;
             height: 30px;
         }
 
@@ -747,7 +815,7 @@
         /*height: 480px;*/
         padding-left: 5%;
         padding-right: 5%;
-        padding-top: 60px;
+        padding-top: 0px;
         letter-spacing: 3px;
         font-size: 1.4rem;
         color: #b5a699;
@@ -801,6 +869,7 @@
         padding-left: 5%;
         letter-spacing: 1px;
         font-size: 1.4rem;
+        font-weight: lighter;
     }
 
     /*
@@ -814,8 +883,8 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        height: 430px;
-        padding-top: 80px;
+        height: 550px;
+        padding-top: 140px;
         font-weight: bold;
     }
 
@@ -881,6 +950,7 @@
         letter-spacing: 2px;
         overflow: visible;
         cursor: pointer;
+        color: #333;
     }
 
     .invest-toggle > .actived,
@@ -895,15 +965,21 @@
         margin-top: -50px;
     }
 
+    .ai-a {
+        /*margin-top: -50px;*/
+            flex-basis: 100%;
+    }
+
     .invest-a-t01 {
-        height: 500px;
+        height: 550px;
+        max-height: 550px;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         background: url("../img/invest-biz/bg1.png") no-repeat center;
         background-size: cover;
         padding-left: 12%;
-        padding-top: 100px;
+        padding-top: 120px;
     }
 
     .invest-a-t01 > :first-child {
@@ -917,7 +993,7 @@
 
     .invest-a-t01 > :nth-child(n+3) {
         letter-spacing: 5px;
-        line-height: 45px;
+        line-height: 35px;
     }
 
     .invest-a-t02 {
@@ -929,7 +1005,30 @@
     .invest-a-t02 > .intro {
         display: flex;
         width: 100%;
-        height: 300px;
+        height: 200px;
+        /*flex-basis: 25%;*/
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-left: 3%;
+        padding-right: 3%;
+        padding-top: 3%;
+    }
+
+    .ai-a-t02 {
+        display: flex;
+        flex-direction: column;
+        background-color: #252525;
+        height: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .ai-a-t02 > .intro {
+        display: flex;
+        width: 100%;
+        height: 150px;
+    padding-top: 80px;
         /*flex-basis: 25%;*/
         flex-direction: column;
         justify-content: center;
@@ -943,13 +1042,33 @@
         border-bottom: 5px solid #ff7e00;
         padding-bottom: 20px;
         margin-bottom: 20px;
-        font-size: 5rem;
+        font-size: 36px;
         letter-spacing: 15px;
     }
 
     .invest-a-t02 > .intro > :nth-child(n+2) {
+        line-height: 30px;
+        font-size: 1.6rem;
+        color: rgba(255, 255, 255, 0.8);
+    }
+
+    .ai-a-t02 > .intro > :first-child {
+        
+    padding-left: 10px;
+        font-weight: bolder;
+        border-bottom: 5px solid #ff7e00;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        font-size: 30px;
+        letter-spacing: 15px;
+        color: #fff;
+    }
+
+    .ai-a-t02 > .intro > :nth-child(n+2) {
+        
         line-height: 50px;
         font-size: 1.6rem;
+        letter-spacing: 5px;
         color: rgba(255, 255, 255, 0.8);
     }
 
@@ -957,6 +1076,32 @@
         display: flex;
         flex-wrap: wrap;
         margin: 40px 5%;
+    }
+
+    .ai-a-t02 > .invest-area {
+        display: flex;
+        flex-wrap: wrap;
+        /*margin: 40px 5%;*/
+        margin-top: 5%;
+    }
+
+    .ai-a .invest-item > :first-child {
+        font-size: 1.4rem;
+        font-weight: bolder;
+        color: white;
+        line-height: 30px;
+
+    }
+
+    .ai-a .invest-item {
+        display: flex;
+        flex-basis: 33.3333%;
+        height: 220px;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 5%;
+        padding-right: 5%;
+        letter-spacing: 5px;
     }
 
     .invest-item {
@@ -971,7 +1116,7 @@
     }
 
     .invest-item > :first-child {
-        font-size: 3rem;
+        font-size: 2.4rem;
         font-weight: bolder;
         color: white;
         line-height: 50px;
@@ -979,11 +1124,13 @@
     }
 
     .invest-item > :nth-child(2) {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
         font-weight: bolder;
         color: white;
         line-height: 30px;
     }
+
+
 
     .item1 {
         background: url("../img/invest-biz/1.png") no-repeat center;
@@ -1142,8 +1289,8 @@
         position: absolute;
         /*top: 2845px;*/
         /*left: 446px;*/
-        height: 45px;
-        width: 45px;
+        height: 47px;
+        width: 47px;
         background: url("../img/invest-biz/gopic.png") no-repeat center;
         background-size: contain;
     }
@@ -1163,6 +1310,7 @@
         font-weight: bolder;
         line-height: 80px;
         height: 200px;
+        padding-top: 3%;
     }
 
     .crazy-team > .team-member-list {
@@ -1208,7 +1356,7 @@
     }
 
     .crazy-team > .team-member-list > .team-member-line > .team-member > :nth-child(N+3) {
-        font-size: 1.6rem;
+        font-size: 14px;
         line-height: 30px;
         max-lines: 2;
         min-height: 60px;
@@ -1260,7 +1408,7 @@
         padding-right: 7%;
         margin-top: 100px;
         line-height: 50px;
-        font-size: 1.8rem;
+        font-size: 20px;
         color: white;
         padding-bottom: 50px;
         white-space: pre-line;
@@ -1269,7 +1417,7 @@
     /*about us*/
     .about_t01 {
         margin-top: 80px;
-        height: 450px;
+        height: 550px;
         display: flex;
         background: url("../img/about/c1bg.png") no-repeat center;
         background-size: cover;
@@ -1312,18 +1460,19 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        height: 550px;
     }
 
     .about_t02 > .about_t02_01 {
         flex-basis: 18.75%;
-        height: 200px;
+        height: 275px;
         background: url("../img/about/a.png") no-repeat center;
         background-size: cover;
     }
 
     .about_t02 > .about_t02_02 {
         flex-basis: 36.8%;
-        height: 400px;
+        height: 550px;
         background: url("../img/about/b.png") no-repeat center;
         background-size: cover
     }
@@ -1336,7 +1485,7 @@
         justify-content: center;
         align-items: flex-end;
         flex-basis: 44.45%;
-        height: 400px;
+        height: 550px;
         background: #252525;
         /*padding-top: 5%;*/
     }
@@ -1355,14 +1504,14 @@
         color: grey;
         white-space: pre-line;
         text-align: right;
-        line-height: 20px;
-        letter-spacing: 2px;
+        line-height: 25px;
+        letter-spacing: 1px;
     }
 
     .about_t02 > .about_t02_04 {
         flex-basis: 18.75%;
-        height: 200px;
-        margin-top: -200px;
+        height: 275px;
+        margin-top: -275px;
         background: url("../img/about/f.png") no-repeat center;
         background-size: cover
     }
@@ -1408,18 +1557,18 @@
     }
 
     .about_t04_title {
-        font-size: 3rem;
+        font-size: 2.4rem;
         font-weight: bolder;
         letter-spacing: 3px;
         line-height: 60px;
     }
 
     .temp1 > :last-child, .temp2 > .txt > :last-child {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
         font-weight: 500;
         /*white-space: pre-line;*/
         letter-spacing: 2px;
-        line-height: 40px;
+        line-height: 30px;
     }
 
     .about_t04_01 {
@@ -1454,7 +1603,7 @@
         justify-content: center;
         align-items: center;
         margin-top: 80px;
-        height: 400px;
+        height: 550px;
         color: white;
         background: url("../img/about/hero.png") no-repeat center;
         background-size: cover;
@@ -1609,7 +1758,7 @@
     /*工作机会*/
     .job-hd {
         margin-top: 80px;
-        height: 450px;
+        height: 550px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -1670,11 +1819,15 @@
         color: white;
     }
 
+    .contact_title {
+        font-size: 2.4rem;
+    }
+
     .job-list {
         display: flex;
         flex-wrap: wrap;
-        padding-left: 12%;
-        padding-right: 12%;
+        padding-left: 8%;
+        padding-right: 8%;
         margin-bottom: 50px;
     }
 
@@ -1763,7 +1916,7 @@
     /*创业服务*/
     .startup-hd {
         margin-top: 80px;
-        height: 450px;
+        height: 550px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -1848,14 +2001,14 @@
     .startup-service > .left > .left_t01 > :nth-child(3),
     .startup-service > .left > .left_t03 > :nth-child(3),
     .startup-service > .right > .right_t02 > :nth-child(3) {
-        line-height: 40px;
+        line-height: 30px;
     }
 
     .startup-service .txt-intro {
         white-space: pre-line;
         line-height: 25px;
         font-size: 1.4rem;
-        padding-top: 20px;
+        /*padding-top: 20px;*/
         color: grey;
     }
 
@@ -1943,7 +2096,7 @@
     /*人工智能工程院*/
     .ai-hd {
         margin-top: 80px;
-        height: 450px;
+        height: 550px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -2153,13 +2306,242 @@
         background-size: cover;
     }
 
+     .ai-content2 {
+        /*display: flex;*/
+        margin-top: -50px;
+    }
+
+    .ai-content2 > .row1, .row2 , .row3, .row4 {
+        flex-basis: 100%;
+        display: flex;
+        height: 550px;
+        overflow: hidden;
+    }
+
+    .ai-content2 > .row1 > .left_t01 {
+        /*height: 500px;*/
+        padding-left: 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        background: url("../img/ai/bg1.png") no-repeat left;
+        background-size: auto 110%;
+        margin-top: 10px;
+        flex-basis: 50%;
+    }
+
+    .ai-content2 > .row1 > .right_t01 {
+        height: 550px;
+        background: url("../img/ai/img1.jpg") no-repeat center;
+        background-size: cover;
+        flex-basis: 50%;
+    }
+
+    .ai-content2 > .row3 > .left_t01 {
+        /*height: 500px;*/
+        padding-left: 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        background: url("../img/ai/bg3.png") no-repeat left;
+        background-size: auto 110%;
+        margin-top: 10px;
+        flex-basis: 50%;
+    }
+
+    .ai-content2 > .row3 > .left_t01 > :nth-child(3){
+        margin-top: 20px;
+        font-size: 0.7rem;
+    }
+
+    .ai-content2 > .row3 > .right_t01 {
+        height: 550px;
+        background: url("../img/ai/img1.jpg") no-repeat center;
+        background-size: cover;
+        flex-basis: 50%;
+    }
+
+    .ai-content2 > .row4 > .left_t01 > :nth-child(3){
+        margin-top: 20px;
+        font-size: 0.7rem;
+    }
+
+    .ai-content2 > .row4 > .left_t01 {
+        /*height: 500px;*/
+        padding-right: 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        background: url("../img/ai/bg1.png") no-repeat left;
+        background-size: auto 110%;
+        margin-top: 10px;
+        flex-basis: 50%;
+    }
+
+    .ai-content2 > .row4 > .right_t01 {
+        height: 550px;
+        background: url("../img/ai/img1.jpg") no-repeat center;
+        background-size: cover;
+        flex-basis: 50%;
+    }
+
+    .ai-content2 > .row1 > .left_t01 > :nth-child(2),
+    .ai-content2 > .row1 > .left_t03 > :nth-child(2) {
+        margin-top: 0px;
+    }
+
+    .ai-content2 > .row1 > .left_t01 > :nth-child(3),
+    .ai-content2 > .row1 > .left_t03 > :last-child {
+        margin-top: 20px;
+        white-space: pre-line;
+        line-height: 30px;
+        font-size: 1.6rem;
+        opacity: 0.5;
+    }
+
+    .ai-content2 > .left > .left_t02 .logo-bg {
+        flex-basis: 30%;
+        display: flex;
+        justify-content: center;
+        background: url("../img/ai/logo33.png") no-repeat center;
+        background-size: 100px;
+        font-size: 6rem;
+        font-weight: bolder;
+        /*filter:alpha(opacity=50);*/
+        /*-moz-opacity:0.5;*/
+        /*-khtml-opacity: 0.5;*/
+        opacity: 0.5;
+    }
+
+    .ai-content2 > .left > .left_t02 > .left_t02_01 {
+        display: flex;
+        height: 250px;
+        background: url("../img/ai/subbg1.png");
+        background-size: cover;
+    }
+
+    .ai-content2 > .left > .left_t02 > .left_t02_01 > .logo-bg {
+        padding-top: 70px;
+
+    }
+
+    .ai-content2 > .left > .left_t02 > .left_t02_01 > :last-child {
+        padding-top: 100px;
+        font-size: 4rem;
+        font-weight: bolder;
+        color: white;
+        margin-left: -12%;
+        white-space: pre-line;
+        z-index: 999;
+    }
+
+    .ai-content2 > .left > .left_t02 > .left_t02_02 > .logo-bg {
+
+        padding-top: 80px;
+    }
+
+    .ai-content2 > .left > .left_t02 > .left_t02_02 > :last-child {
+        padding-top: 110px;
+        font-size: 4rem;
+        font-weight: bolder;
+        color: white;
+        margin-left: -12%;
+        white-space: pre-line;
+        z-index: 999;
+    }
+
+    .ai-content2 > .left > .left_t02 > .left_t02_03 > .logo-bg {
+        padding-top: 115px;
+    }
+
+    .ai-content2 > .left > .left_t02 > .left_t02_03 > :last-child {
+        padding-top: 130px;
+        font-size: 4rem;
+        font-weight: bolder;
+        color: white;
+        margin-left: -12%;
+        white-space: pre-line;
+        z-index: 999;
+    }
+
+    .ai-content2 > .left > .left_t02 > .left_t02_02 {
+        display: flex;
+        height: 280px;
+        background: url("../img/ai/subbg2.png");
+        background-size: cover;
+    }
+
+    .ai-content2 > .left > .left_t02 > .left_t02_03 {
+        display: flex;
+        height: 350px;
+        background: url("../img/ai/subbg3.png");
+        background-size: cover;
+    }
+
+    .ai-content2 > .left > .left_t03 {
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding-left: 10%;
+    }
+
+    .ai-content2 > .left > .left_t04 {
+        height: 800px;
+        background: url("../img/ai/img3.png") no-repeat center;
+        background-size: cover;
+    }
+
+    
+
+    .ai-content2 > .right > .right_t02,
+    .ai-content2 > .right > .right_t04 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        padding-left: 10%;
+        padding-right: 10%;
+        height: 550px;
+    }
+
+    .ai-content2 > .right > .right_t02 > :nth-child(2),
+    .ai-content2 > .right > .right_t04 > :nth-child(2) {
+        margin-top: 20px;
+    }
+
+    .ai-content2 > .right > .right_t02 > :nth-child(3),
+    .ai-content2 > .right > .right_t04 > :nth-child(3) {
+        margin-top: 20px;
+        white-space: pre-line;
+        line-height: 45px;
+        font-size: 1.6rem;
+        text-align: right;
+    }
+
+    .ai-content2 > .right > .right_t03 {
+        height: 880px;
+        background: url("../img/ai/img2.png") no-repeat center;
+        background-size: cover;
+    }
+
+    .ai-content2 > .right > .right_t04 {
+        height: 650px;
+        background: url("../img/ai/bg3.png") no-repeat center;
+        background-size: cover;
+    }
+
     /*联系我们*/
     .contact-hd {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 500px;
+        height: 550px;
         margin-top: 80px;
         background: url("../img/contact/hero.png") no-repeat center;
         background-size: cover;
@@ -2181,7 +2563,7 @@
 
     .office > :first-child {
         flex-basis: 25%;
-        height: 300px;
+        height: 400px;
         font-size: 2rem;
         z-index: 98;
     }
@@ -2189,7 +2571,7 @@
     .office > :nth-child(2) {
         flex-basis: 100%;
         margin-left: -20%;
-        height: 300px;
+        height: 400px;
     }
 
     .office > .address {
@@ -2197,7 +2579,7 @@
         margin-left: -40%;
         padding-left: 5%;
         padding-right: 3%;
-        height: 300px;
+        height: 400px;
         background-color: rgba(255, 255, 255, 0.9);
         z-index: 99;
         display: flex;
@@ -2207,9 +2589,9 @@
     }
 
     .office > .address > :last-child {
-        margin-top: 30px;
+        margin-top: 15px;
         font-size: 1.4rem;
-        line-height: 45px;
+        line-height: 30px;
         /*white-space: pre-line;*/
 
     }
@@ -2241,7 +2623,7 @@
     .contacts-container > .corporate > :last-child,
     .contacts-container > .blueprint > :last-child {
         color: #a9a9a9;
-        font-size: 3rem;
+        font-size: 20px;
     }
 
     .contacts-container > .social > :last-child {
@@ -2297,7 +2679,8 @@
         margin-bottom: 10px;
         display: flex;
         flex-basis: 24.5%;
-        height: 300px;
+        min-height: 400px;
+        max-height: 400px;
         justify-content: flex-start;
         align-items: center;
         background: #f4f4f4 url("../img/news/mark.png") no-repeat 5% 95%;
@@ -2312,7 +2695,7 @@
     .news-list > .news > div {
         padding-left: 12%;
         padding-right: 12%;
-        font-size: 2rem;
+        font-size: 1.6rem;
         line-height: 40px;
         font-weight: bolder;
         cursor: pointer;
@@ -2366,7 +2749,7 @@
     }
 
     .news-detail > :first-child {
-        font-size: 5rem;
+        font-size: 48px;
         color: black;
         white-space: pre-line;
         line-height: 60px;
@@ -2375,7 +2758,7 @@
     }
 
     .news-detail > :nth-child(2) {
-        font-size: 3rem;
+        font-size: 24px;
         color: black;
         white-space: pre-line;
         line-height: 60px;
@@ -2385,7 +2768,7 @@
 
     .news-detail > .long-txt {
         margin-top: 30px;
-        font-size: 1.6rem;
+        font-size: 14px;
         letter-spacing: 2px;
         white-space: pre-line;
         line-height: 40px;

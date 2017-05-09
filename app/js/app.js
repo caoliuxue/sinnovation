@@ -49,8 +49,8 @@ $(document).ready(function () {
         // Optional parameters
         direction: 'horizontal',
         loop: true,
-        speed: 2000,
-        autoplay: true,
+        speed: 3000,
+        autoplay: 3000,
         paginationHide: false,
         pagination: '.swiper-pagination',
         paginationBulletRender: function (swiper, index, className) {
@@ -189,10 +189,10 @@ $(document).ready(function () {
             $.each(data, function (index) {
                 if (null === selectedTeam || (null !== selectedTeam && selectedTeam === data[index])) {
                     //add toggle btn
-                    var teamInToggle = $("<span>" + data[index] + "</span>");
+                    var teamInToggle = $("<a href='#"+data[index]+"'><span>" + data[index] + "</span></a>");
                     $(".team-toggle").append(teamInToggle);
                     //add team list viewer
-                    var teamTitle = $("<div class='team-title font-color-black'>" + data[index] + "成员</div>");
+                    var teamTitle = $("<div class='team-title font-color-black' id='"+data[index]+"'>" + data[index] + "成员</div>");
                     var team_member_list = $("<div class='team-member-list'></div>");
                     $(".crazy-team").append(teamTitle, team_member_list);
                     $.get("js/team-member.json", function (data) {
@@ -278,4 +278,16 @@ $(document).ready(function () {
         $("html,body").stop(true);
         $("html,body").animate({scrollTop: 0}, 500);
     });
+
+    if(screen.width <= 2000)
+    {
+        // document.write("<style>body{zoom:80%;}</style>");
+    }
+    if(screen.width <= 1500)
+    {
+        // document.write("<style>body{zoom:60%;}</style>");
+        document.getElementById('html').style.zoom = '50%';
+    }
+
+    
 });
