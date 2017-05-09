@@ -3,6 +3,18 @@
 /*@import url("mainStyle.css") screen and (max-width: 767px);*/
 @import url("mainStyle.css") screen and (min-width: 768px);
 
+/*@media screen and (max-width: 1280px) and (max-height: 720px) {
+@media screen and (max-width: 1280px) and (min-width: 768px) {
+   html {
+      -webkit-transform: scale(.5);
+      -moz-transform: scale(.5);
+      transform: scale(.5);
+
+      // or simply zoom: 50%
+   }
+}
+*/
+
 html {
     font-family: sans-serif;
     -webkit-text-size-adjust: 100%;
@@ -71,11 +83,11 @@ a {
 }
 
 .font-size-6rem {
-    font-size: 6rem;
+    font-size: 4.8rem;
 }
 
 .font-size-3rem {
-    font-size: 3rem;
+    font-size: 2.4rem;
 }
 
 .font-size-4rem {
@@ -120,7 +132,7 @@ a {
     width: 25px;
     border-radius: 0;
     border: 1px solid #ff7e00;
-    height: 8px;
+    height: 5px;
     display: inline-block;
     background: transparent;
     margin: 0 8px;
