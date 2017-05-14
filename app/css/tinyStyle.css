@@ -101,7 +101,6 @@
         color: #4c4c4c;
     }
 
-
     .header_nav ul > .current > a {
         color: #ff7e00;
     }
@@ -160,7 +159,6 @@
         /*margin-top: 80px;*/
         height: 45px;
     }
-
 
     /*有李开复头像层*/
     .index-content01 {
@@ -341,14 +339,14 @@
     .index-content03-left > .t03-l2 {
         font-size: 3rem;
         line-height: 60px;
-    height: 60px;
+        height: 60px;
         letter-spacing: 5px;
     }
 
     .index-content03-left > .t03-l3 {
         letter-spacing: 3px;
         font-size: 1.5rem;
-    line-height: 30px;
+        line-height: 30px;
     }
 
     .index-content03-left > .t03-l4 {
@@ -364,7 +362,7 @@
         flex-direction: column;
         align-items: flex-start;
         text-align: right;
-            height: 100px;
+        height: 100px;
     }
 
     /*人工智能工程院*/
@@ -596,18 +594,18 @@
     }
 
     .lplogin {
-            width: 150px;
-    height: 50px;
-    margin-top: 20px;
-    border: 1px solid black;
-    border-radius: 50px;
-    line-height: 50px;
-    padding-left: 20px;
-    padding-right: 20px;
-    font-size: 1.4rem;
-    letter-spacing: 6px;
-    font-weight: 500;
-    text-align: center;
+        width: 150px;
+        height: 50px;
+        margin-top: 20px;
+        border: 1px solid black;
+        border-radius: 50px;
+        line-height: 50px;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 1.4rem;
+        letter-spacing: 6px;
+        font-weight: 500;
+        text-align: center;
     }
 
     .sendbp {
@@ -807,8 +805,8 @@
 
     .invest-header > :first-child {
         letter-spacing: 8px;
-            font-weight: bold;
-            font-size: 3rem;
+        font-weight: bold;
+        font-size: 3rem;
 
     }
 
@@ -914,11 +912,11 @@
 
     .invest-a-t02 > div {
         display: flex;
-            flex-wrap: wrap;
+        flex-wrap: wrap;
         /*flex-direction: column;*/
         justify-content: flex-start;
         flex-basis: 18.75%;
-            height: 750px;
+        height: 750px;
     }
 
     .invest-a-t02 > .intro {
@@ -936,30 +934,30 @@
         font-family: "Microsoft Yahei";
     }
 
-     .invest-a-t02 > .intro :first-child{
+    .invest-a-t02 > .intro :first-child {
         padding-left: 10px;
-    font-weight: bolder;
-     border-bottom: 5px solid #ff7e00; 
-    padding-bottom: 20px;
-    margin-bottom: 20px;
-    font-size: 30px;
-    letter-spacing: 15px;
-    color: #fff;
+        font-weight: bolder;
+        border-bottom: 5px solid #ff7e00;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        font-size: 30px;
+        letter-spacing: 15px;
+        color: #fff;
     }
 
-    .invest-a-t02 > .intro :nth-child(2){
+    .invest-a-t02 > .intro :nth-child(2) {
         line-height: 30px;
-    font-size: 1.6rem;
-    letter-spacing: 5px;
-    color: rgba(255, 255, 255, 0.8);
+        font-size: 1.6rem;
+        letter-spacing: 5px;
+        color: rgba(255, 255, 255, 0.8);
     }
 
-    .invest-a-t02 > .intro :last-child{
-        
+    .invest-a-t02 > .intro :last-child {
+
         line-height: 30px;
-    font-size: 1.6rem;
-    letter-spacing: 5px;
-    color: rgba(255, 255, 255, 0.8);
+        font-size: 1.6rem;
+        letter-spacing: 5px;
+        color: rgba(255, 255, 255, 0.8);
     }
 
     .invest-a-t02 :nth-child(4) {
@@ -1001,54 +999,54 @@
         background: url("../img/invest-biz/1.png") no-repeat center;
         /*float: left;*/
         display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
     }
 
     .item2 {
         background: url("../img/invest-biz/2.png") no-repeat center;
-    display: flex;
+        display: flex;
 
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
     }
 
     .item3 {
         background: url("../img/invest-biz/3.png") no-repeat center;
         /*float: left;*/
         display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
 
     }
 
     .item4 {
         background: url("../img/invest-biz/4.png") no-repeat center;
         display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
 
     }
 
     .item5 {
         background: url("../img/invest-biz/5.png") no-repeat center;
         display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
 
     }
 
     .item6 {
         background: url("../img/invest-biz/6.png") no-repeat center;
         display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
 
     }
 
@@ -1128,7 +1126,7 @@
         align-items: center;
 
         border-left: 1px solid gray;
-    border-top: 1px solid gray;
+        border-top: 1px solid gray;
         margin-bottom: 20px;
         /*-webkit-filter: grayscale(100%);*/
     }
@@ -1164,7 +1162,7 @@
         /*top: 2845px;*/
         /*left: 446px;*/
         height: 50px;
-    width: 50px;
+        width: 50px;
         background: url("../img/invest-biz/gopic.png") no-repeat center;
         background-size: contain;
     }
@@ -1172,7 +1170,7 @@
     .crazy-team {
         display: flex;
         flex-direction: column;
-            padding-top: 100px;
+        padding-top: 100px;
     }
 
     .crazy-team > .team-title {
@@ -1312,7 +1310,7 @@
     }
 
     .about_t01 > .text :first-child {
-            font-size: 3rem;
+        font-size: 3rem;
     }
 
     .about_t01 > .text :nth-child(2) {
@@ -1327,8 +1325,8 @@
 
     .about_t01 > .video {
         display: flex;
-        padding-top: /*80px;
-        padding-bottom: 80px;*/
+        padding-top: 80px;
+        /*padding-bottom: 80px;*/
         flex-basis: 50%;
         justify-content: center;
         align-items: center;
@@ -1383,11 +1381,11 @@
 
     .about_t02 > .about_t02_03 > :last-child {
         font-size: 1.5rem;
-    color: gray;
-    white-space: pre-line;
-    text-align: right;
-    line-height: 25px;
-    letter-spacing: 2px;
+        color: gray;
+        white-space: pre-line;
+        text-align: right;
+        line-height: 25px;
+        letter-spacing: 2px;
     }
 
     .about_t02 > .about_t02_04 {
@@ -1447,12 +1445,12 @@
     }
 
     .temp1 > :last-child, .temp2 > .txt > :last-child {
-            font-size: 1.3rem;
-    font-weight: 500;
-    white-space: pre-line;
-    letter-spacing: 2px;
-    line-height: 30px;
-    padding-top: 20px;
+        font-size: 1.3rem;
+        font-weight: 500;
+        white-space: pre-line;
+        letter-spacing: 2px;
+        line-height: 30px;
+        padding-top: 20px;
     }
 
     .about_t04_01 {
@@ -1559,8 +1557,8 @@
     }
 
     .about_team_lkf > .index-content01-right > img {
-            width: 30px;
-    margin-left: -50px;
+        width: 30px;
+        margin-left: -50px;
     }
 
     .about_team-toggle {
@@ -1576,8 +1574,6 @@
         -moz-box-shadow: 100px 100px 50px 20px #bfbfbf; /* 老的 Firefox */
         box-shadow: 0 1px 5px 1px #bfbfbf;
     }
-
-
 
     /*.team-toggle-container {*/
     /*position: relative;*/
@@ -1601,28 +1597,28 @@
         flex-wrap: wrap;
     }
 
-    .team-toggle > a, span{
+    .team-toggle > a, span {
         flex-basis: 33.33%;
         padding: 0px 5%;
         text-align: center;
         font-size: 1.5rem;
-    font-weight: bold;
+        font-weight: bold;
     }
 
-    .team-toggle > a > span{
+    .team-toggle > a > span {
         flex-basis: 33.33%;
         padding: 0px 5%;
         text-align: center;
         font-size: 1.5rem;
-    font-weight: bold;
-    height: 100px;
-    line-height: 100px;
-    /* width: 17%; */
-    min-width: 72px;
-    letter-spacing: 2px;
-    overflow: visible;
-    cursor: pointer;
-    color: #000;
+        font-weight: bold;
+        height: 100px;
+        line-height: 100px;
+        /* width: 17%; */
+        min-width: 72px;
+        letter-spacing: 2px;
+        overflow: visible;
+        cursor: pointer;
+        color: #000;
     }
 
     .about_job {
@@ -1641,7 +1637,7 @@
         align-items: center;
     }
 
-    .about_job > .job-left > img{
+    .about_job > .job-left > img {
         width: 60%;
     }
 
@@ -1664,9 +1660,9 @@
 
     .job-right > :nth-child(2) {
         letter-spacing: 3px;
-    line-height: 50px;
-    font-size: 1.2rem;
-    width: 70%;
+        line-height: 50px;
+        font-size: 1.2rem;
+        width: 70%;
     }
 
     .job-right > :last-child {
@@ -1674,11 +1670,10 @@
         border: 1px solid white;
         width: 200px;
         margin-top: -15%;
-    margin-left: 66%;
-}
+        margin-left: 66%;
     }
 
-    .job-right > :last-child :first-child{
+    .job-right > :last-child :first-child {
         color: white;
     }
 
@@ -1745,7 +1740,7 @@
     .active_tab {
         background-color: #ff7e00;
         color: white;
-            margin-left: 0px;
+        margin-left: 0px;
     }
 
     .job-list {
@@ -1854,7 +1849,7 @@
         background: url("../img/startup/hero.png") no-repeat center;
         background-size: cover;
     }
-    
+
     .startup-hd > :first-child {
         font-size: 3rem;
     }
@@ -2010,15 +2005,15 @@
         background-size: cover;
     }
 
-    .ai-hd :nth-child(2){
-        
+    .ai-hd :nth-child(2) {
+
     }
 
-    .ai-hd :nth-child(3){
-        
+    .ai-hd :nth-child(3) {
+
     }
 
-    .ai-content2 > .row1, .row2 , .row4 {
+    .ai-content2 > .row1, .row2, .row4 {
         flex-basis: 100%;
         display: flex;
         /*height: 1000px;*/
@@ -2026,7 +2021,7 @@
         flex-direction: column-reverse;
     }
 
-     .ai-content2 > .row3 {
+    .ai-content2 > .row3 {
         flex-basis: 100%;
         display: flex;
         /*height: 1000px;*/
@@ -2057,18 +2052,18 @@
     .ai-content2 > .row3 > .left_t01 {
         background: url("../img/ai/bg3.png") no-repeat left;
 
-            height: 400px;
-    padding-left: 10%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    background-size: auto 110%;
-    margin-top: 10px;
-    /* flex-basis: 100%; */
+        height: 400px;
+        padding-left: 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        background-size: auto 110%;
+        margin-top: 10px;
+        /* flex-basis: 100%; */
     }
 
-    .ai-content2 > .row3 > .left_t01 > :nth-child(3){
+    .ai-content2 > .row3 > .left_t01 > :nth-child(3) {
         margin-top: 20px;
         font-size: 0.7rem;
     }
@@ -2080,21 +2075,21 @@
         flex-basis: 100%;
     }
 
-    .ai-content2 > .row4 > .left_t01 > :nth-child(3){
+    .ai-content2 > .row4 > .left_t01 > :nth-child(3) {
         margin-top: 20px;
         font-size: 0.7rem;
     }
 
     .ai-content2 > .row4 > .left_t01 {
         background: url("../img/ai/bg1.png") no-repeat left;
-    height: 400px;
-    padding-left: 10%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    background-size: auto 110%;
-    margin-top: 10px;
+        height: 400px;
+        padding-left: 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        background-size: auto 110%;
+        margin-top: 10px;
     }
 
     .ai-content2 > .row4 > .right_t01 {
@@ -2119,12 +2114,11 @@
         padding-bottom: 50px;
     }
 
-    
     .ai-a-t02 > .intro {
         display: flex;
         width: 100%;
         height: 250px;
-    padding-top: 50px;
+        padding-top: 50px;
         /*flex-basis: 25%;*/
         flex-direction: column-reverse;
         justify-content: center;
@@ -2133,14 +2127,13 @@
         padding-right: 3%;
     }
 
-    .ai-a-t02 
-    {
+    .ai-a-t02 {
         background-color: #252525;
     }
 
     .ai-a-t02 > .intro > :first-child {
-        
-    padding-left: 10px;
+
+        padding-left: 10px;
         font-weight: bolder;
         /*border-bottom: 5px solid #ff7e00;*/
         padding-bottom: 20px;
@@ -2151,12 +2144,13 @@
     }
 
     .ai-a-t02 > .intro > :nth-child(n+2) {
-        
+
         line-height: 50px;
         font-size: 1.6rem;
         letter-spacing: 5px;
         color: rgba(255, 255, 255, 0.8);
     }
+
     .ai-hd img {
         /*height: 100px;*/
         width: 50px;
@@ -2198,7 +2192,7 @@
     }
 
     .ai-content > .left > .left_t02 {
-        display: hidden !important;
+        display: none !important;
     }
 
     .ai-content > .left > .left_t01 > :nth-child(2),
@@ -2360,43 +2354,44 @@
         background-size: cover;
     }
 
-    .contact-hd :first-child{
+    .contact-hd :first-child {
         font-size: 3rem;
     }
 
-    .contact-hd :last-child{
+    .contact-hd :last-child {
         font-size: 4rem;
         width: 50%;
         padding-top: 30px;
     }
 
     .office {
-            display: flex;
-    flex-direction: column;
+        display: flex;
+        flex-wrap: wrap;
+        /*flex-direction: column;*/
         margin-bottom: 20px;
     }
 
     .office > :first-child {
-        /*flex-basis: 30%;*/
-        width: 100%;
+        flex-basis: 100%;
+        /*width: 100%;*/
         height: 400px;
         z-index: 98;
     }
 
     .office > :nth-child(2) {
-        /*flex-basis: 100%;*/
-        width: 40%;
+        flex-basis: 40%;
+        /*width: 40%;*/
         float: left;
         margin-left: 0%;
         height: 300px;
     }
 
     .office > .address {
-        flex-basis: 40%;
-        margin-left: 40%;
+        flex-basis: 60%;
+        /*margin-left: 40%;*/
         padding-left: 5%;
         height: 300px;
-        margin-top: -300px;
+        /*margin-top: -300px;*/
         background-color: rgba(255, 255, 255, 0.9);
         z-index: 99;
         display: flex;
@@ -2413,8 +2408,7 @@
 
     }
 
-    .contact_title
-    {
+    .contact_title {
         font-size: 2rem;
         font-weight: bolder;
     }
@@ -2532,7 +2526,7 @@
         padding-left: 12%;
         padding-right: 12%;
         font-size: 1.3rem;
-    line-height: 30px;
+        line-height: 30px;
         font-weight: bolder;
         cursor: pointer;
         /*color: #ff7e00;*/
@@ -2624,6 +2618,7 @@
     .news-detail > img {
         width: 100%;
     }
+
 }
 
 
