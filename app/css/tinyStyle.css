@@ -986,10 +986,10 @@
         display: flex;
         height: 250px;
         flex-direction: column;
-        justify-content: flex-start;
+        justify-content: center;
         padding-left: 2%;
         padding-right: 2%;
-        padding-top: 60px;
+        /*padding-top: 60px;*/
         letter-spacing: 5px;
         background-size: cover;
         /*width: 50%;*/
@@ -2296,6 +2296,7 @@
         flex-basis: 75%;
         display: flex;
         flex-direction: column;
+        height: 750px;
     }
 
     .ai-a-t02 > .intro > :first-child {
