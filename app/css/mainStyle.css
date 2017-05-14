@@ -970,6 +970,7 @@
     .ai-a {
         /*margin-top: -50px;*/
             flex-basis: 100%;
+            background-color: #252525;
     }
 
     .invest-a-t01 {
@@ -2446,7 +2447,7 @@
 
     .ai-content2 > .row3 > .right_t01 {
         height: 550px;
-        background: url("../img/ai/img1.jpg") no-repeat center;
+        background: url("../img/ai/img2.png") no-repeat center;
         background-size: cover;
         flex-basis: 50%;
     }
@@ -2471,7 +2472,7 @@
 
     .ai-content2 > .row4 > .right_t01 {
         height: 550px;
-        background: url("../img/ai/img1.jpg") no-repeat center;
+        background: url("../img/ai/img3.png") no-repeat center;
         background-size: cover;
         flex-basis: 50%;
     }
@@ -2654,6 +2655,7 @@
         height: 400px;
         font-size: 2rem;
         z-index: 98;
+            width: 35%;
     }
 
     .office > :nth-child(2) {

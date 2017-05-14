@@ -2228,7 +2228,7 @@
 
     .ai-content2 > .row3 > .right_t01 {
         height: 400px;
-        background: url("../img/ai/img1.jpg") no-repeat center;
+        background: url("../img/ai/img2.png") no-repeat center;
         background-size: cover;
         flex-basis: 100%;
     }
@@ -2252,7 +2252,7 @@
 
     .ai-content2 > .row4 > .right_t01 {
         height: 300px;
-        background: url("../img/ai/img1.jpg") no-repeat center;
+        background: url("../img/ai/img3.png") no-repeat center;
         background-size: cover;
         flex-basis: 100%;
     }
