@@ -45,6 +45,11 @@
     $(".menu-close").click(function () {
         $("#header_nav").modal('toggle');
     });
+
+    $("#header_nav ul li a").click(function () {
+        $("#header_nav").modal('toggle');
+    });
+
     var bannerSwiper = new Swiper('.swiper-container', {
         // Optional parameters
         direction: 'horizontal',
