@@ -274,6 +274,80 @@
         text-align: center;
     }
 
+    #two .access_more:hover {
+        background-color: #000;
+        border: 1px solid black;
+    }
+
+    #two .access_more:hover a {
+        color: #fff;
+    }
+
+    #two .access_more:hover a:hover {
+        color: #fff;
+    }
+
+     #four .access_more:hover {
+        background-color: #000;
+        border: 1px solid black;
+    }
+
+    #four .access_more:hover a {
+        color: #fff;
+    }
+
+    #four .access_more:hover a:hover {
+        color: #fff;
+    }
+
+
+    #three .access_more:hover {
+        background-color: #fff;
+        border: 1px solid #fff;
+    }
+
+    #three .access_more:hover a {
+        color: #ff7e00;
+    }
+
+    #three .access_more:hover a:hover {
+        color: #ff7e00;
+    }
+
+    #three .access_more a {
+        color: #fff;
+    }
+
+    #five .access_more:hover {
+        background-color: #fff;
+        border: 1px solid #fff;
+    }
+
+    #five .access_more:hover a {
+        color: #ff7e00;
+    }
+
+    #five .access_more:hover a:hover {
+        color: #ff7e00;
+    }
+
+    #five .access_more a {
+        color: #fff;
+    }
+
+    #seven .access_more:hover {
+        background-color: #000;
+        border: 1px solid black;
+    }
+
+    #seven .access_more:hover a {
+        color: #fff;
+    }
+
+    #seven .access_more:hover a:hover {
+        color: #fff;
+    }
+
     .lplogin {
         width: 250px;
         height: 66px;
@@ -281,8 +355,6 @@
         border: 1px solid black;
         border-radius: 50px;
         line-height: 66px;
-        padding-left: 20px;
-        padding-right: 20px;
         font-size: 1.4rem;
         letter-spacing: 6px;
         font-weight: 500;
@@ -307,6 +379,41 @@
         text-decoration: none;
     }
 
+    #lplogin {
+            width: 250px;
+    height: 66px;
+    margin-top: 50px;
+    border: 1px solid black;
+    border-radius: 50px;
+    line-height: 66px;
+    padding-left: 70px;
+    padding-right: 20px;
+    padding-top: 10px;
+    font-size: 1.4rem;
+    letter-spacing: 6px;
+    font-weight: 500;
+    text-align: center;
+    }
+
+    #lplogin:hover {
+        background-color: #b5a699;
+    }
+
+    #lplogin:hover a{
+        color: black;
+        background-color: #b5a699;
+    }
+
+    #lplogin a {
+        color: #b5a699;
+    }
+
+    #lplogin a:hover{
+        color: black;
+        background-color:  #b5a699;
+        text-decoration: none;
+    }
+
 
     .sendbp {
         width: 130px;
@@ -324,25 +431,41 @@
         color: #ff7e00;
     }
 
-    .sendbp:hover {
+    #sendbp:hover {
         background-color: #ff7e00;
     }
 
-    .sendbp:hover a{
+    #sendbp:hover a{
         color: #fff;
+        background-color:  #ff7e00;
     }
 
-    .sendbp a {
+    #sendbp a {
         color: #ff7e00;
+        display: block;
+        line-height: 40px;
     }
 
-    .sendbp a:hover{
+    #sendbp a:hover{
         color: #fff;
         background-color:  #ff7e00;
         text-decoration: none;
     }
 
-
+    #sendbp {
+            /*width: 160px;*/
+    height: 60px;
+    margin-top: 10px;
+    border: 1px solid black;
+    border-radius: 50px;
+    line-height: 30px;
+    padding-top: 6px;
+    font-size: 1.4rem;
+    letter-spacing: 6px;
+    font-weight: 500;
+    text-align: center;
+    color: #ff7e00;
+    }
 
     .sendbp1 {
         width: 150px;
@@ -710,7 +833,7 @@
 
         .t05-item > .item-slogan {
             width: 50%;
-            margin-top: 200px;
+            margin-top: 160px;
             letter-spacing: 3px;
             font-size: 1.6rem;
         }
@@ -720,9 +843,9 @@
         }
 
         .t05-item > .item-logo {
-            
+            background-position-x: 10% !important;
             background-size: auto 100% !important;
-            height: 30px;
+            height: 70px;
         }
 
     }
@@ -880,6 +1003,37 @@
         font-size: 1.4rem;
         color: #b5a699;
         line-height: 45px;
+    }
+
+    .footer-nav a{
+        display: flex;
+        flex-wrap: wrap;
+        background-color: black;
+        justify-content: space-between;
+        /*height: 480px;*/
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 0px;
+        letter-spacing: 3px;
+        font-size: 1.4rem;
+        color: #b5a699;
+        line-height: 45px;
+    }
+
+    .footer-nav a:hover{
+        display: flex;
+        flex-wrap: wrap;
+        background-color: black;
+        justify-content: space-between;
+        /*height: 480px;*/
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 0px;
+        letter-spacing: 3px;
+        font-size: 1.4rem;
+        color: #ff7e00;
+        line-height: 45px;
+        text-decoration: none;
     }
 
     .footer-nav > .lp_login {
@@ -1065,6 +1219,112 @@
         background-color: #252525;
     }
 
+
+.invest-declaration {
+        /*height: 550px;*/
+        /*max-height: 550px;*/
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        background: url("../img/invest-biz/bg1.png") no-repeat center;
+        background-size: cover;
+        padding-left: 12%;
+        padding-top: 120px;
+        padding-right: 12%;
+        padding-bottom: 120px;
+    }
+
+    .invest-declaration .titleicon{
+        background: url("../img/invest-biz/titleicon.png") no-repeat center;
+        background-size: cover;
+        width: 10px;
+    height: 30px;
+    margin-top: 10px;
+    margin-right: 10px;
+    }
+
+    .invest-declaration :nth-child(2) {
+        line-height: 140px;
+        letter-spacing: 5px;
+        font-weight: bolder;
+        /*height: 140px;*/
+    }
+
+    .invest-declaration :nth-child(3) {
+        font-size: 1.4rem;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        letter-spacing: 2px;
+        line-height: 50px;
+    }
+
+    .invest-declaration :nth-child(2n+4) {
+        font-size: 1.6rem;
+        letter-spacing: 2px;
+        line-height: 50px;
+        display: flex;
+        flex-direction: row;
+        align-content: flex-start;
+        font-weight: bolder;
+    }
+
+    .invest-declaration :nth-child(2n+4) :nth-child(2){
+        font-size: 1.6rem;
+        letter-spacing: 2px;
+        line-height: 50px;
+        display: flex;
+        flex-direction: row;
+        align-content: flex-start;
+    }
+
+    .invest-declaration :nth-child(5) {
+        font-size: 1.4rem;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        letter-spacing: 2px;
+        line-height: 50px;
+    }
+
+    .invest-declaration :nth-child(7) {
+        font-size: 1.4rem;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        letter-spacing: 2px;
+        line-height: 50px;
+    }
+
+    .invest-declaration :nth-child(9) {
+        font-size: 1.4rem;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        letter-spacing: 2px;
+        line-height: 50px;
+    }
+
+    .invest-declaration :nth-child(11) {
+        font-size: 1.4rem;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        letter-spacing: 2px;
+        line-height: 50px;
+    }
+
+    .invest-declaration :nth-child(13) {
+        font-size: 1.4rem;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        letter-spacing: 2px;
+        line-height: 50px;
+    }
+
+    .invest-declaration :nth-child(15) {
+        font-size: 1.4rem;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        letter-spacing: 2px;
+        line-height: 50px;
+    }
+
     .invest-a-t02 > .intro {
         display: flex;
         width: 100%;
@@ -1195,37 +1455,52 @@
 
 
 
-    .item1 {
+    .ai-a .item1 {
         background: url("../img/ai/1.png") no-repeat center;
         background-size: cover;
     }
 
-    .item2 {
+    .ai-a .item2 {
         background: url("../img/ai/2.png") no-repeat center;
         background-size: cover;
     }
 
-    .item3 {
+    .ai-a .item3 {
         background: url("../img/ai/3.png") no-repeat center;
         background-size: cover;
     }
 
-    .item4 {
+     .invest-a .item1 {
+        background: url("../img/invest-biz/1.png") no-repeat center;
+        background-size: cover;
+    }
+
+    .invest-a .item2 {
+        background: url("../img/invest-biz/2.png") no-repeat center;
+        background-size: cover;
+    }
+
+    .invest-a .item3 {
+        background: url("../img/invest-biz/3.png") no-repeat center;
+        background-size: cover;
+    }
+
+    .invest-a .item4 {
         background: url("../img/invest-biz/4.png") no-repeat center;
         background-size: cover;
     }
 
-    .item5 {
+    .invest-a .item5 {
         background: url("../img/invest-biz/5.png") no-repeat center;
         background-size: cover;
     }
 
-    .item6 {
+    .invest-a .item6 {
         background: url("../img/invest-biz/6.png") no-repeat center;
         background-size: cover;
     }
 
-    .item7 {
+    .invest-a .item7 {
         background: url("../img/invest-biz/7.png") no-repeat center;
         background-size: cover;
     }
@@ -1337,9 +1612,11 @@
         border-right: 1px solid gray;
     }
 
-    .app > img {
-        height: 50px;
+    .app > a > img {
+        /*height: 50px;*/
         margin: 100px auto;
+        max-height: 50px;
+        max-width: 100px;
     }
 
     .gray {
@@ -2200,6 +2477,7 @@
         padding-right: 6%;
         /*padding-top: 100px;*/
         /*overflow: scroll;*/
+        height: 100%;
     }
 
     .startup-detail > .detail-close {
@@ -2497,7 +2775,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
-        background: url("../img/ai/bg3.png") no-repeat left;
+        /*background: url("../img/ai/bg3.png") no-repeat left;*/
         background-size: auto 110%;
         margin-top: 10px;
         flex-basis: 50%;
@@ -2505,7 +2783,7 @@
 
     .ai-content2 > .row3 > .left_t01 > :nth-child(3){
         margin-top: 20px;
-        font-size: 0.7rem;
+        font-size: 1.4rem;
     }
 
     .ai-content2 > .row3 > .right_t01 {
@@ -2517,17 +2795,18 @@
 
     .ai-content2 > .row4 > .left_t01 > :nth-child(3){
         margin-top: 20px;
-        font-size: 0.7rem;
+        font-size: 1.4rem;
     }
 
     .ai-content2 > .row4 > .left_t01 {
         /*height: 500px;*/
         padding-right: 10%;
+        padding-left: 5%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: flex-end;
-        background: url("../img/ai/bg1.png") no-repeat left;
+        /*background: url("../img/ai/bg1.png") no-repeat left;*/
         background-size: auto 110%;
         margin-top: 10px;
         flex-basis: 50%;
@@ -2549,7 +2828,7 @@
     .ai-content2 > .row1 > .left_t03 > :last-child {
         margin-top: 20px;
         white-space: pre-line;
-        line-height: 30px;
+        line-height: 35px;
         font-size: 1.6rem;
         /*opacity: 0.5;*/
         color: #000;
@@ -2748,6 +3027,50 @@
         line-height: 30px;
         /*white-space: pre-line;*/
 
+    }
+
+    .offices > :nth-child(1) > :first-child {
+        flex-basis: 40%;
+        /*width: 100%;*/
+        height: 400px;
+        z-index: 98;
+        /*height: 25px;*/
+        width: 100%;
+        background: url("../img/contact/office1.jpg") no-repeat center;
+        background-size: cover;
+    }
+
+    .offices > :nth-child(2) > :first-child {
+        flex-basis: 40%;
+        /*width: 100%;*/
+        height: 400px;
+        z-index: 98;
+        /*height: 25px;*/
+        width: 100%;
+        background: url("../img/contact/office2.jpg") no-repeat center;
+        background-size: cover;
+    }
+
+    .offices > :nth-child(3) > :first-child {
+        flex-basis: 40%;
+        /*width: 100%;*/
+        height: 400px;
+        z-index: 98;
+        /*height: 25px;*/
+        width: 100%;
+        background: url("../img/contact/office3.jpg") no-repeat center;
+        background-size: cover;
+    }
+
+    .offices > :nth-child(4) > :first-child {
+        flex-basis: 40%;
+        /*width: 100%;*/
+        height: 400px;
+        z-index: 98;
+        /*height: 25px;*/
+        width: 100%;
+        background: url("../img/contact/office4.jpg") no-repeat center;
+        background-size: cover;
     }
 
     .contacts-container {

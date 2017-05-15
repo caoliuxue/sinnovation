@@ -246,6 +246,94 @@
         margin-top: 30px;
     }
 
+    .access_more > a {
+        text-decoration: none;
+    !important;
+        color: rgba(60, 60, 60, 0.86);
+    !important;
+    }
+
+    .access_more > a:hover {
+        text-decoration: none;
+    !important;
+        color: #ff7e00;
+    !important;
+    }
+
+    #two .access_more:hover {
+        background-color: #000;
+        border: 1px solid black;
+    }
+
+    #two .access_more:hover a {
+        color: #fff;
+    }
+
+    #two .access_more:hover a:hover {
+        color: #fff;
+    }
+
+     #four .access_more:hover {
+        background-color: #000;
+        border: 1px solid black;
+    }
+
+    #four .access_more:hover a {
+        color: #fff;
+    }
+
+    #four .access_more:hover a:hover {
+        color: #fff;
+    }
+
+
+    #three .access_more:hover {
+        background-color: #fff;
+        border: 1px solid #fff;
+    }
+
+    #three .access_more:hover a {
+        color: #ff7e00;
+    }
+
+    #three .access_more:hover a:hover {
+        color: #ff7e00;
+    }
+
+    #three .access_more a {
+        color: #fff;
+    }
+
+    #five .access_more:hover {
+        background-color: #fff;
+        border: 1px solid #fff;
+    }
+
+    #five .access_more:hover a {
+        color: #ff7e00;
+    }
+
+    #five .access_more:hover a:hover {
+        color: #ff7e00;
+    }
+
+    #five .access_more a {
+        color: #fff;
+    }
+
+    #seven .access_more:hover {
+        background-color: #000;
+        border: 1px solid black;
+    }
+
+    #seven .access_more:hover a {
+        color: #fff;
+    }
+
+    #seven .access_more:hover a:hover {
+        color: #fff;
+    }
+
     .index-content03-right  > .access_more {
     /* margin-top: 35px; */
     width: 140px;
@@ -683,6 +771,56 @@
         text-align: center;
     }
 
+     .lplogin:hover {
+        background-color: #b5a699;
+    }
+
+    .lplogin:hover a{
+        color: black;
+    }
+
+    .lplogin a {
+        color: #b5a699;
+    }
+
+    .lplogin a:hover{
+        color: black;
+        background-color:  #b5a699;
+        text-decoration: none;
+    }
+
+    #lplogin {
+    height: 50px;
+    margin-top: 50px;
+    border: 1px solid black;
+    border-radius: 50px;
+    line-height: 50px;
+    font-size: 1.4rem;
+    letter-spacing: 6px;
+    font-weight: 500;
+    text-align: center;
+    width: 150px;
+    }
+
+    #lplogin:hover {
+        background-color: #b5a699;
+    }
+
+    #lplogin:hover a{
+        color: black;
+        background-color: #b5a699;
+    }
+
+    #lplogin a {
+        color: #b5a699;
+    }
+
+    #lplogin a:hover{
+        color: black;
+        background-color:  #b5a699;
+        text-decoration: none;
+    }
+
     .sendbp {
         width: 130px;
         height: 35px;
@@ -697,6 +835,19 @@
         font-weight: 500;
         text-align: center;
         color: #ff7e00;
+    }
+
+    .sendbp:hover {
+        background-color: #ff7e00;
+        color: #fff;
+    }
+
+    #sendbp:hover > a{
+        color: #fff;
+    }
+
+    #sendbp > a:hover {
+        color: #fff;
     }
 
     .sendbp1 {
@@ -820,6 +971,20 @@
         color: #ff7e00;
         white-space: nowrap;
         text-align: left;
+    }
+
+    .footer-nav > .footer-column  a {
+        color: #b5a699;
+        white-space: nowrap;
+        text-align: left;
+        text-decoration: none;
+    }
+
+    .footer-nav > .footer-column  a:hover {
+        color: #ff7e00;
+        white-space: nowrap;
+        text-align: left;
+        text-decoration: none;
     }
 
     .footer-nav > .lp_login {
@@ -1092,62 +1257,91 @@
         line-height: 20px;
     }
 
-    .item1 {
+    .ai-a .item1 {
         background: url("../img/ai/1.png") no-repeat center;
         /*float: left;*/
         display: flex;
         flex-direction: column;
         justify-content: center;
         text-align: center;
+        background-size: cover;
     }
 
-    .item2 {
+    .ai-a .item2 {
         background: url("../img/ai/2.png") no-repeat center;
         display: flex;
 
         flex-direction: column;
         justify-content: center;
         text-align: center;
+        background-size: cover;
     }
 
-    .item3 {
+    .ai-a .item3 {
         background: url("../img/ai/3.png") no-repeat center;
         /*float: left;*/
         display: flex;
         flex-direction: column;
         justify-content: center;
         text-align: center;
-
+background-size: cover;
     }
 
-    .item4 {
+    .invest-a .item1 {
+        background: url("../img/invest-biz/1.png") no-repeat center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+background-size: cover;
+    }
+
+    .invest-a .item2 {
+        background: url("../img/invest-biz/2.png") no-repeat center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+background-size: cover;
+    }
+
+    .invest-a .item3 {
+        background: url("../img/invest-biz/3.png") no-repeat center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+background-size: cover;
+    }
+
+    .invest-a .item4 {
         background: url("../img/invest-biz/4.png") no-repeat center;
         display: flex;
         flex-direction: column;
         justify-content: center;
         text-align: center;
-
+background-size: cover;
     }
 
-    .item5 {
+    .invest-a .item5 {
         background: url("../img/invest-biz/5.png") no-repeat center;
         display: flex;
         flex-direction: column;
         justify-content: center;
         text-align: center;
-
+background-size: cover;
     }
 
-    .item6 {
+    .invest-a .item6 {
         background: url("../img/invest-biz/6.png") no-repeat center;
         display: flex;
         flex-direction: column;
         justify-content: center;
         text-align: center;
-
+background-size: cover;
     }
 
-    .item7 {
+    .invest-a .item7 {
         background: url("../img/invest-biz/7.png") no-repeat center;
         float: left;
 
@@ -1250,8 +1444,9 @@
         /*-webkit-filter: grayscale(0%);*/
     }
 
-    .app > img {
-        height: 40px;
+    .app > a > img {
+        max-height: 60px;
+        max-width: 60px;
         margin: 100px auto;
     }
 
@@ -2983,6 +3178,111 @@
 
     .news-detail > img {
         width: 100%;
+    }
+
+    .invest-declaration {
+        /*height: 550px;*/
+        /*max-height: 550px;*/
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        background: url("../img/invest-biz/bg1.png") no-repeat center;
+        background-size: cover;
+        padding-left: 12%;
+        padding-top: 120px;
+        padding-right: 12%;
+        padding-bottom: 120px;
+    }
+
+    .invest-declaration .titleicon{
+        background: url("../img/invest-biz/titleicon.png") no-repeat center;
+        background-size: cover;
+        width: 10px;
+    height: 30px;
+    margin-top: 10px;
+    margin-right: 10px;
+    }
+
+    .invest-declaration :nth-child(2) {
+        line-height: 100px;
+        letter-spacing: 5px;
+        font-weight: bolder;
+        /*height: 140px;*/
+    }
+
+    .invest-declaration :nth-child(3) {
+        font-size: 1.4rem;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        letter-spacing: 2px;
+        line-height: 50px;
+    }
+
+    .invest-declaration :nth-child(2n+4) {
+        font-size: 1.6rem;
+        letter-spacing: 2px;
+        line-height: 50px;
+        display: flex;
+        flex-direction: row;
+        align-content: flex-start;
+        font-weight: bolder;
+    }
+
+    .invest-declaration :nth-child(2n+4) :nth-child(2){
+        font-size: 1.6rem;
+        letter-spacing: 2px;
+        line-height: 50px;
+        display: flex;
+        flex-direction: row;
+        align-content: flex-start;
+    }
+
+    .invest-declaration :nth-child(5) {
+        font-size: 1.4rem;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        letter-spacing: 2px;
+        line-height: 50px;
+    }
+
+    .invest-declaration :nth-child(7) {
+        font-size: 1.4rem;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        letter-spacing: 2px;
+        line-height: 50px;
+    }
+
+    .invest-declaration :nth-child(9) {
+        font-size: 1.4rem;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        letter-spacing: 2px;
+        line-height: 50px;
+    }
+
+    .invest-declaration :nth-child(11) {
+        font-size: 1.4rem;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        letter-spacing: 2px;
+        line-height: 50px;
+    }
+
+    .invest-declaration :nth-child(13) {
+        font-size: 1.4rem;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        letter-spacing: 2px;
+        line-height: 50px;
+    }
+
+    .invest-declaration :nth-child(15) {
+        font-size: 1.4rem;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        letter-spacing: 2px;
+        line-height: 50px;
     }
 
 }

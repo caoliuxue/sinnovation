@@ -23,15 +23,15 @@
             </a>
             <a href="invest_biz.html">基金介绍</a>
             <a href="invest_biz.html">投资项目</a>
-            <a href="invest_biz.html">投资宣言</a>
+            <a href="invest_declaration.html">投资者宣言</a>
             <a href="invest_biz.html?tab=team">投资团队</a>
             <a href="invest_biz.html">投资人关系</a>
         </div>
         <div>
             <a href="startup.html"><span>创业服务</span></a>
-            <a href="startup.html">兄弟会</a>
-            <a href="startup.html">新泡儿</a>
-            <a href="startup.html">同学会</a>
+            <a href="startup.html#兄弟会">兄弟会</a>
+            <a href="startup.html#新泡儿">新泡儿</a>
+            <a href="startup.html#同学会">同学会</a>
             <a href="startup.html?tab=team">运营团队</a>
         </div>
         <div>
@@ -63,7 +63,7 @@
         <li class="main-nav"><a href="invest_biz.html">投资业务</a></li>
         <li class="sub-nav"><a href="invest_biz.html">基金介绍</a></li>
         <li class="sub-nav"><a href="invest_biz.html">投资项目</a></li>
-        <li class="sub-nav"><a href="invest_biz.html">投资宣言</a></li>
+        <li class="sub-nav"><a href="invest_declaration.html">投资者宣言</a></li>
         <li class="sub-nav"><a href="invest_biz.html?tab=team">投资团队</a></li>
         <li class="sub-nav"><a href="invest_biz.html">投资人关系</a></li>
         <li class="main-nav"><a href="startup.html">创业服务</a></li>
@@ -104,7 +104,7 @@
             <div class="font-size-3rem font-color-black">迎接更为智能的未来社会</div>
             <div class="font-size-6rem font-color-black bolder">人工智能工程院</div>
             <div>创新工场人工智能工程院成立于2016年9月，是专门面向人工智能的创业人才培养基地和创业项目孵化实验室。从科研角度出发，致力于推进人工智能在科学研究与商业领域的发展，与来自世界顶级机构的著名工程师和顶尖科学家共同探索技术、产品、商业价值和数据的结合。</div>
-            <div class="access_more font-color-black">了解更多工程院</div>
+            <div class="access_more font-color-black" data-toggle="modal" data-target="#myModal">了解更多工程院</div>
         </div>
         <div class="right_t01"></div>
 </div>
@@ -155,6 +155,23 @@
 
 <!--content end-->
 
+<div class="modal fade startup-detail-container" id="myModal" tabindex="-1">
+    <div class="startup-detail">
+        <div class="detail-close">
+            <span>+</span>
+        </div>
+        <div class="font-size-6rem font-color-black bolder title">工程院介绍：</div>
+        <div class="slogan">创新工场人工智能工程院成立于2016年9月，是专门面向人工智能的创业人才培养基地和创业项目孵化实验室。由李开复博士亲自领导带队，与来自世界顶级机构的著名工程师和顶尖科学家共同探索技术、产品、商业价值和数据的结合，致力于推进人工智能在科学研究与商业领域的发展，实现人工智能科研成果向产业实践的高效转化。
+        </div>
+        
+        <div class="slogan">
+   作为国内仅有的由投资机构发起的工程院，我们的使命是为人工智能创业提供全方位的支持及全球视野和资源，并期待与国内外的企业、政府、创业者、投资人等携手，共同打造健康、良性的人工智能生态。创新工场人工智能工程院提供的全方位支持，包括人才与技术、产品和商业经验、市场推广、软硬件平台、高质量大数据源等多个维度。对于垂直行业的领先企业，创新工场在金融、自动驾驶、运营商、文化娱乐、医疗及物流等行业都有深刻的理解及丰富的积累，可在定向分析后提供系统性的解决方案，通过AI赋能后提升其在行业的竞争力。对于人工智能领域的优秀人才和高水准创业团队，如果已经有了清晰的商业模式和成熟的产品规划，创新工场可直接提供投资支持；如果商业模式或产品规划尚未清晰，创新工场则可以孵化的方式，帮助创业者实现创业梦想。
+
+        </div>
+        
+    </div>
+</div>
+
 <div class="index-footer">
         <div class="footer-nav">
             <div class="footer-column">
@@ -165,50 +182,50 @@
                 <div>媒体合作</div>
                 <div>Email：<br/><span>press@chuangxin.com</span></div>
                 <div>商业计划书投递</div>
-                <div class="sendbp" style="border: 1px solid #ff7e00;"><a href="http://cn.mikecrm.com/0N5BKeb" target="_blank">BP投递</a></div>
+                <div class="sendbp" id="sendbp" style="border: 1px solid #ff7e00;"><a href="http://cn.mikecrm.com/0N5BKeb" target="_blank">BP投递</a></div>
             </div>
             <div class="footer-column">
-                <div class="footer-nav-main">
-                    发现更多
-                    <img src="img/index/triangle.png">
-                </div>
-                <div>最新动态</div>
-                <div>投资业务</div>
-                <div>创业服务</div>
-                <div>人工智能工程院</div>
+            <div class="footer-nav-main">
+                发现更多
+                <img src="img/index/triangle.png">
             </div>
-            <div class="footer-column">
-                <div class="footer-nav-main">
-                    公司地址
-                    <img src="img/index/triangle.png">
-                </div>
-                <div>北京</div>
-                <div>上海</div>
-                <div>深圳</div>
-                <div>硅谷</div>
+            <div><a href="./news.html">最新动态</a></div>
+            <div><a href="./invest_biz.html">投资业务</a></div>
+            <div><a href="./startup.html">创业服务</a></div>
+            <div><a href="./ai.html">人工智能工程院</a></div>
+        </div>
+        <div class="footer-column">
+            <div class="footer-nav-main">
+                公司地址
+                <img src="img/index/triangle.png">
             </div>
-            <div class="footer-column">
-                <div class="footer-nav-main">
-                    关于我们
-                    <img src="img/index/triangle.png">
-                </div>
-                <div>企业介绍</div>
-                <div>团队</div>
-                <div>工作机会</div>
+            <div><a href="./contact.html#beijing">北京</a></div>
+            <div><a href="./contact.html#shanghai">上海</a></div>
+            <div><a href="./contact.html#shenzhen">深圳</a></div>
+            <div><a href="./contact.html#guiwu">硅谷</a></div>
+        </div>
+        <div class="footer-column">
+            <div class="footer-nav-main">
+                关于我们
+                <img src="img/index/triangle.png">
             </div>
-            <div class="footer-column">
-                <div class="footer-nav-main">
-                    关注我们
-                    <img src="img/index/triangle.png">
-                </div>
-                <div>微博</div>
-                <div>微信</div>
-                <div>领英</div>
-                <div>推特</div>
-                <div>知乎</div>
+            <div><a href="./about_us.html">企业介绍</a></div>
+            <div><a href="./about_team.html">团队</a></div>
+            <div><a href="./job.html">工作机会</a></div>
+        </div>
+        <div class="footer-column">
+            <div class="footer-nav-main">
+                关注我们
+                <img src="img/index/triangle.png">
             </div>
+            <div><a href="http://weibo.com/u/2962715680?is_hot=1">微博</a></div>
+            <div><a href="#">微信</a></div>
+            <div><a href="https://www.linkedin.com/company-beta/740432/">领英</a></div>
+            <div><a href="https://twitter.com/sinovationvc">推特</a></div>
+            <div><a href="https://www.zhihu.com/topic/19624098/hot">知乎</a></div>
+        </div>
             <div class="lp_login">
-                <div class="lplogin" style="border: 1px solid #b5a699;"><a href="https://www.dataroomlogin.com/" target="_blank">LP登录</a></div>
+                <div class="lplogin" id="lplogin" style="border: 1px solid #b5a699;"><a href="https://www.dataroomlogin.com/" target="_blank">LP登录</a></div>
             </div>
         </div>
 
