@@ -21,7 +21,7 @@
     }
 
     .header_logo {
-        height: 80px;
+        height: 70px;
         flex-basis: 40%;
         background: url("../img/index/logo.png") no-repeat 30% center;
         background-size: auto 40px;
@@ -49,7 +49,7 @@
     }
 
     .header_nav > .menu > span {
-        font-size: 8rem;
+        font-size: 4rem;
         color: black;
         font-weight: 100;
         margin-right: 5%;
@@ -70,11 +70,11 @@
     }
 
     .head-menu img {
-        width: 30px;
-        height: 28px;
+        width: 25px;
+        height: 20px;
     }
 
-    .header_nav ul {
+    .header_nav ul {    
         list-style: none;
         padding: 0;
         margin: 0 9%;
@@ -107,8 +107,8 @@
 
     .swiper-container {
         width: 100%;
-        height: 360px;
-        margin-top: 80px;
+        height: 320px;
+        margin-top: 70px;
     }
 
     .slide1 {
@@ -129,8 +129,9 @@
     .rectangle-left {
         width: 100%;
         height: 120px;
-        background: url("../img/index/Rectangle-l.png") no-repeat 10% 80px;
-        background-size: 40px 40px;
+        background: url("../img/index/Rectangle-l.png") no-repeat 5% 60px;
+        background-size: 30px 30px;
+            margin-top: -10px;
     }
 
     .rectangle-right {
@@ -138,45 +139,45 @@
         /*background: #000;*/
         height: 60px;
         margin-top: -40px;
-        background: url("../img/index/Rectangle-r.png") no-repeat 85% 0;
-        background-size: 40px 40px;
+        background: url("../img/index/Rectangle-r.png") no-repeat 90% 0px;
+        background-size: 30px 30px;
     }
 
     .slide-title {
-        width: 85%;
+        width: 90%;
         height: 120px;
-        margin-top: -20px;
+        margin-top: -40px;
         font-family: "Source Sans Pro";
         font-size: 3em;
         color: white;
         font-weight: bolder;
-        padding-left: 15%;
-        letter-spacing: 5px;
+        padding-left: 12%;
+        letter-spacing: 2px;
     }
 
     .swiper-slide-hover > img {
-        margin-left: 15%;
-        /*margin-top: 80px;*/
-        height: 45px;
+        margin-left: 6%;
+        margin-top: 15px;
+        height: 30px;
     }
 
     /*有李开复头像层*/
     .index-content01 {
         display: flex;
-        height: 400px;
+        height: 370px;
         background: url("../img/index/sinnovation-bg.png") no-repeat 0 0;
         background-size: auto 100%;
     }
 
     .index-content01-left {
         flex-basis: 100%;
-        padding-left: 12%;
-        padding-right: 12%;
+        padding-left: 5%;
+        padding-right: 5%;
     }
 
     .index-content01-left > .t01-l1 {
-        font-size: 2rem;
-        padding-top: 75px;
+        font-size: 1.4rem;
+        padding-top: 35px;
         letter-spacing: 5px;
         font-weight: 500;
     }
@@ -200,26 +201,43 @@
         /*height: 6px;*/
         margin-top: 31px;
         font-size: 1.4em;
-        letter-spacing: 1px;
+        letter-spacing: 2px;
         font-weight: 300;
         white-space: pre-line;
+        line-height: 25px;
     }
 
     .access_more {
         /*margin-top: 35px;*/
-        /*width: 200px;*/
+        width: 140px;
         height: 46px;
         line-height: 46px;
         border: 1px solid black;
         border-radius: 50px;
-        padding-left: 30px;
-        padding-right: 30px;
-        font-size: 1.6rem;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 1rem;
         letter-spacing: 6px;
         font-weight: 500;
         text-align: center;
+        margin-top: 30px;
     }
 
+    .index-content03-right  > .access_more {
+    /* margin-top: 35px; */
+    width: 140px;
+    height: 46px;
+    line-height: 46px;
+    border: 1px solid black;
+    border-radius: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 1rem;
+    letter-spacing: 6px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 10px;
+}
     .index-content01-right {
         flex-basis: 40%;
         background: url("../img/index/lkf.png") no-repeat 40% 20px;
@@ -230,7 +248,7 @@
     .index-content02 {
         display: flex;
         /*border: 2px solid #ff3f3e;*/
-        height: 550px;
+        height: 460px;
         background: url("../img/index/index-content02-bg.jpg") no-repeat center center;
         background-size: cover;
     }
@@ -238,7 +256,7 @@
     .index-content02 > .cover {
         display: flex;
         flex-wrap: wrap;
-        height: 550px;
+        height: 460px;
         width: 100%;
         background-color: rgba(0, 0, 0, 0.65);
         padding-right: 5%;
@@ -254,20 +272,20 @@
     .t02-l1 {
         border: 1px solid #ff7e00;
         width: 30%;
-        padding-top: 20px;
+        padding-top: 10px;
         padding-bottom: 25px;
         margin-top: 35px;
         /*margin-left: 25px;*/
         display: flex;
         flex-direction: column;
-        height: 135px;
+        height: 115px;
     }
 
     .t02-l1 > :first-child {
         color: white;
         width: 100%;
         text-align: left;
-        font-size: 0.5rem;
+        font-size: 1rem;
         font-weight: 400;
         letter-spacing: 1px;
         padding-left: 15%;
@@ -308,13 +326,14 @@
     .index-content02-right > .t02-r3 {
         font-size: 1.3rem;
         font-weight: 300;
-        line-height: 40px;
+        line-height: 30px;
         padding-left: 10%;
+        padding-top: 20px;
     }
 
     /*投后介绍*/
     .index-content03 {
-        height: 400px;
+        height: 350px;
         display: flex;
         flex-wrap: wrap;
         background: url("../img/index/index-content03-bg.png") no-repeat 0 0;
@@ -345,7 +364,7 @@
 
     .index-content03-left > .t03-l3 {
         letter-spacing: 3px;
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         line-height: 30px;
     }
 
@@ -369,7 +388,7 @@
     .index-content04 {
         display: flex;
         flex-direction: row;
-        height: 400px;
+        height: 280px;
         background: url("../img/index/index-content04-bg.png") no-repeat 100% 100%;
         background-size: auto 100%;
 
@@ -384,7 +403,7 @@
     }
 
     .index-content04-middle {
-        flex-basis: 60%;
+        flex-basis: 65%;
         padding-left: 5%;
         text-align: right;
         display: flex;
@@ -411,7 +430,7 @@
     }
 
     .index-content04-right {
-        flex-basis: 40%;
+        flex-basis: 35%;
         background: url("../img/index/index-content04-logo.png") no-repeat center;
         background-size: 80% auto;
     }
@@ -454,8 +473,8 @@
         justify-content: space-around;
         align-items: flex-end;
         padding-bottom: 20px;
-        padding-left: 12%;
-        padding-right: 12%;
+        padding-left: 5%;
+        padding-right: 5%;
     }
 
     .page-prev {
@@ -491,13 +510,14 @@
         background-size: auto 80%;
         width: 100% !important;
         height: 400px;
-        padding-left: 15%;
+        padding-left: 10%;
+        background-size: 90% !important;
     }
 
     .t05-item > .item-slogan {
         width: 45%;
         font-size: 1.6rem;
-        margin-top: 120px;
+        margin-top: 150px;
         letter-spacing: 3px;
     }
 
@@ -508,7 +528,7 @@
 
     .t05-item > .item-logo {
         background: url("../img/index/logo_en_new.png") no-repeat;
-        background-size: auto 100%;
+        background-size: auto 100% !important;
         height: 30px;
     }
 
@@ -569,7 +589,7 @@
     }
 
     .t06-row-column-l {
-        height: 410px;
+        height: 290px;
         width: 100%;
         margin-top: 5px;
         margin-bottom: 5px;
@@ -594,15 +614,15 @@
     }
 
     .lplogin {
-        width: 150px;
-        height: 50px;
+        width: 130px;
+        height: 35px;
         margin-top: 20px;
         border: 1px solid black;
         border-radius: 50px;
-        line-height: 50px;
+        line-height: 35px;
         padding-left: 20px;
         padding-right: 20px;
-        font-size: 1.4rem;
+        font-size: 1rem;
         letter-spacing: 6px;
         font-weight: 500;
         text-align: center;
@@ -614,10 +634,10 @@
         margin-top: 10px;
         border: 1px solid black;
         border-radius: 50px;
-        line-height: 30px;
+        line-height: 35px;
         padding-left: 10px;
         padding-right: 10px;
-        font-size: 1.4rem;
+        font-size: 1rem;
         letter-spacing: 6px;
         font-weight: 500;
         text-align: center;
@@ -715,6 +735,7 @@
         font-size: 1.7rem;
         color: #b5a699;
         line-height: 45px;
+        margin-top: -10px;
     }
 
     .footer-nav {
@@ -724,24 +745,26 @@
         justify-content: space-between;
         /*height: 480px;*/
         padding-left: 5%;
-        padding-right: 5%;
-        padding-top: 60px;
+        /*padding-right: 5%;*/
+        padding-top: 30px;
 
         font-size: 1.7rem;
         color: #b5a699;
-        line-height: 45px;
+        line-height: 30px;
     }
 
     .footer-nav > .footer-column {
-        flex-basis: 45%;
+        flex-basis: 47%;
         display: flex;
         flex-direction: column;
         font-size: 1.4rem;
+            padding-top: 5px;
     }
 
     .footer-nav > .footer-column span, .footer-nav > .footer-copyright span {
         color: #ff7e00;
         white-space: nowrap;
+        text-align: left;
     }
 
     .footer-nav > .lp_login {
@@ -784,12 +807,12 @@
 
     */
     .invest-header {
-        margin-top: 80px;
+        margin-top: 70px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 530px;
+        height: 368px;
         /*padding-top: 80px;*/
     }
 
@@ -820,7 +843,7 @@
         background: url("../img/invest-biz/ling-group.png") no-repeat center;
         background-size: contain;
         height: 80px;
-        margin-top: 50px;
+        margin-top: 10px;
         width: 200px;
     }
 
@@ -837,12 +860,12 @@
         /*padding-left: 5%;*/
         /*padding-right: 5%;*/
         /*margin-left: 27%;*/
-        height: 100px;
+        height: 70px;
         display: flex;
         justify-content: space-around;
         align-items: center;
-        -moz-box-shadow: 100px 100px 50px 20px #bfbfbf; /* 老的 Firefox */
-        box-shadow: 0 1px 5px 1px #bfbfbf;
+        -moz-box-shadow: 100px 100px 50px 20px #e7e7e7; /* 老的 Firefox */
+        box-shadow: 0 1px 5px 1px #e7e7e7;
     }
 
     .invest-toggle span,
@@ -854,7 +877,7 @@
         font-size: 1.5rem;
         font-weight: bold;
         /*height: 100px;*/
-        line-height: 100px;
+        line-height: 70px;
         /*width: 17%;*/
         min-width: 72px;
         letter-spacing: 2px;
@@ -877,32 +900,33 @@
     }
 
     .invest-a-t01 {
-        height: 500px;
+        height: 380px;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        background: url("../img/invest-biz/bg.png") no-repeat center;
+        background: url(../img/index/sinnovation-bg.png) no-repeat 0 0;
         background-size: cover;
         padding: 0 5%;
-        padding-top: 100px;
+        padding-top: 70px;
         font-family: "Microsoft Yahei";
     }
 
     .invest-a-t01 > :first-child {
         letter-spacing: 5px;
         font-size: 18px !important;
+            margin-top: 15px;
     }
 
     .invest-a-t01 > :nth-child(2) {
         letter-spacing: 5px;
-        line-height: 40px;
-        font-size: 50px !important;
-        padding-bottom: 50px;
-        padding-top: 20px;
+        line-height: 30px;
+        font-size: 28px !important;
+        padding-bottom: 10px;
+        padding-top: 10px;
     }
 
     .invest-a-t01 > :nth-child(n+3) {
-        letter-spacing: 5px;
+        letter-spacing: 3px;
         line-height: 30px;
     }
 
@@ -910,7 +934,7 @@
         display: flex;
         background-color: #252525;
         flex-direction: column;
-            height: 1050px;
+            height: 800px;
     }
 
     .invest-a-t02 > div {
@@ -919,19 +943,19 @@
         /*flex-direction: column;*/
         justify-content: flex-start;
         flex-basis: 18.75%;
-        height: 750px;
+        height: 800px;
     }
 
     .invest-a-t02 > .intro {
         display: flex;
-        flex-basis: 30%;
+        flex-basis: 25%;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         padding-left: 3%;
         padding-right: 3%;
         /*width: 50%;*/
-        height: 300px;
+        /*height: 300px;*/
         background-color: #333;
         font-family: "Microsoft Yahei";
     }
@@ -942,14 +966,14 @@
         border-bottom: 5px solid #ff7e00;
         padding-bottom: 20px;
         margin-bottom: 20px;
-        font-size: 30px;
+        font-size: 28px;
         letter-spacing: 15px;
         color: #fff;
     }
 
     .invest-a-t02 > .intro :nth-child(2) {
         line-height: 30px;
-        font-size: 1.6rem;
+        font-size: 14px;
         letter-spacing: 5px;
         color: rgba(255, 255, 255, 0.8);
     }
@@ -957,7 +981,7 @@
     .invest-a-t02 > .intro :last-child {
 
         line-height: 30px;
-        font-size: 1.6rem;
+        font-size: 14px;
         letter-spacing: 5px;
         color: rgba(255, 255, 255, 0.8);
     }
@@ -984,7 +1008,7 @@
 
     .invest-area > .invest-item {
         display: flex;
-        height: 250px;
+        height: 200px;
         flex-direction: column;
         justify-content: center;
         padding-left: 2%;
@@ -999,7 +1023,7 @@
     }
 
     .invest-item > :first-child {
-        font-size: 2.2rem;
+        font-size: 1.8rem;
         font-weight: bolder;
         color: white;
         line-height: 50px;
@@ -1078,29 +1102,34 @@
     .invest-a-t03 {
         display: flex;
         flex-direction: column;
-        height: 600px;
-        padding-left: 12%;
-        padding-right: 12%;
-        padding-top: 100px;
+        height: 420px;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 40px;
         background: url("../img/invest-biz/phase-mobile.png") no-repeat bottom center;
         background-size: 95% auto;
         background-clip: padding-box;
     }
 
+    .invest-a-t03 > div{
+        font-size: 18px;
+    }
+
     .invest-a-t03 > :nth-child(2) {
-        padding-top: 20px;
+        padding-top: 10px;
     }
 
     .invest-a-t03 > :nth-child(2) > :first-child {
         padding: 5px 5px 20px 0;
         /*border-bottom: 5px solid #ff7e00;*/
         font-weight: bolder;
-        font-size: 4rem;
+        font-size: 30px;
     }
 
     .invest-a-t03 > :nth-child(3) {
-        padding: 30px 5px 10px 5px;
-        font-size: 1.6rem;
+        padding: 20px 5px 10px 5px;
+        font-size: 14px;
+        letter-spacing: 1px;
     }
 
     /*亿元美金俱乐部*/
@@ -1118,22 +1147,24 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        /*align-items: center;*/
-        padding-top: 80px;
-        padding-left: 50px;
+        align-items: flex-start;;
+        padding-top: 30px;
+    padding-bottom: 20px;
+        padding-left: 5%;
     }
 
     .invest-a-t04 > .title > span {
         letter-spacing: 5px;
         /*border-bottom: 5px solid #ff7e00;*/
         /*padding-bottom: 30px;*/
-        font-size: 3rem !important;
+        font-size: 28px !important;
     }
 
     .invest-a-t04 > .title > :nth-child(2) {
         line-height: 70px;
         letter-spacing: 1px;
-        font-size: 16px;
+        font-size: 14px;
+            text-align: center;
     }
 
     .invest-a-t04 > .apps-wrapper {
@@ -1151,7 +1182,7 @@
 
     .app {
         width: 33.3%;
-        height: 200px;
+        height: 150px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1197,7 +1228,7 @@
         padding-right: 7%;
         justify-content: flex-start;
         align-items: center;
-        font-size: 6rem;
+        font-size: 28px;
         font-weight: bolder;
         line-height: 80px;
         height: 200px;
@@ -1728,10 +1759,10 @@
 
     .about-team-toggle > a, span {
         /*flex-basis: 50%;*/
-        padding: 0px 5%;
+        padding: 0px 1%;
         text-align: center;
         font-size: 1.5rem;
-        font-weight: bold;
+        font-weight: lighter;
     }
 
     .about-team-toggle > a > span {
@@ -1968,7 +1999,7 @@
     /*创业服务*/
     .startup-hd {
         margin-top: 80px;
-        height: 450px;
+        height: 300px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -1985,7 +2016,7 @@
 
     .startup-hd > :last-child {
         height: 35px;
-        margin-top: 30px;
+        margin-top: 20px;
     }
 
     .startup-toggle {
@@ -1994,7 +2025,7 @@
         padding-left: 10%;
         padding-right: 10%;
         /*margin-left: 25%;*/
-        height: 100px;
+        /*height: 100px;*/
         display: flex;
         justify-content: space-around;
         align-items: center;
