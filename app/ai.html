@@ -22,7 +22,7 @@
                 <span>投资业务</span>
             </a>
             <a href="invest_biz.html">基金介绍</a>
-            <a href="invest_biz.html">投资项目</a>
+            <a href="invest_biz.html#billon">投资项目</a>
             <a href="invest_declaration.html">投资者宣言</a>
             <a href="invest_biz.html?tab=team">投资团队</a>
             <a href="invest_biz.html">投资人关系</a>
@@ -37,7 +37,7 @@
         <div>
             <a class="active_menu" href="ai.html"><span>人工智能工程院</span></a>
             <a href="ai.html">工程院介绍</a>
-            <a href="ai.html">工程院团队</a>
+            <a href="ai.html?tab=team">工程院团队</a>
         </div>
         <div>
             <a href="about_us.html"><span>关于我们</span></a>
@@ -62,7 +62,7 @@
         <li class="main-nav"><a href="index.html">首页</a></li>
         <li class="main-nav"><a href="invest_biz.html">投资业务</a></li>
         <li class="sub-nav"><a href="invest_biz.html">基金介绍</a></li>
-        <li class="sub-nav"><a href="invest_biz.html">投资项目</a></li>
+        <li class="sub-nav"><a href="invest_biz.html#billon">投资项目</a></li>
         <li class="sub-nav"><a href="invest_declaration.html">投资者宣言</a></li>
         <li class="sub-nav"><a href="invest_biz.html?tab=team">投资团队</a></li>
         <li class="sub-nav"><a href="invest_biz.html">投资人关系</a></li>
@@ -73,7 +73,7 @@
         <li class="sub-nav"><a href="startup.html?tab=team">运营团队</a></li>
         <li class="main-nav current"><a href="ai.html">人工智能工程院</a></li>
         <li class="sub-nav"><a href="ai.html">工程院介绍</a></li>
-        <li class="sub-nav"><a href="ai.html">工程院团队</a></li>
+        <li class="sub-nav"><a href="ai.html?tab=team">工程院团队</a></li>
         <li class="main-nav "><a href="about_us.html">关于我们</a></li>
         <li class="sub-nav"><a href="about_us.html">工场介绍</a></li>
         <li class="sub-nav"><a href="about_team.html">团队介绍</a></li>
@@ -93,8 +93,8 @@
 
 <div class="toggle-container">
     <div class="ai-toggle">
-        <span class="ai actived">人工智能工程院</span>
-        <span class="team">团队介绍</span>
+        <span class="aiintroduce actived">人工智能工程院</span>
+        <span class="aiteam">团队介绍</span>
     </div>
 </div>
 
@@ -104,7 +104,7 @@
             <div class="font-size-3rem font-color-black">迎接更为智能的未来社会</div>
             <div class="font-size-6rem font-color-black bolder">人工智能工程院</div>
             <div>创新工场人工智能工程院成立于2016年9月，是专门面向人工智能的创业人才培养基地和创业项目孵化实验室。从科研角度出发，致力于推进人工智能在科学研究与商业领域的发展，与来自世界顶级机构的著名工程师和顶尖科学家共同探索技术、产品、商业价值和数据的结合。</div>
-            <div class="access_more font-color-black" data-toggle="modal" data-target="#myModal">了解更多工程院</div>
+            <div class="access_more font-color-black" data-toggle="modal" data-target="#myModal"><a href="#">了解更多工程院</a></div>
         </div>
         <div class="right_t01"></div>
 </div>
@@ -152,6 +152,13 @@
 </div>
 </div>
 
+<div class="ai-content2-b">
+        <div class="ai-crazy-team"><!-- 
+            <div class="team-title font-color-black">投资团队成员</div>
+            <div class="team-member-list"> 
+            </div>-->
+        </div>
+    </div>
 
 <!--content end-->
 
@@ -239,4 +246,37 @@
 <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
 <script src="bower_components/swiper/dist/js/swiper.js"></script>
 <script src="js/app.js"></script>
+<script type="text/javascript">
+    function GetRequest() {
+
+        var url = location.search; //获取url中"?"符后的字串
+        var theRequest = new Object();
+        if (url.indexOf("?") != -1) {
+            var str = url.substr(1);
+            strs = str.split("&");
+            for (var i = 0; i < strs.length; i++) {
+                theRequest[strs[i].split("=")[0]] = (strs[i].split("=")[1]);
+            }
+        }
+        return theRequest;
+    }
+    function GetQueryString(name) {
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) return (r[2]);
+        return null;
+    }
+
+    $(document).ready(function () {
+        var Request = new Object();
+        Request = GetRequest();
+        if ("team" == Request['tab']) {
+            $('.aiteam').addClass("actived");
+            $(".aiintroduce").removeClass("actived");
+            $(".ai-content2").hide();
+            $(".ai-content2-b").show();
+        }
+
+    });
+</script>
 </html>

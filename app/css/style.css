@@ -22,7 +22,7 @@ html {
 }
 
 body {
-    font: normal 100% Source Sans Pro, Microsoft Yahei,Source Sans Pro, Helvetica, Arial, sans-serif !important;
+    font: normal 100% Source Sans Pro,PingFang SC, Microsoft Yahei, Helvetica, Arial, sans-serif !important;
     margin: 0;
     position: relative;
     overflow-x: hidden;

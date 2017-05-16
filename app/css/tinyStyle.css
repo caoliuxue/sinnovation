@@ -59,7 +59,7 @@
         font-size: 4rem;
         color: black;
         font-weight: 100;
-        margin-right: 5%;
+        margin-right: -8%;
         line-height: 80px;
         transform: rotate(45deg);
         /*-ms-transform:rotate(7deg); 	!* IE 9 *!*/
@@ -569,7 +569,8 @@
 
     .index-content04-middle > .t04-l3 {
         line-height: 30px;
-        font-weight: 100;
+        font-weight: 300;
+        font-size: 1.4rem;
     }
 
     .index-content04-right {
@@ -654,7 +655,7 @@
         width: 100% !important;
         height: 400px;
         padding-left: 10%;
-        background-size: 90% !important;
+        background-size: 80% !important;
     }
 
     .t05-item > .item-slogan {
@@ -1175,7 +1176,7 @@
         padding-left: 3%;
         padding-right: 3%;
         /*width: 50%;*/
-        /*height: 300px;*/
+        height: 300px;
         background-color: #333;
         font-family: "Microsoft Yahei";
     }
@@ -1541,7 +1542,7 @@ background-size: cover;
     .about-crazy-team {
         display: flex;
         flex-direction: column;
-        padding-top: 100px;
+        padding-top: 60px;
     }
 
     .about-crazy-team > .team-title {
@@ -1600,6 +1601,222 @@ background-size: cover;
     }
 
     .about-crazy-team > .team-member-list > .team-member-line > .team-member > :nth-child(N+3) {
+        font-size: 1.6rem;
+        line-height: 30px;
+        max-lines: 2;
+        min-height: 40px;
+        color: #a4a4a4;
+        font-weight: 500;
+        text-align: center;
+        white-space: pre-line;
+    }
+
+    .ai-crazy-team {
+        display: flex;
+        flex-direction: column;
+        padding-top: 100px;
+    }
+
+    .ai-crazy-team > .team-title {
+        display: flex;
+        padding-left: 7%;
+        padding-right: 7%;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: 3rem;
+        font-weight: bolder;
+        line-height: 80px;
+        height: 100px;
+    }
+
+    .ai-crazy-team > .team-member-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .ai-crazy-team > .team-member-list > .team-member-line {
+        display: flex;
+        width: 100%;
+        padding-left: 3%;
+        padding-right: 3%;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .ai-crazy-team > .team-member-list > .team-member-line > .team-member {
+        display: flex;
+        flex-basis: 50%;
+        /*height: 456px;*/
+        flex-direction: column;
+        /*justify-content: center;*/
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    .ai-crazy-team > .team-member-list > .team-member-line > .team-member img {
+        width: 95%;
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ai-crazy-team > .team-member-list > .team-member-line > .team-member > :nth-child(2) {
+        margin-top: 30px;
+        font-size: 2rem;
+        font-weight: bolder;
+        line-height: 40px;
+        color: black;
+        overflow: hidden;
+        text-align: center;;
+    }
+
+    .ai-crazy-team > .team-member-list > .team-member-line > .team-member > :nth-child(N+3) {
+        font-size: 1.6rem;
+        line-height: 30px;
+        max-lines: 2;
+        min-height: 40px;
+        color: #a4a4a4;
+        font-weight: 500;
+        text-align: center;
+        white-space: pre-line;
+    }
+
+    .invest-crazy-team {
+        display: flex;
+        flex-direction: column;
+        padding-top: 100px;
+    }
+
+    .invest-crazy-team > .team-title {
+        display: flex;
+        padding-left: 7%;
+        padding-right: 7%;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: 3rem;
+        font-weight: bolder;
+        line-height: 80px;
+        height: 100px;
+    }
+
+    .invest-crazy-team > .team-member-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .invest-crazy-team > .team-member-list > .team-member-line {
+        display: flex;
+        width: 100%;
+        padding-left: 3%;
+        padding-right: 3%;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .invest-crazy-team > .team-member-list > .team-member-line > .team-member {
+        display: flex;
+        flex-basis: 50%;
+        /*height: 456px;*/
+        flex-direction: column;
+        /*justify-content: center;*/
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    .invest-crazy-team > .team-member-list > .team-member-line > .team-member img {
+        width: 95%;
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .invest-crazy-team > .team-member-list > .team-member-line > .team-member > :nth-child(2) {
+        margin-top: 30px;
+        font-size: 2rem;
+        font-weight: bolder;
+        line-height: 40px;
+        color: black;
+        overflow: hidden;
+        text-align: center;;
+    }
+
+    .invest-crazy-team > .team-member-list > .team-member-line > .team-member > :nth-child(N+3) {
+        font-size: 1.6rem;
+        line-height: 30px;
+        max-lines: 2;
+        min-height: 40px;
+        color: #a4a4a4;
+        font-weight: 500;
+        text-align: center;
+        white-space: pre-line;
+    }
+
+    .startup-crazy-team {
+        display: flex;
+        flex-direction: column;
+        padding-top: 100px;
+    }
+
+    .startup-crazy-team > .team-title {
+        display: flex;
+        padding-left: 7%;
+        padding-right: 7%;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: 3rem;
+        font-weight: bolder;
+        line-height: 80px;
+        height: 100px;
+    }
+
+    .startup-crazy-team > .team-member-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .startup-crazy-team > .team-member-list > .team-member-line {
+        display: flex;
+        width: 100%;
+        padding-left: 3%;
+        padding-right: 3%;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .startup-crazy-team > .team-member-list > .team-member-line > .team-member {
+        display: flex;
+        flex-basis: 50%;
+        /*height: 456px;*/
+        flex-direction: column;
+        /*justify-content: center;*/
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    .startup-crazy-team > .team-member-list > .team-member-line > .team-member img {
+        width: 95%;
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .startup-crazy-team > .team-member-list > .team-member-line > .team-member > :nth-child(2) {
+        margin-top: 30px;
+        font-size: 2rem;
+        font-weight: bolder;
+        line-height: 40px;
+        color: black;
+        overflow: hidden;
+        text-align: center;;
+    }
+
+    .startup-crazy-team > .team-member-list > .team-member-line > .team-member > :nth-child(N+3) {
         font-size: 1.6rem;
         line-height: 30px;
         max-lines: 2;
@@ -1865,11 +2082,12 @@ background-size: cover;
     }
 
     .about_team_hd > :first-child {
-        height: 100px;
+            height: 80px;
+    margin-bottom: 20px;
     }
 
     .about_team_hd > :nth-child(2) {
-        font-size: 6rem;
+        font-size: 3rem;
         font-weight: bolder;
         letter-spacing: 5px;
     }
@@ -1890,8 +2108,9 @@ background-size: cover;
     .about_team_lkf_left {
         display: flex;
         flex-direction: column;
-        flex-basis: 50%;
+        flex-basis: 100%;
         padding-left: 3%;
+        padding-right: 3%;
     }
 
     .about_team_lkf_left > :first-child {
@@ -1919,6 +2138,8 @@ background-size: cover;
         height: 200px;
         overflow: hidden;
         max-height: 300px;
+        background: url("../img/about/more.png") no-repeat 90% 100%;
+        background-size: 20px;
     }
 
     .about_team_lkf > .index-content01-right {
@@ -1927,6 +2148,7 @@ background-size: cover;
         flex-direction: column;
         justify-content: flex-end;
         padding-bottom: 80px;
+        display: none;
     }
 
     .about_team_lkf > .index-content01-right > img {
@@ -2010,12 +2232,29 @@ background-size: cover;
     }
 
     .about-team-toggle > a, span {
-        /*flex-basis: 50%;*/
+        flex-basis: 33.33%;
         padding: 0px 1%;
         text-align: center;
         font-size: 1.5rem;
         font-weight: lighter;
     }
+
+    .about-team-toggle :nth-child(4) {
+        flex-basis: 50%;
+        padding: 0px 1%;
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: lighter;
+    }
+
+    .about-team-toggle :nth-child(5) {
+        flex-basis: 50%;
+        padding: 0px 1%;
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: lighter;
+    }
+
 
     .about-team-toggle > a > span {
         flex-basis: 33.33%;
@@ -2352,7 +2591,7 @@ background-size: cover;
 
     .startup-service > .left > .left_t02 {
         height: 400px;
-        background: url("../img/startup/img2.png") no-repeat center right;
+        background: url("../img/startup/img3.png") no-repeat center right;
         background-size: cover;
 
     }
@@ -2366,7 +2605,7 @@ background-size: cover;
 
     .startup-service > .right > .right_t03 {
         height: 400px;
-        background: url("../img/startup/img3.png") no-repeat center right;
+        background: url("../img/startup/img2.png") no-repeat center right;
         background-size: cover;
 
     }
