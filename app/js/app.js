@@ -1,7 +1,7 @@
 /**
  * Created by caoliuxue on 2017/4/16.
  */
-$(document).ready(function () {
+ $(document).ready(function () {
 
     function get_device_type() {
         var info = navigator.userAgent;
@@ -45,6 +45,11 @@ $(document).ready(function () {
     $(".menu-close").click(function () {
         $("#header_nav").modal('toggle');
     });
+
+    $("#header_nav ul li a").click(function () {
+        $("#header_nav").modal('toggle');
+    });
+
     var bannerSwiper = new Swiper('.swiper-container', {
         // Optional parameters
         direction: 'horizontal',
@@ -102,6 +107,34 @@ $(document).ready(function () {
         } else if ($(this).hasClass("introduce")) {
             $(".invest-b").hide();
             $(".invest-a").show();
+        }
+    });
+
+    $(".startup-b").hide();
+    $(".startup-toggle span").click(function () {
+        console.log(this);
+        $(".startup-toggle span").removeClass("actived");
+        $(this).addClass("actived");
+        if ($(this).hasClass("operation-team")) {
+            $(".startup-service").hide();
+            $(".startup-b").show();
+        } else if ($(this).hasClass("startup-servicetab")) {
+            $(".startup-b").hide();
+            $(".startup-service").show();
+        }
+    });
+
+    $(".ai-content2-b").hide();
+    $(".ai-toggle span").click(function () {
+        console.log(this);
+        $(".ai-toggle span").removeClass("actived");
+        $(this).addClass("actived");
+        if ($(this).hasClass("aiintroduce")) {
+            $(".ai-content2-b").hide();
+            $(".ai-content2").show();
+        } else if ($(this).hasClass("aiteam")) {
+            $(".ai-content2").hide();
+            $(".ai-content2-b").show();
         }
     });
 
@@ -168,21 +201,21 @@ $(document).ready(function () {
 
 
 //    ABOUT US
-    $("video").click(function () {
-        console.log($(this));
-        if ($(this).prop("paused")) {
-            this.play();
-        } else {
-            this.pause();
-        }
-    });
+$("video").click(function () {
+    console.log($(this));
+    if ($(this).prop("paused")) {
+        this.play();
+    } else {
+        this.pause();
+    }
+});
 
 //    ABOUT TEAM
 
-    var selectedTeam = null;
+var selectedTeam = null;
 
-    var renderTeam = function () {
-        $.get("js/team-list.json", function (data) {
+var renderTeam = function () {
+    $.get("js/team-list.json", function (data) {
             // console.log(data);
             var allMember = $("<span class='actived'>全部团队成员</span>");
             $(".team-toggle").append(allMember);
@@ -212,36 +245,243 @@ $(document).ready(function () {
                 }
             });
         }, "json");
-    };
-    renderTeam();
+};
+// renderTeam();
+
+var renderAboutTeam = function () {
+    $.get("js/about-team-list.json", function (data) {
+            // console.log(data);
+            var allMember = $("<span class='actived'>全部团队成员</span>");
+            $(".about-team-toggle").append(allMember);
+            var i = 0;
+            $.each(data, function (index) {
+                if (null === selectedTeam || (null !== selectedTeam && selectedTeam === data[index])) {
+                    //add toggle btn
+                    var teamInToggle = $("<a href='#"+data[index]+"'><span>" + data[index] + "</span></a>");
+                    $(".about-team-toggle").append(teamInToggle);
+                    //add team list viewer
+                    var teamTitle = $("<div class='team-title font-color-black' id='"+data[index]+"'>" + data[index] + "成员</div>");
+                    var team_member_list = $("<div class='team-member-list'></div>");
+                    $(".about-crazy-team").append(teamTitle, team_member_list);
+                    $.get("js/about-team-member.json", function (data) {
+                        var lineArray = [];
+                        var item = {};
+                        $.each(data[index], function (index1) {
+                            item = this;
+                            lineArray.push(this);
+                            if(document.body.clientWidth > 768)
+                            {
+                                if (lineArray.length === 5) {
+                                    renderLine(team_member_list, lineArray);
+                                    lineArray = [];
+                                } else if (index1 === (data[index].length - 1)) {
+                                    renderLine(team_member_list, lineArray);
+                                }
+                            }
+                            else
+                            {
+                                if (lineArray.length === 2) {
+                                    renderLine(team_member_list, lineArray);
+                                    lineArray = [];
+                                } else if (index1 === (data[index].length - 1)) {
+                                    renderLine(team_member_list, lineArray);
+                                }
+                            }
+
+                        });
+                    }, "json");
+
+                    i++;
+                }
+            });
+        }, "json");
+};
+renderAboutTeam();
+
+var renderInvestTeam = function () {
+    $.get("js/about-team-list.json", function (data) {
+            // console.log(data);
+            // var allMember = $("<span class='actived'>全部团队成员</span>");
+            // $(".invest-team-toggle").append(allMember);
+            var i = 0;
+            $.each(data, function (index) {
+                index = 0;
+                if (null === selectedTeam || (null !== selectedTeam && selectedTeam === data[index])) {
+                    //add toggle btn
+                    var teamInToggle = $("<a href='#"+data[index]+"'><span>" + data[index] + "</span></a>");
+                    $(".invest-team-toggle").append(teamInToggle);
+                    //add team list viewer
+                    var teamTitle = $("<div class='team-title font-color-black' id='"+data[index]+"'>" + data[index] + "成员</div>");
+                    var team_member_list = $("<div class='team-member-list'></div>");
+                    $(".invest-crazy-team").append(teamTitle, team_member_list);
+                    $.get("js/about-team-member.json", function (data) {
+                        var lineArray = [];
+                        var item = {};
+                        $.each(data[index], function (index1) {
+                            item = this;
+                            lineArray.push(this);
+                            if(document.body.clientWidth > 768)
+                            {
+                                if (lineArray.length === 5) {
+                                    renderLine(team_member_list, lineArray);
+                                    lineArray = [];
+                                } else if (index1 === (data[index].length - 1)) {
+                                    renderLine(team_member_list, lineArray);
+                                }
+                            }
+                            else
+                            {
+                                if (lineArray.length === 2) {
+                                    renderLine(team_member_list, lineArray);
+                                    lineArray = [];
+                                } else if (index1 === (data[index].length - 1)) {
+                                    renderLine(team_member_list, lineArray);
+                                }
+                            }
+                            
+                        });
+                    }, "json");
+
+                    i++;
+                }
+                return false;
+            });
+        }, "json");
+};
+renderInvestTeam();
+
+
+var renderStartupTeam = function () {
+    $.get("js/about-team-list.json", function (data) {
+            // console.log(data);
+            // var allMember = $("<span class='actived'>全部团队成员</span>");
+            // $(".invest-team-toggle").append(allMember);
+            var i = 0;
+            $.each(data, function (index) {
+                index = 1;
+                if (null === selectedTeam || (null !== selectedTeam && selectedTeam === data[index])) {
+                    //add toggle btn
+                    var teamInToggle = $("<a href='#"+data[index]+"'><span>" + data[index] + "</span></a>");
+                    $(".startup-team-toggle").append(teamInToggle);
+                    //add team list viewer
+                    var teamTitle = $("<div class='team-title font-color-black' id='"+data[index]+"'>" + data[index] + "成员</div>");
+                    var team_member_list = $("<div class='team-member-list'></div>");
+                    $(".startup-crazy-team").append(teamTitle, team_member_list);
+                    $.get("js/about-team-member.json", function (data) {
+                        var lineArray = [];
+                        var item = {};
+                        $.each(data[index], function (index1) {
+                            item = this;
+                            lineArray.push(this);
+                            if(document.body.clientWidth > 768)
+                            {
+                                if (lineArray.length === 5) {
+                                    renderLine(team_member_list, lineArray);
+                                    lineArray = [];
+                                } else if (index1 === (data[index].length - 1)) {
+                                    renderLine(team_member_list, lineArray);
+                                }
+                            }
+                            else
+                            {
+                                if (lineArray.length === 2) {
+                                    renderLine(team_member_list, lineArray);
+                                    lineArray = [];
+                                } else if (index1 === (data[index].length - 1)) {
+                                    renderLine(team_member_list, lineArray);
+                                }
+                            }
+                            
+                        });
+                    }, "json");
+
+                    i++;
+                }
+                return false;
+            });
+        }, "json");
+};
+renderStartupTeam();
+
+var renderAITeam = function () {
+    $.get("js/about-team-list.json", function (data) {
+            // console.log(data);
+            // var allMember = $("<span class='actived'>全部团队成员</span>");
+            // $(".invest-team-toggle").append(allMember);
+            var i = 0;
+            $.each(data, function (index) {
+                index = 3;
+                if (null === selectedTeam || (null !== selectedTeam && selectedTeam === data[index])) {
+                    //add toggle btn
+                    var teamInToggle = $("<a href='#"+data[index]+"'><span>" + data[index] + "</span></a>");
+                    $(".ai-team-toggle").append(teamInToggle);
+                    //add team list viewer
+                    var teamTitle = $("<div class='team-title font-color-black' id='"+data[index]+"'>" + data[index] + "成员</div>");
+                    var team_member_list = $("<div class='team-member-list'></div>");
+                    $(".ai-crazy-team").append(teamTitle, team_member_list);
+                    $.get("js/about-team-member.json", function (data) {
+                        var lineArray = [];
+                        var item = {};
+                        $.each(data[index], function (index1) {
+                            item = this;
+                            lineArray.push(this);
+                            if(document.body.clientWidth > 768)
+                            {
+                                if (lineArray.length === 5) {
+                                    renderLine(team_member_list, lineArray);
+                                    lineArray = [];
+                                } else if (index1 === (data[index].length - 1)) {
+                                    renderLine(team_member_list, lineArray);
+                                }
+                            }
+                            else
+                            {
+                                if (lineArray.length === 2) {
+                                    renderLine(team_member_list, lineArray);
+                                    lineArray = [];
+                                } else if (index1 === (data[index].length - 1)) {
+                                    renderLine(team_member_list, lineArray);
+                                }
+                            }
+                            
+                        });
+                    }, "json");
+
+                    i++;
+                }
+                return false;
+            });
+        }, "json");
+};
+renderAITeam();
 
 //JOB-LIST
 
-    $.get("js/jobs.json", function (data) {
-        console.log(data);
-        $.each(data, function () {
-            var job = $("<div class='job-item'></div>");
-            job.append("<div>" + this.title + "</div>");
-            job.append("<div>" + this.office + "</div>");
-            job.click(function () {
-                window.open("job-detail.html");
-            });
-            $(".job-list").append(job);
+$.get("js/jobs.json", function (data) {
+    console.log(data);
+    $.each(data, function () {
+        var job = $("<div class='job-item'></div>");
+        job.append("<div>" + this.title + "</div>");
+        job.append("<div>" + this.office + "</div>");
+        job.click(function () {
+            window.open("job-detail.html");
         });
-    }, "json");
+        $(".job-list").append(job);
+    });
+}, "json");
 
 //    创业服务
 
-    $(".detail-close").click(function () {
-        $("#myModal").modal('toggle');
-    });
+$(".detail-close").click(function () {
+    $("#myModal").modal('toggle');
+});
 
 
 //    联系我们
 
 
-    try {
-        var initBMap = function initialize(id) {
+try {
+    var initBMap = function initialize(id) {
             var map = new BMap.Map(id);    // 创建Map实例
             var point = new BMap.Point(116.320831, 39.990322);
             var myIcon = new BMap.Icon("img/contact/coordinate.png", new BMap.Size(45, 45), {
@@ -270,17 +510,21 @@ $(document).ready(function () {
 
 //    最新动态
 
-    $(".news-list > .news >div").click(function () {
-        window.open("news-detail.html");
-    });
+$(".news-list > .news >div").click(function () {
+    window.open("news-detail.html");
+});
 
-    $(".gotop").click(function () {
-        $("html,body").stop(true);
-        $("html,body").animate({scrollTop: 0}, 500);
-    });
+$(".gotop").click(function () {
+    $("html,body").stop(true);
+    $("html,body").animate({scrollTop: 0}, 500);
+});
 
-    if(screen.width <= 2000)
-    {
+$(".about_team_lkf_left > :last-child").click(function () {
+    $(".about_team_lkf_left > :last-child")
+});
+
+if(screen.width <= 2000)
+{
         // document.write("<style>body{zoom:80%;}</style>");
     }
     if(screen.width <= 1500)
