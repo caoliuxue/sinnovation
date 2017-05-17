@@ -3,6 +3,13 @@
  */
  $(document).ready(function () {
 
+
+var name = 'tab';
+var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+    var r = window.location.search.substr(1).match(reg);
+    // alert(r[2]);
+
+
     function get_device_type() {
         var info = navigator.userAgent;
         var ios = new Array("iPhone", "iPod");
@@ -32,11 +39,25 @@
         return "others";
     }
 
+    function dashangToggle(){
+        $(".hide_box").fadeToggle();
+        $(".shang_box").fadeToggle();
+    }
+
     console.log(get_device_type());
 
     $(".head-menu img").click(function () {
         $("#header_nav").modal();
     });
+
+    $(".pay_item").click(function(){
+        $(this).addClass('checked').siblings('.pay_item').removeClass('checked');
+        var dataid=$(this).attr('data-id');
+        $(".shang_payimg img").attr("src","img/"+dataid+"img.jpg");
+        $("#shang_pay_txt").text(dataid=="alipay"?"支付宝":"微信");
+    });
+
+    
 
     $(".header_logo").click(function () {
         window.location.href = "index.html";
@@ -125,6 +146,7 @@
     });
 
     $(".ai-content2-b").hide();
+    $(".aiteamslider").hide();
     $(".ai-toggle span").click(function () {
         console.log(this);
         $(".ai-toggle span").removeClass("actived");
@@ -132,9 +154,11 @@
         if ($(this).hasClass("aiintroduce")) {
             $(".ai-content2-b").hide();
             $(".ai-content2").show();
+            $(".aiteamslider").hide();
         } else if ($(this).hasClass("aiteam")) {
             $(".ai-content2").hide();
             $(".ai-content2-b").show();
+            $(".aiteamslider").show();
         }
     });
 
@@ -155,7 +179,7 @@
             // console.log(this.name);
             var that = this;
             var member = $("<div class=\"team-member\"></div>");
-            member.append("<img src='" + this.img + "'/>");
+            member.append("<div style='overflow: hidden;'><img src='" + this.img + "'/><div class='mask'></div></div>");
             member.append("<div>" + this.name + "</div>");
             member.append("<div>" + this.title + "</div>");
             member.click(function () {
@@ -298,6 +322,7 @@ var renderAboutTeam = function () {
 };
 renderAboutTeam();
 
+
 var renderInvestTeam = function () {
     $.get("js/about-team-list.json", function (data) {
             // console.log(data);
@@ -348,8 +373,15 @@ var renderInvestTeam = function () {
             });
         }, "json");
 };
-renderInvestTeam();
 
+if ("team" == r[2]) {
+
+    $('.invest_team').addClass("actived");
+    $(".introduce").removeClass("actived");
+    $(".invest-a").hide();
+    $(".invest-b").show();
+    renderInvestTeam();
+    }
 
 var renderStartupTeam = function () {
     $.get("js/about-team-list.json", function (data) {
@@ -401,7 +433,15 @@ var renderStartupTeam = function () {
             });
         }, "json");
 };
-renderStartupTeam();
+
+if ("team" == r[2]) {
+
+    $('.operation-team').addClass("actived");
+    $(".startup-servicetab").removeClass("actived");
+    $(".startup-service").hide();
+    $(".startup-b").show();
+    renderStartupTeam();
+    }
 
 var renderAITeam = function () {
     $.get("js/about-team-list.json", function (data) {
@@ -453,8 +493,16 @@ var renderAITeam = function () {
             });
         }, "json");
 };
-renderAITeam();
+// renderAITeam();
 
+if ("team" == r[2]) {
+            $('.aiteam').addClass("actived");
+            $(".aiintroduce").removeClass("actived");
+            $(".ai-content2").hide();
+            $(".ai-content2-b").show();
+            $(".aiteamslider").show();
+            renderAITeam();
+        }
 //JOB-LIST
 
 $.get("js/jobs.json", function (data) {
@@ -534,4 +582,12 @@ if(screen.width <= 2000)
     }
 
     
+function dashangToggle(){
+    $(".hide_box").fadeToggle();
+    $(".shang_box").fadeToggle();
+}
+
+
 });
+
+
