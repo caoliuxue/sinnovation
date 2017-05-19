@@ -447,10 +447,14 @@
     .t02-l1 > :nth-child(2) > :nth-child(2) {
                 font-size: 2rem;
                 font-weight: 300;
+                flex-basis: none !important;
+                padding: 0px;
             }
 
     .t02-l1 > :first-child > span{
                 font-size: 1rem;
+                flex-basis: none;
+                padding: 0px;
             }
 
     .index-content02-right {
@@ -466,7 +470,9 @@
         /*margin-top: 80px;*/
         letter-spacing: 10px;
         border-bottom: 5px solid #ff7e00;
-        padding-bottom: 10px;
+        padding-bottom: 20px;
+        padding-right: 0px;
+        margin-bottom: 10px;
     }
 
     .index-content02-right > .t02-r2 {
@@ -1146,6 +1152,7 @@
     {
         padding: 0px;
         font-size: 1.5rem;
+            flex-basis: 33.33%;
     }
 
     .invest-a, .invest-b {
@@ -1214,7 +1221,7 @@
     }
 
     .invest-a-t02 > .intro :first-child {
-        padding-left: 10px;
+        padding-left: 30px;
         font-weight: bolder;
         border-bottom: 5px solid #ff7e00;
         padding-bottom: 20px;
@@ -1222,6 +1229,8 @@
         font-size: 28px;
         letter-spacing: 15px;
         color: #fff;
+        /*padding: 0px;*/
+        flex-basis: 20%;
     }
 
     .invest-a-t02 > .intro :nth-child(2) {
@@ -1456,6 +1465,7 @@ background-size: cover;
         letter-spacing: 5px;
         /*border-bottom: 5px solid #ff7e00;*/
         /*padding-bottom: 30px;*/
+        padding: 0px;
         font-size: 28px !important;
     }
 
@@ -1464,6 +1474,7 @@ background-size: cover;
         letter-spacing: 1px;
         font-size: 14px;
             text-align: center;
+            margin-top: 20px;
     }
 
     .invest-a-t04 > .apps-wrapper {
@@ -2022,6 +2033,7 @@ background-size: cover;
         padding-bottom: 10px;
         letter-spacing: 5px;
         font-weight: bolder;
+        flex-basis: 20%;
     }
 
     .about_t02 > .about_t02_03 > :last-child {
@@ -2546,7 +2558,7 @@ background-size: cover;
     }
 
     .job-detail-container > .title {
-        height: 150px;
+        /*height: 150px;*/
         /*line-height: 150px;*/
         font-size: 60px;
     }
@@ -2711,7 +2723,7 @@ background-size: cover;
         margin-right: 17%;
         padding-left: 10%;
         padding-right: 6%;
-        padding-top: 100px;
+        /*padding-top: 50px;*/
         /*overflow: scroll;*/
     }
 
@@ -2737,7 +2749,7 @@ background-size: cover;
 
     .startup-detail > .title {
         letter-spacing: 5px;
-        margin-top: 50px;
+        /*margin-top: 50px;*/
         /*line-height: 110px;*/
     }
 

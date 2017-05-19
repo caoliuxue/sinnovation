@@ -7,7 +7,7 @@
     var name = 'tab';
     var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
     var r = window.location.search.substr(1).match(reg);
-    // alert(r[2]);
+    
 
 
     function get_device_type() {
@@ -96,19 +96,19 @@
 //     $('.about_team_lkf_left > :last-child').css('max-height','none');
 // });
 
-    $(".header_logo").click(function () {
-        window.location.href = "index.html";
-    });
+$(".header_logo").click(function () {
+    window.location.href = "index.html";
+});
 
-    $(".menu-close").click(function () {
-        $("#header_nav").modal('toggle');
-    });
+$(".menu-close").click(function () {
+    $("#header_nav").modal('toggle');
+});
 
-    $("#header_nav ul li a").click(function () {
-        $("#header_nav").modal('toggle');
-    });
+$("#header_nav ul li a").click(function () {
+    $("#header_nav").modal('toggle');
+});
 
-    var bannerSwiper = new Swiper('.swiper-container', {
+var bannerSwiper = new Swiper('.swiper-container', {
         // Optional parameters
         direction: 'horizontal',
         loop: true,
@@ -523,30 +523,7 @@ var renderAITeam = function () {
 };
 renderAITeam();
 
-if ("team" == r[2]) {
-    $('.aiteam').addClass("actived");
-    $(".aiintroduce").removeClass("actived");
-    $(".ai-content2").hide();
-    $(".ai-content2-b").show();
-    $(".aiteamslider").show();
-    // renderAITeam();
-}
 
-if ("team" == r[2]) {
-    $('.operation-team').addClass("actived");
-    $(".startup-servicetab").removeClass("actived");
-    $(".startup-service").hide();
-    $(".startup-b").show();
-    // renderStartupTeam();
-}
-
-if ("team"==r[2]) {
-    $('.invest_team').addClass("actived");
-    $(".introduce").removeClass("actived");
-    $(".invest-a").hide();
-    $(".invest-b").show();
-    // renderInvestTeam();
-}
 //JOB-LIST
 
 $.get("js/jobs.json", function (data) {
@@ -615,6 +592,41 @@ $(".about_team_lkf_left > :last-child").click(function () {
     $(".about_team_lkf_left > :last-child")
 });
 
+
+    
+    function dashangToggle(){
+        $(".hide_box").fadeToggle();
+        $(".shang_box").fadeToggle();
+    }
+
+
+    // alert(r[2]);
+    if ("team"==r[2]) {
+        $(".operation-team").addClass("actived");
+        $(".startup-servicetab").removeClass("actived");
+        $(".startup-service").hide();
+        $(".startup-b").show();
+    // renderStartupTeam();
+}
+
+
+if ("team"==r[2]) {
+    $('.invest_team').addClass("actived");
+    $(".introduce").removeClass("actived");
+    $(".invest-a").hide();
+    $(".invest-b").show();
+    // renderInvestTeam();
+}
+
+if ("team"==r[2]) {
+    $('.aiteam').addClass("actived");
+    $(".aiintroduce").removeClass("actived");
+    $(".ai-content2").hide();
+    $(".ai-content2-b").show();
+    $(".aiteamslider").show();
+    // renderAITeam();
+}
+
 if(screen.width <= 2000)
 {
         // document.write("<style>body{zoom:80%;}</style>");
@@ -624,13 +636,6 @@ if(screen.width <= 2000)
         // document.write("<style>body{zoom:60%;}</style>");
         document.getElementById('html').style.zoom = '50%';
     }
-
-    
-    function dashangToggle(){
-        $(".hide_box").fadeToggle();
-        $(".shang_box").fadeToggle();
-    }
-
 
 });
 
