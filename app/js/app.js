@@ -564,9 +564,6 @@ try {
         };
 
         initBMap("bdmap1");
-        initBMap("bdmap2");
-        initBMap("bdmap3");
-        initBMap("bdmap4");
     } catch (e) {
         console.log();
     }
@@ -576,6 +573,64 @@ try {
     //     http://api.map.baidu.com/api?v=1.4&ak=您的密钥&callback=initialize"; //此为v1.4版本及以前版本的引用方式
     // document.body.appendChild(script);
     // })();
+
+try {
+    var initBMap2 = function initialize(id) {
+            var map = new BMap.Map(id);    // 创建Map实例
+            var point = new BMap.Point(121.526042,31.304821);
+            var myIcon = new BMap.Icon("img/contact/coordinate.png", new BMap.Size(45, 45), {
+                offset: new BMap.Size(10, 25)
+            });
+            var marker = new BMap.Marker(point, {icon: myIcon});        // 创建标注
+            map.centerAndZoom(point, 19);  // 初始化地图,设置中心点坐标和地图级别
+            map.setCurrentCity("北京");          // 设置地图显示的城市 此项是必须设置的
+            // map.enableScrollWheelZoom(true);     //开启鼠标滚轮缩放
+            map.addOverlay(marker);
+        };
+
+        initBMap2("bdmap2");
+    } catch (e) {
+        console.log();
+    }
+
+try {
+    var initBMap3 = function initialize(id) {
+            var map = new BMap.Map(id);    // 创建Map实例
+            var point = new BMap.Point(113.943154,22.529166);
+            var myIcon = new BMap.Icon("img/contact/coordinate.png", new BMap.Size(45, 45), {
+                offset: new BMap.Size(10, 25)
+            });
+            var marker = new BMap.Marker(point, {icon: myIcon});        // 创建标注
+            map.centerAndZoom(point, 19);  // 初始化地图,设置中心点坐标和地图级别
+            map.setCurrentCity("北京");          // 设置地图显示的城市 此项是必须设置的
+            // map.enableScrollWheelZoom(true);     //开启鼠标滚轮缩放
+            map.addOverlay(marker);
+        };
+
+        initBMap3("bdmap3");
+    } catch (e) {
+        console.log();
+    }
+
+try {
+    var initBMap4 = function initialize(id) {
+            var map = new BMap.Map(id);    // 创建Map实例
+            var point = new BMap.Point(37.411522, -122.125611);
+            var myIcon = new BMap.Icon("img/contact/coordinate.png", new BMap.Size(45, 45), {
+                offset: new BMap.Size(10, 25)
+            });
+            var marker = new BMap.Marker(point, {icon: myIcon});        // 创建标注
+            map.centerAndZoom(point, 19);  // 初始化地图,设置中心点坐标和地图级别
+            map.setCurrentCity("北京");          // 设置地图显示的城市 此项是必须设置的
+            // map.enableScrollWheelZoom(true);     //开启鼠标滚轮缩放
+            map.addOverlay(marker);
+        };
+
+        initBMap4("bdmap4");
+    } catch (e) {
+        console.log();
+    }
+
 
 //    最新动态
 
