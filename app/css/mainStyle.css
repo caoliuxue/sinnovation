@@ -426,16 +426,16 @@
                 color: #fff;
             }
 
-            #同学会 .access_more:hover {
+            #同学汇 .access_more:hover {
                 background-color: #000;
                 border: 1px solid black;
             }
 
-            #同学会 .access_more:hover a {
+            #同学汇 .access_more:hover a {
                 color: #fff;
             }
 
-            #同学会 .access_more:hover a:hover {
+            #同学汇 .access_more:hover a:hover {
                 color: #fff;
             }
 
@@ -2134,6 +2134,11 @@
                 white-space: pre-line;
             }
 
+            #新泡儿2, #同学汇2
+    {
+        display: none;
+    }
+
             .ai-crazy-team {
                 display: flex;
                 flex-direction: column;
@@ -3738,7 +3743,7 @@
 
         .aiteamslider
         {
-            padding: 50px 10%;
+            padding: 50px 8%;
         }
 
         .aiteamslider > div > span
@@ -3761,7 +3766,8 @@
 
         .aiteamslider >:last-child
         {
-            height: 400px !important;
+            max-height: 800px !important;
+    min-height: 500px !important;
             margin-top: 50px;
         }
 
