@@ -7,7 +7,7 @@
     var name = 'tab';
     var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
     var r = window.location.search.substr(1).match(reg);
-    // alert(r[2]);
+    
 
 
     function get_device_type() {
@@ -96,19 +96,19 @@
 //     $('.about_team_lkf_left > :last-child').css('max-height','none');
 // });
 
-    $(".header_logo").click(function () {
-        window.location.href = "index.html";
-    });
+$(".header_logo").click(function () {
+    window.location.href = "index.html";
+});
 
-    $(".menu-close").click(function () {
-        $("#header_nav").modal('toggle');
-    });
+$(".menu-close").click(function () {
+    $("#header_nav").modal('toggle');
+});
 
-    $("#header_nav ul li a").click(function () {
-        $("#header_nav").modal('toggle');
-    });
+$("#header_nav ul li a").click(function () {
+    $("#header_nav").modal('toggle');
+});
 
-    var bannerSwiper = new Swiper('.swiper-container', {
+var bannerSwiper = new Swiper('.swiper-container', {
         // Optional parameters
         direction: 'horizontal',
         loop: true,
@@ -523,30 +523,7 @@ var renderAITeam = function () {
 };
 renderAITeam();
 
-if ("team" == r[2]) {
-    $('.aiteam').addClass("actived");
-    $(".aiintroduce").removeClass("actived");
-    $(".ai-content2").hide();
-    $(".ai-content2-b").show();
-    $(".aiteamslider").show();
-    // renderAITeam();
-}
 
-if ("team" == r[2]) {
-    $('.operation-team').addClass("actived");
-    $(".startup-servicetab").removeClass("actived");
-    $(".startup-service").hide();
-    $(".startup-b").show();
-    // renderStartupTeam();
-}
-
-if ("team"==r[2]) {
-    $('.invest_team').addClass("actived");
-    $(".introduce").removeClass("actived");
-    $(".invest-a").hide();
-    $(".invest-b").show();
-    // renderInvestTeam();
-}
 //JOB-LIST
 
 $.get("js/jobs.json", function (data) {
@@ -587,9 +564,6 @@ try {
         };
 
         initBMap("bdmap1");
-        initBMap("bdmap2");
-        initBMap("bdmap3");
-        initBMap("bdmap4");
     } catch (e) {
         console.log();
     }
@@ -599,6 +573,64 @@ try {
     //     http://api.map.baidu.com/api?v=1.4&ak=您的密钥&callback=initialize"; //此为v1.4版本及以前版本的引用方式
     // document.body.appendChild(script);
     // })();
+
+try {
+    var initBMap2 = function initialize(id) {
+            var map = new BMap.Map(id);    // 创建Map实例
+            var point = new BMap.Point(121.526042,31.304821);
+            var myIcon = new BMap.Icon("img/contact/coordinate.png", new BMap.Size(45, 45), {
+                offset: new BMap.Size(10, 25)
+            });
+            var marker = new BMap.Marker(point, {icon: myIcon});        // 创建标注
+            map.centerAndZoom(point, 19);  // 初始化地图,设置中心点坐标和地图级别
+            map.setCurrentCity("北京");          // 设置地图显示的城市 此项是必须设置的
+            // map.enableScrollWheelZoom(true);     //开启鼠标滚轮缩放
+            map.addOverlay(marker);
+        };
+
+        initBMap2("bdmap2");
+    } catch (e) {
+        console.log();
+    }
+
+try {
+    var initBMap3 = function initialize(id) {
+            var map = new BMap.Map(id);    // 创建Map实例
+            var point = new BMap.Point(113.943154,22.529166);
+            var myIcon = new BMap.Icon("img/contact/coordinate.png", new BMap.Size(45, 45), {
+                offset: new BMap.Size(10, 25)
+            });
+            var marker = new BMap.Marker(point, {icon: myIcon});        // 创建标注
+            map.centerAndZoom(point, 19);  // 初始化地图,设置中心点坐标和地图级别
+            map.setCurrentCity("北京");          // 设置地图显示的城市 此项是必须设置的
+            // map.enableScrollWheelZoom(true);     //开启鼠标滚轮缩放
+            map.addOverlay(marker);
+        };
+
+        initBMap3("bdmap3");
+    } catch (e) {
+        console.log();
+    }
+
+try {
+    var initBMap4 = function initialize(id) {
+            var map = new BMap.Map(id);    // 创建Map实例
+            var point = new BMap.Point(37.411522, -122.125611);
+            var myIcon = new BMap.Icon("img/contact/coordinate.png", new BMap.Size(45, 45), {
+                offset: new BMap.Size(10, 25)
+            });
+            var marker = new BMap.Marker(point, {icon: myIcon});        // 创建标注
+            map.centerAndZoom(point, 19);  // 初始化地图,设置中心点坐标和地图级别
+            map.setCurrentCity("北京");          // 设置地图显示的城市 此项是必须设置的
+            // map.enableScrollWheelZoom(true);     //开启鼠标滚轮缩放
+            map.addOverlay(marker);
+        };
+
+        initBMap4("bdmap4");
+    } catch (e) {
+        console.log();
+    }
+
 
 //    最新动态
 
@@ -615,6 +647,41 @@ $(".about_team_lkf_left > :last-child").click(function () {
     $(".about_team_lkf_left > :last-child")
 });
 
+
+    
+    function dashangToggle(){
+        $(".hide_box").fadeToggle();
+        $(".shang_box").fadeToggle();
+    }
+
+
+    // alert(r[2]);
+    if ("team"==r[2]) {
+        $(".operation-team").addClass("actived");
+        $(".startup-servicetab").removeClass("actived");
+        $(".startup-service").hide();
+        $(".startup-b").show();
+    // renderStartupTeam();
+}
+
+
+if ("team"==r[2]) {
+    $('.invest_team').addClass("actived");
+    $(".introduce").removeClass("actived");
+    $(".invest-a").hide();
+    $(".invest-b").show();
+    // renderInvestTeam();
+}
+
+if ("team"==r[2]) {
+    $('.aiteam').addClass("actived");
+    $(".aiintroduce").removeClass("actived");
+    $(".ai-content2").hide();
+    $(".ai-content2-b").show();
+    $(".aiteamslider").show();
+    // renderAITeam();
+}
+
 if(screen.width <= 2000)
 {
         // document.write("<style>body{zoom:80%;}</style>");
@@ -624,13 +691,6 @@ if(screen.width <= 2000)
         // document.write("<style>body{zoom:60%;}</style>");
         document.getElementById('html').style.zoom = '50%';
     }
-
-    
-    function dashangToggle(){
-        $(".hide_box").fadeToggle();
-        $(".shang_box").fadeToggle();
-    }
-
 
 });
 
