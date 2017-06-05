@@ -111,7 +111,7 @@
             justify-content: space-between;
             flex-direction: row;
             width: 100%;
-            height: 80px;
+            height: 100px;
             position: fixed;
             top: 0;
             z-index: 20;
@@ -120,10 +120,10 @@
         }
 
         .header_logo {
-            height: 80px;
+            height: 100px;
             flex-basis: 30%;
             background: url("../img/index/logo.png") no-repeat center center;
-            background-size: 180px 60px;
+            background-size: 190px 70px;
             cursor: pointer;
         }
 
@@ -149,13 +149,14 @@
         .header_nav > div > a {
             display: block;
             width: 100%;
-            height: 80px;
+            height: 100px;
             text-align: center;
             text-decoration: none;
             color: #4c4c4c;
             font-weight: bolder;
             font-size: 1.6rem;
             background: white;
+            padding-top: 10px;
         }
 
         .header_nav > div > a :hover {
@@ -325,7 +326,7 @@
             }
 
             .access_more {
-                width: 230px;
+                width: 260px;
                 height: 56px;
                 margin-top: 30px;
                 border: 1px solid black;
@@ -2344,7 +2345,7 @@
             }
 
             .about_t02 > .about_t02_03 > :last-child {
-                font-size: 1.8rem;
+                font-size: 2rem;
                 color: #c3c3c3;
                 white-space: pre-line;
                 text-align: right;
@@ -2408,7 +2409,7 @@
             }
 
             .temp1 > :last-child, .temp2 > .txt > :last-child {
-                font-size: 1.8rem;
+                font-size: 2rem;
                 /*font-weight: 500;*/
                 /*white-space: pre-line;*/
                 letter-spacing: 2px;
