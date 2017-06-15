@@ -3574,6 +3574,11 @@
             justify-content: flex-start;
             align-items: flex-start;
             padding-left: 5%;
+            background-color: #f5f5f5;
+        }
+
+        .contacts-container > .blueprint {
+            background-color: #f8f8f8;
         }
 
         .contacts-container > .corporate > :first-child,
