@@ -689,7 +689,8 @@ if(screen.width <= 2000)
     if(screen.width <= 1500)
     {
         // document.write("<style>body{zoom:60%;}</style>");
-        document.getElementById('html').style.zoom = '50%';
+        // document.getElementById('html').style.zoom = '50%';
+        document.body.style.zoom = '50%';
     }
 
 });
