@@ -690,7 +690,7 @@ if(screen.width <= 2000)
     {
         // document.write("<style>body{zoom:60%;}</style>");
         // document.getElementById('html').style.zoom = '50%';
-        document.body.style.zoom = '50%';
+        // document.body.style.zoom = '50%';
     }
 
 });
