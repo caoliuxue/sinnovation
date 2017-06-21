@@ -198,6 +198,11 @@
             display: none;
         }
 
+        .head-menu-en
+        {
+            display: none;
+        }
+
         .swiper-container {
             width: 100%;
             height: 560px;

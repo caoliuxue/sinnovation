@@ -70,7 +70,7 @@
 
     .head-menu {
         padding-right: 5%;
-        flex-basis: 50%;
+        flex-basis: 10%;
         display: flex;
         justify-content: flex-end;
         align-self: center;
@@ -79,6 +79,25 @@
     .head-menu img {
         width: 25px;
         height: 20px;
+    }
+
+    .head-menu-en
+    {
+        padding-right: 5%;
+        flex-basis: 10%;
+        display: flex;
+        justify-content: flex-end;
+        align-self: center;
+    }
+
+    .head-menu a {
+        color:#000;
+        font-size: 2rem;
+        justify-content: flex-end;
+        align-self: center;
+        font-weight: bolder;
+        margin-right: 20px;
+        line-height: 20px;
     }
 
     .header_nav ul {    
@@ -2773,12 +2792,12 @@
 
     .startup-detail > .slogan {
         letter-spacing: 3px;
-    white-space: pre-line;
-    line-height: 25px;
-    color: rgba(0, 0, 0, 0.75);
-    font-size: 1.6rem;
-    margin-bottom: 20px;
-    margin-top: 20px;
+        white-space: pre-line;
+        line-height: 25px;
+        color: rgba(0, 0, 0, 0.75);
+        font-size: 1.6rem;
+        margin-bottom: 20px;
+        margin-top: 20px;
     }
 
     .startup-detail img {
