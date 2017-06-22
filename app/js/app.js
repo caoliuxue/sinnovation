@@ -548,7 +548,7 @@ $(".detail-close").click(function () {
 
 //    联系我们
 
-
+/*
 try {
     var initBMap = function initialize(id) {
             var map = new BMap.Map(id);    // 创建Map实例
@@ -630,7 +630,7 @@ try {
     } catch (e) {
         console.log();
     }
-
+*/
 
 //    最新动态
 

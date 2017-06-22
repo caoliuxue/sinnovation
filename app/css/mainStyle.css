@@ -3845,5 +3845,29 @@
         {
             cursor: pointer !important;
         }
+
+        #bdmap1
+        {
+            background: url("../img/contact/addressbeijing.png") no-repeat 90% center;
+            background-size: 120%;
+        }
+
+        #bdmap2
+        {
+            background: url("../img/contact/addressshanghai.png") no-repeat 90% center;
+            background-size: 120%;
+        }
+
+        #bdmap3
+        {
+            background: url("../img/contact/addressshenzhen.png") no-repeat 90% center;
+            background-size: 120%;
+        }
+
+        #bdmap4
+        {
+            background: url("../img/contact/addressguigu.png") no-repeat 90% center;
+            background-size: 120%;
+        }
     }
 
