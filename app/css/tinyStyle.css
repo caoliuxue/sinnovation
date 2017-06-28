@@ -144,14 +144,17 @@
 
     .slide2 {
         background: url("../img/index/swiper2.png") no-repeat center 100%;
+        background-size: cover;
     }
 
     .slide3 {
         background: url("../img/index/swiper3.png") no-repeat center 100%;
+        background-size: cover;
     }
 
     .slide4 {
         background: url("../img/index/swiper4.png") no-repeat center 100%;
+        background-size: cover;
     }
 
     .swiper-slide-hover {
@@ -583,7 +586,7 @@
         .index-content04-middle {
             flex-basis: 65%;
             padding-left: 5%;
-            text-align: right;
+            text-align: left;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -2581,7 +2584,7 @@
                 .job-detail-container > .title {
                     /*height: 150px;*/
                     /*line-height: 150px;*/
-                    font-size: 60px;
+                    font-size: 40px;
                 }
 
                 .job-detail-container > .job-label {
@@ -3547,6 +3550,10 @@
     letter-spacing: 2px;
     white-space: pre-line;
     line-height: 40px;
+}
+
+.long-txt img {
+    width: 100%;
 }
 
 .gotop {

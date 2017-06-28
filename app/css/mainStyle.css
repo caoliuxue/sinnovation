@@ -3649,7 +3649,7 @@
             margin-top: 10px;
             margin-bottom: 10px;
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-start;
             flex-wrap: wrap;
         }
 
@@ -3663,6 +3663,7 @@
             align-items: center;
             background: #f4f4f4 url("../img/news/mark.png") no-repeat 5% 95%;
             background-size: 50px 50px;
+            margin-left: 7px;
         }
 
         .news-list > .news:hover {
