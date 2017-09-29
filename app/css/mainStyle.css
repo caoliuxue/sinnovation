@@ -111,7 +111,7 @@
             justify-content: space-between;
             flex-direction: row;
             width: 100%;
-            height: 80px;
+            height: 100px;
             position: fixed;
             top: 0;
             z-index: 20;
@@ -120,10 +120,10 @@
         }
 
         .header_logo {
-            height: 80px;
+            height: 100px;
             flex-basis: 30%;
-            background: url("../img/index/logo.png") no-repeat center center;
-            background-size: 180px 60px;
+            background: url("../img/index/logo.svg") no-repeat center center;
+            background-size: 35%;
             cursor: pointer;
         }
 
@@ -149,13 +149,14 @@
         .header_nav > div > a {
             display: block;
             width: 100%;
-            height: 80px;
+            height: 100px;
             text-align: center;
             text-decoration: none;
             color: #4c4c4c;
             font-weight: bolder;
-            font-size: 1.6rem;
+            font-size: 2rem;
             background: white;
+            padding-top: 10px;
         }
 
         .header_nav > div > a :hover {
@@ -194,6 +195,11 @@
         }
 
         .head-menu {
+            display: none;
+        }
+
+        .head-menu-en
+        {
             display: none;
         }
 
@@ -317,7 +323,7 @@
             .index-content01-left > .t01-l3 {
                 /*height: 6px;*/
                 margin-top: 31px;
-                font-size: 1.8rem;
+                font-size: 2rem;
                 letter-spacing: 1px;
                 /*font-weight: 300;*/
                 line-height: 35px;
@@ -325,7 +331,7 @@
             }
 
             .access_more {
-                width: 230px;
+                width: 260px;
                 height: 56px;
                 margin-top: 30px;
                 border: 1px solid black;
@@ -668,7 +674,7 @@
                 color: white;
                 width: 100%;
                 text-align: left;
-                font-size: 1.8rem;
+                font-size: 2rem;
                 font-weight: 400;
                 letter-spacing: 5px;
                 padding-left: 12%;
@@ -719,7 +725,7 @@
 
             .index-content02-right > .t02-r3 {
                 margin-top: 30px;
-                font-size: 1.8rem;
+                font-size: 2rem;
                 /*font-weight: 300;*/
                 line-height: 35px;
                 max-width: 60%;
@@ -755,7 +761,7 @@
 
             .index-content03-left > .t03-l3 {
                 letter-spacing: 4px;
-                font-size: 1.8rem;
+                font-size: 2rem;
             }
 
             .index-content03-left > .t03-l4 {
@@ -816,7 +822,7 @@
 
             .index-content04-middle > .t04-l3 {
                 width: 70%;
-                font-size: 1.8rem;
+                font-size: 2rem;
                 text-align: right;
                 line-height: 45px;
                 /*font-weight: 100;*/
@@ -960,7 +966,7 @@
                     width: 50%;
                     margin-top: 100px;
                     letter-spacing: 3px;
-                    font-size: 1.8rem;
+                    font-size: 2rem;
                 }
 
                 .t05-item > .item-ceo {
@@ -996,7 +1002,7 @@
                     width: 50%;
                     margin-top: 160px;
                     letter-spacing: 3px;
-                    font-size: 1.8rem;
+                    font-size: 2rem;
                 }
 
                 .t05-item > .item-ceo {
@@ -1050,7 +1056,7 @@
             .t06-row > :nth-child(2) {
                 margin-left: 10px;
                 margin-right: 10px;
-                font-size: 1.8rem;
+                font-size: 2rem;
             }
 
             .t06-row-reverse {
@@ -1096,7 +1102,7 @@
                 letter-spacing: 3px;
                 line-height: 35px;
                 font-weight: bolder;
-                font-size: 1.8rem;
+                font-size: 2rem;
             }
 
             .main-title {
@@ -1112,7 +1118,7 @@
                 margin-top: 20px;
                 line-height: 30px;
                 /*font-weight: 200;*/
-                font-size: 1.8rem !important;
+                font-size: 2rem !important;
             }
 
             .news1 {
@@ -1168,7 +1174,7 @@
                 padding-right: 5%;
                 padding-top: 0px;
                 letter-spacing: 3px;
-                font-size: 1.8rem;
+                font-size: 2rem;
                 color: #b5a699;
                 line-height: 45px;
             }
@@ -1183,7 +1189,7 @@
                 padding-right: 5%;
                 padding-top: 0px;
                 letter-spacing: 3px;
-                font-size: 1.8rem;
+                font-size: 2rem;
                 color: #b5a699;
                 line-height: 45px;
             }
@@ -1198,7 +1204,7 @@
                 padding-right: 5%;
                 padding-top: 0px;
                 letter-spacing: 3px;
-                font-size: 1.8rem;
+                font-size: 2rem;
                 color: #ff7e00;
                 line-height: 45px;
                 text-decoration: none;
@@ -1329,7 +1335,7 @@
             .ai-toggle span,
             .job-toggle span,
             .startup-toggle span {
-                font-size: 1.8rem;
+                font-size: 2rem;
                 font-weight: bold;
                 height: 100px;
                 line-height: 100px;
@@ -1379,13 +1385,13 @@
             .invest-a-t01 > :nth-child(2) {
                 letter-spacing: 5px;
                 line-height: 100px;
-                font-size: 1.8rem;
+                font-size: 2rem;
             }
 
             .invest-a-t01 > :nth-child(n+3) {
                 letter-spacing: 5px;
                 line-height: 35px;
-                font-size: 1.8rem;
+                font-size: 2rem;
             }
 
             .invest-a-t02 {
@@ -1435,7 +1441,7 @@
             }
 
             .invest-declaration :nth-child(3) {
-                font-size: 1.8rem;
+                font-size: 2rem;
                 padding-top: 20px;
                 padding-bottom: 20px;
                 letter-spacing: 2px;
@@ -1462,7 +1468,7 @@
             }
 
             .invest-declaration :nth-child(5) {
-                font-size: 1.8rem;
+                font-size: 2rem;
                 padding-top: 20px;
                 padding-bottom: 20px;
                 letter-spacing: 2px;
@@ -1470,7 +1476,7 @@
             }
 
             .invest-declaration :nth-child(7) {
-                font-size: 1.8rem;
+                font-size: 2rem;
                 padding-top: 20px;
                 padding-bottom: 20px;
                 letter-spacing: 2px;
@@ -1478,7 +1484,7 @@
             }
 
             .invest-declaration :nth-child(9) {
-                font-size: 1.8rem;
+                font-size: 2rem;
                 padding-top: 20px;
                 padding-bottom: 20px;
                 letter-spacing: 2px;
@@ -1486,7 +1492,7 @@
             }
 
             .invest-declaration :nth-child(11) {
-                font-size: 1.8rem;
+                font-size: 2rem;
                 padding-top: 20px;
                 padding-bottom: 20px;
                 letter-spacing: 2px;
@@ -1494,7 +1500,7 @@
             }
 
             .invest-declaration :nth-child(13) {
-                font-size: 1.8rem;
+                font-size: 2rem;
                 padding-top: 20px;
                 padding-bottom: 20px;
                 letter-spacing: 2px;
@@ -1502,7 +1508,7 @@
             }
 
             .invest-declaration :nth-child(15) {
-                font-size: 1.8rem;
+                font-size: 2rem;
                 padding-top: 20px;
                 padding-bottom: 20px;
                 letter-spacing: 2px;
@@ -1555,7 +1561,7 @@
 
             .invest-a-t02 > .intro > :nth-child(n+2) {
                 line-height: 30px;
-                font-size: 1.8rem;
+                font-size: 2rem;
                 color: rgba(255, 255, 255, 0.8);
             }
 
@@ -1574,7 +1580,7 @@
             .ai-a-t02 > .intro > :nth-child(n+2) {
 
                 line-height: 50px;
-                font-size: 1.8rem;
+                font-size: 2rem;
                 letter-spacing: 5px;
                 color: rgba(255, 255, 255, 0.8);
             }
@@ -1593,7 +1599,7 @@
             }
 
             .ai-a .invest-item > :first-child {
-                font-size: 1.8rem;
+                font-size: 2rem;
                 font-weight: bolder;
                 color: white;
                 line-height: 30px;
@@ -1728,7 +1734,7 @@
 
             .invest-a-t03 > :nth-child(3) {
                 padding: 50px 5px 10px 5px;
-                font-size: 1.8rem;
+                font-size: 2rem;
             }
 
             /*亿元美金俱乐部*/
@@ -1760,7 +1766,7 @@
             .invest-a-t04 > .title > :nth-child(2) {
                 line-height: 100px;
                 letter-spacing: 1px;
-                font-size: 1.8rem;
+                font-size: 2rem;
             }
 
             .invest-a-t04 > .apps-wrapper {
@@ -1848,6 +1854,19 @@
             }
 
             .crazy-team > .team-title {
+                display: flex;
+                padding-left: 7%;
+                padding-right: 7%;
+                justify-content: flex-start;
+                align-items: center;
+                font-size: 6rem;
+                font-weight: bolder;
+                line-height: 80px;
+                height: 200px;
+                padding-top: 3%;
+            }
+
+            .ai-news-title {
                 display: flex;
                 padding-left: 7%;
                 padding-right: 7%;
@@ -2052,7 +2071,7 @@
             }
 
             .invest-crazy-team > .team-member-list > .team-member-line > .team-member > :nth-child(N+3) {
-                font-size: 14px;
+                font-size: 1.8rem;
                 line-height: 30px;
                 max-lines: 2;
                 min-height: 60px;
@@ -2124,7 +2143,7 @@
             }
 
             .startup-crazy-team > .team-member-list > .team-member-line > .team-member > :nth-child(N+3) {
-                font-size: 14px;
+                font-size: 1.8rem;
                 line-height: 30px;
                 max-lines: 2;
                 min-height: 60px;
@@ -2200,7 +2219,7 @@
             }
 
             .ai-crazy-team > .team-member-list > .team-member-line > .team-member > :nth-child(N+3) {
-                font-size: 14px;
+                font-size: 1.8rem;
                 line-height: 30px;
                 max-lines: 2;
                 min-height: 60px;
@@ -2327,7 +2346,7 @@
                 padding-right: 5%;
                 flex-direction: column;
                 justify-content: center;
-                align-items: flex-end;
+                align-items: flex-start;
                 flex-basis: 44.45%;
                 height: 550px;
                 background: #252525;
@@ -2344,10 +2363,10 @@
             }
 
             .about_t02 > .about_t02_03 > :last-child {
-                font-size: 1.8rem;
+                font-size: 2rem;
                 color: #c3c3c3;
                 white-space: pre-line;
-                text-align: right;
+                text-align: left;
                 line-height: 46px;
                 letter-spacing: 1px;
             }
@@ -2408,7 +2427,7 @@
             }
 
             .temp1 > :last-child, .temp2 > .txt > :last-child {
-                font-size: 1.8rem;
+                font-size: 2rem;
                 /*font-weight: 500;*/
                 /*white-space: pre-line;*/
                 letter-spacing: 2px;
@@ -2502,6 +2521,7 @@
                 margin-top: 80px;
                 letter-spacing: 5px;
                 line-height: 60px;
+                    margin-bottom: 5px;
             }
 
             .about_team_lkf_left > :nth-child(2) > span {
@@ -2513,7 +2533,7 @@
 
             .about_team_lkf_left > :last-child {
                 margin-top: 40px;
-                font-size: 1.8rem;
+                font-size: 2rem;
                 font-weight: 300;
                 line-height: 50px;
                 letter-spacing: 5px;
@@ -2756,7 +2776,7 @@
 
                 .job-item > :last-child {
                     margin-top: 25px;
-                    font-size: 1.6rem;
+                    font-size: 1.8rem;
                 }
 
                 /*JOB DETAIL*/
@@ -2874,7 +2894,7 @@
                     padding-top: 30px;
                     flex-direction: column;
                     justify-content: center;
-                    align-items: flex-end;
+                    align-items: flex-start;
                     padding-right: 10%;
                     padding-left: 10%;
                 }
@@ -2888,13 +2908,13 @@
                 .startup-service > .left > .left_t01 > :nth-child(3),
                 .startup-service > .left > .left_t03 > :nth-child(3),
                 .startup-service > .right > .right_t02 > :nth-child(3) {
-                    line-height: 30px;
+                    line-height: 32px;
                 }
 
                 .startup-service .txt-intro {
                     white-space: pre-line;
                     line-height: 25px;
-                    font-size: 1.8rem;
+                    font-size: 2rem;
                     /*padding-top: 20px;*/
                     color: grey;
                 }
@@ -2986,7 +3006,8 @@
             }
 
             .startup-detail img {
-             width: 100%;
+             width: auto;
+             height: auto;
          }
 
          /*人工智能工程院*/
@@ -3258,7 +3279,7 @@
 
         .ai-content2 > .row3 > .left_t01 > :nth-child(3){
             margin-top: 20px;
-            font-size: 1.8rem;
+            font-size: 2rem;
         }
 
         .ai-content2 > .row3 > .right_t01 {
@@ -3270,7 +3291,7 @@
 
         .ai-content2 > .row4 > .left_t01 > :nth-child(3){
             margin-top: 20px;
-            font-size: 1.8rem;
+            font-size: 2rem;
         }
 
         .ai-content2 > .row4 > .left_t01 {
@@ -3280,7 +3301,7 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            align-items: flex-end;
+            align-items: flex-start;
             /*background: url("../img/ai/bg1.png") no-repeat left;*/
             background-size: auto 110%;
             margin-top: 10px;
@@ -3303,8 +3324,8 @@
         .ai-content2 > .row1 > .left_t03 > :last-child {
             margin-top: 20px;
             white-space: pre-line;
-            line-height: 35px;
-            font-size: 1.8rem;
+            line-height: 36px;
+            font-size: 2rem;
             /*opacity: 0.5;*/
             color: #000;
         }
@@ -3498,7 +3519,7 @@
 
         .office > .address > :last-child {
             margin-top: 15px;
-            font-size: 1.8rem;
+            font-size: 2rem;
             line-height: 2rem;
             /*white-space: pre-line;*/
 
@@ -3560,6 +3581,11 @@
             justify-content: flex-start;
             align-items: flex-start;
             padding-left: 5%;
+            background-color: #f5f5f5;
+        }
+
+        .contacts-container > .blueprint {
+            background-color: #f8f8f8;
         }
 
         .contacts-container > .corporate > :first-child,
@@ -3623,7 +3649,7 @@
             margin-top: 10px;
             margin-bottom: 10px;
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-start;
             flex-wrap: wrap;
         }
 
@@ -3637,6 +3663,7 @@
             align-items: center;
             background: #f4f4f4 url("../img/news/mark.png") no-repeat 5% 95%;
             background-size: 50px 50px;
+            margin-left: 7px;
         }
 
         .news-list > .news:hover {
@@ -3720,7 +3747,7 @@
 
         .news-detail > .long-txt {
             margin-top: 30px;
-            font-size: 14px;
+            font-size: 2rem;
             letter-spacing: 2px;
             white-space: pre-line;
             line-height: 40px;
@@ -3818,6 +3845,30 @@
         .aboutmore
         {
             cursor: pointer !important;
+        }
+
+        #bdmap1
+        {
+            background: url("../img/contact/addressbeijing.png") no-repeat 90% center;
+            background-size: 120%;
+        }
+
+        #bdmap2
+        {
+            background: url("../img/contact/addressshanghai.png") no-repeat 90% center;
+            background-size: 120%;
+        }
+
+        #bdmap3
+        {
+            background: url("../img/contact/addressshenzhen.png") no-repeat 90% center;
+            background-size: 120%;
+        }
+
+        #bdmap4
+        {
+            background: url("../img/contact/addressguigu.png") no-repeat 90% center;
+            background-size: 120%;
         }
     }
 

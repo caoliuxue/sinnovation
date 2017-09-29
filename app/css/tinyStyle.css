@@ -70,7 +70,7 @@
 
     .head-menu {
         padding-right: 5%;
-        flex-basis: 50%;
+        flex-basis: 10%;
         display: flex;
         justify-content: flex-end;
         align-self: center;
@@ -79,6 +79,25 @@
     .head-menu img {
         width: 25px;
         height: 20px;
+    }
+
+    .head-menu-en
+    {
+        padding-right: 5%;
+        flex-basis: 10%;
+        display: flex;
+        justify-content: flex-end;
+        align-self: center;
+    }
+
+    .head-menu a {
+        color:#000;
+        font-size: 2rem;
+        justify-content: flex-end;
+        align-self: center;
+        font-weight: bolder;
+        margin-right: 20px;
+        line-height: 20px;
     }
 
     .header_nav ul {    
@@ -125,14 +144,17 @@
 
     .slide2 {
         background: url("../img/index/swiper2.png") no-repeat center 100%;
+        background-size: cover;
     }
 
     .slide3 {
         background: url("../img/index/swiper3.png") no-repeat center 100%;
+        background-size: cover;
     }
 
     .slide4 {
         background: url("../img/index/swiper4.png") no-repeat center 100%;
+        background-size: cover;
     }
 
     .swiper-slide-hover {
@@ -233,7 +255,7 @@
 
         .access_more {
             /*margin-top: 35px;*/
-            width: 140px;
+            width: 200px;
             height: 46px;
             line-height: 46px;
             border: 1px solid black;
@@ -337,7 +359,7 @@
 
         .index-content03-right  > .access_more {
             /* margin-top: 35px; */
-            width: 140px;
+            width: 200px;
             height: 46px;
             line-height: 46px;
             border: 1px solid black;
@@ -564,7 +586,7 @@
         .index-content04-middle {
             flex-basis: 65%;
             padding-left: 5%;
-            text-align: right;
+            text-align: left;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -2022,7 +2044,7 @@
                 padding-right: 5%;
                 flex-direction: column;
                 justify-content: center;
-                align-items: flex-end;
+                align-items: flex-start;
                 flex-basis: 100%;
                 height: 400px;
                 background: #252525;
@@ -2042,7 +2064,7 @@
                 font-size: 1.4rem;
                 color: #fff;
                 white-space: pre-line;
-                text-align: right;
+                text-align: left;
                 line-height: 25px;
                 letter-spacing: 2px;
             }
@@ -2093,7 +2115,7 @@
                 padding-left: 5%;
                 padding-right: 5%;
                 padding-top: 50px;
-                text-align: right;
+                text-align: left;
             }
 
             .about_t04_title {
@@ -2562,7 +2584,7 @@
                 .job-detail-container > .title {
                     /*height: 150px;*/
                     /*line-height: 150px;*/
-                    font-size: 60px;
+                    font-size: 40px;
                 }
 
                 .job-detail-container > .job-label {
@@ -2773,12 +2795,12 @@
 
     .startup-detail > .slogan {
         letter-spacing: 3px;
-    white-space: pre-line;
-    line-height: 25px;
-    color: rgba(0, 0, 0, 0.75);
-    font-size: 1.6rem;
-    margin-bottom: 20px;
-    margin-top: 20px;
+        white-space: pre-line;
+        line-height: 25px;
+        color: rgba(0, 0, 0, 0.75);
+        font-size: 1.6rem;
+        margin-bottom: 20px;
+        margin-top: 20px;
     }
 
     .startup-detail img {
@@ -3530,6 +3552,10 @@
     line-height: 40px;
 }
 
+.long-txt img {
+    width: 100%;
+}
+
 .gotop {
     position: fixed;
     left: 85%;
@@ -3731,6 +3757,31 @@
 {
     cursor: pointer !important;
 }
+
+#bdmap1
+        {
+            background: url("../img/contact/addressbeijing.png") no-repeat 50% center;
+            background-size: 400%;
+        }
+
+        #bdmap2
+        {
+            background: url("../img/contact/addressshanghai.png") no-repeat 50% center;
+            background-size: 400%;
+        }
+
+        #bdmap3
+        {
+            background: url("../img/contact/addressshenzhen.png") no-repeat 50% center;
+            background-size: 400%;
+        }
+
+        #bdmap4
+        {
+            background: url("../img/contact/addressguigu.png") no-repeat 50% center;
+            background-size: 400%;
+        }
+        
 }
 
 

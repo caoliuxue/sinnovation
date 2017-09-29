@@ -1,0 +1,42 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Users\\wangyzj\\AppData\\Roaming\\npm\\node_modules\\cnpm\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   '--userconfig=C:\\Users\\wangyzj\\.cnpmrc',
+1 verbose cli   '--disturl=https://npm.taobao.org/mirrors/node',
+1 verbose cli   '--registry=https://registry.npm.taobao.org',
+1 verbose cli   'start' ]
+2 info using npm@3.10.10
+3 info using node@v6.10.2
+4 verbose run-script [ 'prestart', 'start', 'poststart' ]
+5 info lifecycle sinnovation@0.0.1~prestart: sinnovation@0.0.1
+6 verbose lifecycle sinnovation@0.0.1~prestart: unsafe-perm in lifecycle true
+7 verbose lifecycle sinnovation@0.0.1~prestart: PATH: C:\Users\wangyzj\AppData\Roaming\npm\node_modules\cnpm\node_modules\npm\bin\node-gyp-bin;D:\BabelProject\project\创新工场\sinnovation\node_modules\.bin;C:\ProgramData\Oracle\Java\javapath;C:\Python27\;C:\Python27\Scripts;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\TortoiseGit\bin;C:\Program Files\Git\cmd;D:\BabelProject\xampp\php;C:\ProgramData\ComposerSetup\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\nodejs\;C:\Program Files (x86)\GtkSharp\2.12\bin;C:\Users\wangyzj\AppData\Local\Microsoft\WindowsApps;C:\Users\wangyzj\AppData\Roaming\Composer\vendor\bin;C:\Users\wangyzj\AppData\Roaming\npm;C:\Program Files (x86)\Microsoft VS Code\bin
+8 verbose lifecycle sinnovation@0.0.1~prestart: CWD: D:\BabelProject\project\创新工场\sinnovation
+9 silly lifecycle sinnovation@0.0.1~prestart: Args: [ '/d /s /c', 'npm install' ]
+10 silly lifecycle sinnovation@0.0.1~prestart: Returned: code: 0  signal: null
+11 info lifecycle sinnovation@0.0.1~start: sinnovation@0.0.1
+12 verbose lifecycle sinnovation@0.0.1~start: unsafe-perm in lifecycle true
+13 verbose lifecycle sinnovation@0.0.1~start: PATH: C:\Users\wangyzj\AppData\Roaming\npm\node_modules\cnpm\node_modules\npm\bin\node-gyp-bin;D:\BabelProject\project\创新工场\sinnovation\node_modules\.bin;C:\ProgramData\Oracle\Java\javapath;C:\Python27\;C:\Python27\Scripts;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\TortoiseGit\bin;C:\Program Files\Git\cmd;D:\BabelProject\xampp\php;C:\ProgramData\ComposerSetup\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\nodejs\;C:\Program Files (x86)\GtkSharp\2.12\bin;C:\Users\wangyzj\AppData\Local\Microsoft\WindowsApps;C:\Users\wangyzj\AppData\Roaming\Composer\vendor\bin;C:\Users\wangyzj\AppData\Roaming\npm;C:\Program Files (x86)\Microsoft VS Code\bin
+14 verbose lifecycle sinnovation@0.0.1~start: CWD: D:\BabelProject\project\创新工场\sinnovation
+15 silly lifecycle sinnovation@0.0.1~start: Args: [ '/d /s /c', 'lite-server' ]
+16 verbose stack Error: kill ENOSYS
+16 verbose stack     at exports._errnoException (util.js:1018:11)
+16 verbose stack     at process.kill (internal/process.js:190:13)
+16 verbose stack     at process.listener (C:\Users\wangyzj\AppData\Roaming\npm\node_modules\cnpm\node_modules\npm\node_modules\npmlog\node_modules\gauge\node_modules\signal-exit\index.js:86:15)
+16 verbose stack     at emitNone (events.js:91:20)
+16 verbose stack     at process.emit (events.js:185:7)
+16 verbose stack     at processEmit (C:\Users\wangyzj\AppData\Roaming\npm\node_modules\cnpm\node_modules\npm\node_modules\npmlog\node_modules\gauge\node_modules\signal-exit\index.js:146:32)
+16 verbose stack     at processEmit (C:\Users\wangyzj\AppData\Roaming\npm\node_modules\cnpm\node_modules\npm\node_modules\npm-registry-client\node_modules\npmlog\node_modules\gauge\node_modules\signal-exit\index.js:146:32)
+16 verbose stack     at Signal.wrap.onsignal (internal/process.js:217:44)
+17 verbose cwd D:\BabelProject\project\创新工场\sinnovation
+18 error Windows_NT 10.0.15063
+19 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Users\\wangyzj\\AppData\\Roaming\\npm\\node_modules\\cnpm\\node_modules\\npm\\bin\\npm-cli.js" "--userconfig=C:\\Users\\wangyzj\\.cnpmrc" "--disturl=https://npm.taobao.org/mirrors/node" "--registry=https://registry.npm.taobao.org" "start"
+20 error node v6.10.2
+21 error npm  v3.10.10
+22 error code ENOSYS
+23 error errno ENOSYS
+24 error syscall kill
+25 error kill ENOSYS
+26 error If you need help, you may report this error at:
+26 error     <https://github.com/npm/npm/issues>
+27 verbose exit [ 1, true ]
