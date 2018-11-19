@@ -287,7 +287,7 @@ var renderTeam = function () {
                     var teamInToggle = $("<a href='#"+data[index]+"'><span>" + data[index] + "</span></a>");
                     $(".team-toggle").append(teamInToggle);
                     //add team list viewer
-                    var teamTitle = $("<div class='team-title font-color-black' id='"+data[index]+"'>" + data[index] + "成员</div>");
+                    var teamTitle = $("<div class='team-title font-color-black' id='"+data[index]+"'>" + data[index] + "</div>");
                     var team_member_list = $("<div class='team-member-list'></div>");
                     $(".crazy-team").append(teamTitle, team_member_list);
                     $.get("js/team-member.json", function (data) {
@@ -322,7 +322,7 @@ var renderAboutTeam = function () {
                     var teamInToggle = $("<a href='#"+data[index]+"'><span>" + data[index] + "</span></a>");
                     $(".about-team-toggle").append(teamInToggle);
                     //add team list viewer
-                    var teamTitle = $("<div class='team-title font-color-black' id='"+data[index]+"'>" + data[index] + "成员</div>");
+                    var teamTitle = $("<div class='team-title font-color-black' id='"+data[index]+"'>" + data[index] + "</div>");
                     var team_member_list = $("<div class='team-member-list'></div>");
                     $(".about-crazy-team").append(teamTitle, team_member_list);
                     $.get("js/about-team-member.json", function (data) {
@@ -374,7 +374,7 @@ var renderInvestTeam = function () {
                     var teamInToggle = $("<a href='#"+data[index]+"'><span>" + data[index] + "</span></a>");
                     $(".invest-team-toggle").append(teamInToggle);
                     //add team list viewer
-                    var teamTitle = $("<div class='team-title font-color-black' id='"+data[index]+"'>" + data[index] + "成员</div>");
+                    var teamTitle = $("<div class='team-title font-color-black' id='"+data[index]+"'>" + data[index] + "</div>");
                     var team_member_list = $("<div class='team-member-list'></div>");
                     $(".invest-crazy-team").append(teamTitle, team_member_list);
                     $.get("js/about-team-member.json", function (data) {
@@ -429,7 +429,7 @@ var renderStartupTeam = function () {
                     var teamInToggle = $("<a href='#"+data[index]+"'><span>" + data[index] + "</span></a>");
                     $(".startup-team-toggle").append(teamInToggle);
                     //add team list viewer
-                    var teamTitle = $("<div class='team-title font-color-black' id='"+data[index]+"'>" + data[index] + "成员</div>");
+                    var teamTitle = $("<div class='team-title font-color-black' id='"+data[index]+"'>" + data[index] + "</div>");
                     var team_member_list = $("<div class='team-member-list'></div>");
                     $(".startup-crazy-team").append(teamTitle, team_member_list);
                     $.get("js/about-team-member.json", function (data) {
@@ -484,7 +484,7 @@ var renderAITeam = function () {
                     var teamInToggle = $("<a href='#"+data[index]+"'><span>" + data[index] + "</span></a>");
                     $(".ai-team-toggle").append(teamInToggle);
                     //add team list viewer
-                    var teamTitle = $("<div class='team-title font-color-black' id='"+data[index]+"'>" + data[index] + "成员</div>");
+                    var teamTitle = $("<div class='team-title font-color-black' id='"+data[index]+"'>" + data[index] + "</div>");
                     var team_member_list = $("<div class='team-member-list'></div>");
                     $(".ai-crazy-team").append(teamTitle, team_member_list);
                     $.get("js/about-team-member.json", function (data) {
@@ -548,7 +548,7 @@ $(".detail-close").click(function () {
 
 //    联系我们
 
-
+/*
 try {
     var initBMap = function initialize(id) {
             var map = new BMap.Map(id);    // 创建Map实例
@@ -630,7 +630,7 @@ try {
     } catch (e) {
         console.log();
     }
-
+*/
 
 //    最新动态
 
@@ -689,7 +689,8 @@ if(screen.width <= 2000)
     if(screen.width <= 1500)
     {
         // document.write("<style>body{zoom:60%;}</style>");
-        document.getElementById('html').style.zoom = '50%';
+        // document.getElementById('html').style.zoom = '50%';
+        // document.body.style.zoom = '50%';
     }
 
 });
